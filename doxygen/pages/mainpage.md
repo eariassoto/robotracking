@@ -1,7 +1,4 @@
-My Main Page                         {#mainpage}
+P&aacute;gina Principal                         {#mainpage}
 ============
-\tableofcontents
-
-\section sec1 Seccion 1
-\section sec2 Seccion 2
+No hay contenido, a&uacute;n.
 

@@ -1,0 +1,139 @@
+\hypertarget{classespacio_si_no}{}\section{Referencia de la Clase espacio\+Si\+No}
+\label{classespacio_si_no}\index{espacio\+Si\+No@{espacio\+Si\+No}}
+
+
+Espacio de comunicación básica.  
+
+
+
+
+{\ttfamily \#include $<$espacio\+Si\+No.\+h$>$}
+
+Diagrama de herencias de espacio\+Si\+No\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classespacio_si_no}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classespacio_si_no_ae97b5c52c884882f1adfefcc0a42d6ee}{espacio\+Si\+No} (\hyperlink{classespacio_base}{espacio\+Base} $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_si_no_a57a9a2c175f12aa908e05bb32437062e}{$\sim$espacio\+Si\+No} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_si_no_a4094daf8c4bcc9ca7a0303fb4c41859f}{setup} ()
+\begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_si_no_a4adfb774583e44929d17422d510b3e87}{update} (float, float, float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_si_no_a9e413357608b8009da2f048b68220cbc}{draw} ()
+\begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+of\+True\+Type\+Font \hyperlink{classespacio_si_no_a820d421658b6ebc4f6d09673014a60f2}{fuente\+Si\+No}
+\begin{DoxyCompactList}\small\item\em Fuente para dibujar texto en pantalla. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_si_no_ab45fe698965080072120e8ce79934a47}{btn\+Atras}
+\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Espacio de comunicación básica. 
+
+Este espacio ejemplifica un el método más simple para comunicarse. El usuario fija su atención en dos puntos, un lugar indica sí y otro indica no. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classespacio_si_no_ae97b5c52c884882f1adfefcc0a42d6ee}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!espacio\+Si\+No@{espacio\+Si\+No}}
+\index{espacio\+Si\+No@{espacio\+Si\+No}!espacio\+Si\+No@{espacio\+Si\+No}}
+\subsubsection[{espacio\+Si\+No(espacio\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Si\+No\+::espacio\+Si\+No (
+\begin{DoxyParamCaption}
+\item[{{\bf espacio\+Base} $\ast$}]{esp\+Padre}
+\end{DoxyParamCaption}
+)}\label{classespacio_si_no_ae97b5c52c884882f1adfefcc0a42d6ee}
+
+
+Constructor de la clase. 
+
+\hypertarget{classespacio_si_no_a57a9a2c175f12aa908e05bb32437062e}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!````~espacio\+Si\+No@{$\sim$espacio\+Si\+No}}
+\index{````~espacio\+Si\+No@{$\sim$espacio\+Si\+No}!espacio\+Si\+No@{espacio\+Si\+No}}
+\subsubsection[{$\sim$espacio\+Si\+No()}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Si\+No\+::$\sim$espacio\+Si\+No (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classespacio_si_no_a57a9a2c175f12aa908e05bb32437062e}
+
+
+Destructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classespacio_si_no_a9e413357608b8009da2f048b68220cbc}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!draw@{draw}}
+\index{draw@{draw}!espacio\+Si\+No@{espacio\+Si\+No}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Si\+No\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_si_no_a9e413357608b8009da2f048b68220cbc}
+
+
+Controla las tareas gráficas de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a01b3e668211b6159784f79a3f5a32d95}{espacio\+Base}.
+
+\hypertarget{classespacio_si_no_a4094daf8c4bcc9ca7a0303fb4c41859f}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!setup@{setup}}
+\index{setup@{setup}!espacio\+Si\+No@{espacio\+Si\+No}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Si\+No\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_si_no_a4094daf8c4bcc9ca7a0303fb4c41859f}
+
+
+Método inicial del ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
+
+\hypertarget{classespacio_si_no_a4adfb774583e44929d17422d510b3e87}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!update@{update}}
+\index{update@{update}!espacio\+Si\+No@{espacio\+Si\+No}}
+\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Si\+No\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_si_no_a4adfb774583e44929d17422d510b3e87}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classespacio_si_no_ab45fe698965080072120e8ce79934a47}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!btn\+Atras@{btn\+Atras}}
+\index{btn\+Atras@{btn\+Atras}!espacio\+Si\+No@{espacio\+Si\+No}}
+\subsubsection[{btn\+Atras}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Si\+No\+::btn\+Atras\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_si_no_ab45fe698965080072120e8ce79934a47}
+\hypertarget{classespacio_si_no_a820d421658b6ebc4f6d09673014a60f2}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!fuente\+Si\+No@{fuente\+Si\+No}}
+\index{fuente\+Si\+No@{fuente\+Si\+No}!espacio\+Si\+No@{espacio\+Si\+No}}
+\subsubsection[{fuente\+Si\+No}]{\setlength{\rightskip}{0pt plus 5cm}of\+True\+Type\+Font espacio\+Si\+No\+::fuente\+Si\+No\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_si_no_a820d421658b6ebc4f6d09673014a60f2}
+
+
+Fuente para dibujar texto en pantalla. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_si_no_8h}{espacio\+Si\+No.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_si_no_8cpp}{espacio\+Si\+No.\+cpp}\end{DoxyCompactItemize}

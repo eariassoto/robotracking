@@ -1,0 +1,230 @@
+\hypertarget{classmenu_base}{}\section{Referencia de la Clase menu\+Base}
+\label{classmenu_base}\index{menu\+Base@{menu\+Base}}
+
+
+Base para los menús de la aplicación.  
+
+
+
+
+{\ttfamily \#include $<$menu\+Base.\+h$>$}
+
+Diagrama de herencias de menu\+Base\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmenu_base}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmenu_base_a39dcbe65c2af659e4d27da0ec81f5824}{menu\+Base} (string, \hyperlink{classespacio_base}{espacio\+Base} $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classmenu_base_a09884cccdb9271476bbf6d87c6acfdfa}{$\sim$menu\+Base} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classmenu_base_a8d6e8078f62721431e095cb50bbcf40e}{setup} ()
+\begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_base_aed2125585944e1dfa0ee7cb0e4f7958c}{update} (float, float, float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classmenu_base_a0faf0816595b77204dd3e0309b35b76a}{draw} ()
+\begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_base_a5a88a45efd3bc47b4731fb21749a97d5}{eventos} (int index)=0
+\begin{DoxyCompactList}\small\item\em Maneja los eventos de los botones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+of\+True\+Type\+Font \hyperlink{classmenu_base_a8c48cc67dd9d789cf5a06c61333c8db9}{fuente}
+\begin{DoxyCompactList}\small\item\em Fuente del texto. \end{DoxyCompactList}\item 
+of\+Image \hyperlink{classmenu_base_a817536aa29cfe8f13d1e7c745e45b31d}{logo}
+\begin{DoxyCompactList}\small\item\em Logo de la aplicación. \end{DoxyCompactList}\item 
+float \hyperlink{classmenu_base_a97f2f1c174cadb12ae7b62f672fcde97}{logox}
+\begin{DoxyCompactList}\small\item\em Coordenada x del logo. \end{DoxyCompactList}\item 
+float \hyperlink{classmenu_base_a8bd56c156201d813c9c6da884cd98296}{logoy}
+\begin{DoxyCompactList}\small\item\em Coordenada y del logo. \end{DoxyCompactList}\item 
+ofx\+Xml\+Settings \hyperlink{classmenu_base_a07ca6fd4669759542b11d31eada55403}{configuraciones}
+\begin{DoxyCompactList}\small\item\em Instancia que maneja las configuraciones desde un archivo X\+M\+L. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classboton_imagen}{boton\+Imagen} $>$ \hyperlink{classmenu_base_a6de979e3389d5918db62c75d886161d9}{btn}
+\begin{DoxyCompactList}\small\item\em Botones que llevan al usuario a los espacios del menú \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classmenu_base_a28cf020839a96b7793388baf8a9e054d}{btn\+Atras}
+\begin{DoxyCompactList}\small\item\em Botón para que el usuario se devuelva en la aplicación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Base para los menús de la aplicación. 
+
+Se pretende que los espacios de la aplicación se agrupen en categorías. Cada categoría tendrá su menú. Todos los menús heredan de esta clase para que se mantenga el mismo estilo. Cualquier cambio estético que se quisiera aplicar a todos los menús deberían integrarse acá.
+
+Cada menú tiene su propio archivos de configuraciones. Este archivo tiene un formato X\+M\+L e indica los componentes que tendrá el menú. Además, los menús tienen las instancias de los espacios que están relacionados a su categoría. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classmenu_base_a39dcbe65c2af659e4d27da0ec81f5824}{}\index{menu\+Base@{menu\+Base}!menu\+Base@{menu\+Base}}
+\index{menu\+Base@{menu\+Base}!menu\+Base@{menu\+Base}}
+\subsubsection[{menu\+Base(string, espacio\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Base\+::menu\+Base (
+\begin{DoxyParamCaption}
+\item[{string}]{conf\+Path, }
+\item[{{\bf espacio\+Base} $\ast$}]{esp\+Padre}
+\end{DoxyParamCaption}
+)}\label{classmenu_base_a39dcbe65c2af659e4d27da0ec81f5824}
+
+
+Constructor de la clase. 
+
+Carga el archivo de configuración.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em conf\+Path} & Localización del archivo de configuración \\
+\hline
+{\em esp\+Padre} & Puntero al espacio/menú padre del menú \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmenu_base_a09884cccdb9271476bbf6d87c6acfdfa}{}\index{menu\+Base@{menu\+Base}!````~menu\+Base@{$\sim$menu\+Base}}
+\index{````~menu\+Base@{$\sim$menu\+Base}!menu\+Base@{menu\+Base}}
+\subsubsection[{$\sim$menu\+Base()}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Base\+::$\sim$menu\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmenu_base_a09884cccdb9271476bbf6d87c6acfdfa}
+
+
+Destructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classmenu_base_a0faf0816595b77204dd3e0309b35b76a}{}\index{menu\+Base@{menu\+Base}!draw@{draw}}
+\index{draw@{draw}!menu\+Base@{menu\+Base}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void menu\+Base\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_base_a0faf0816595b77204dd3e0309b35b76a}
+
+
+Controla las tareas gráficas de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a01b3e668211b6159784f79a3f5a32d95}{espacio\+Base}.
+
+\hypertarget{classmenu_base_a5a88a45efd3bc47b4731fb21749a97d5}{}\index{menu\+Base@{menu\+Base}!eventos@{eventos}}
+\index{eventos@{eventos}!menu\+Base@{menu\+Base}}
+\subsubsection[{eventos(int index)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf espacio\+Base}$\ast$ menu\+Base\+::eventos (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{classmenu_base_a5a88a45efd3bc47b4731fb21749a97d5}
+
+
+Maneja los eventos de los botones. 
+
+Cada menú tiene una cantidad determinada de botones. Para cada uno de ellos se implementa un evento que se dispara cuando el usuario hace clic
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Indice del boton en la lista btn \\
+\hline
+\end{DoxyParams}
+
+
+Implementado en \hyperlink{classmenu_comunicacion_a7386759ca2897f5ce031bf4c166fa8a1}{menu\+Comunicacion}, \hyperlink{classmenu_ocio_ab64d85113d3df4d1ba3b7599b89d0598}{menu\+Ocio}, \hyperlink{classmenu_educacion_af29464c6a5f1bb3c57ac6e12d3fcc740}{menu\+Educacion} y \hyperlink{classmenu_cotidiana_a5bc0b717e3cf19d4daa8bb73f3669f3a}{menu\+Cotidiana}.
+
+\hypertarget{classmenu_base_a8d6e8078f62721431e095cb50bbcf40e}{}\index{menu\+Base@{menu\+Base}!setup@{setup}}
+\index{setup@{setup}!menu\+Base@{menu\+Base}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void menu\+Base\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_base_a8d6e8078f62721431e095cb50bbcf40e}
+
+
+Método inicial del ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
+
+
+
+Reimplementado en \hyperlink{classmenu_comunicacion_a9e42e30977954e20c304261a9f1be5e1}{menu\+Comunicacion}, \hyperlink{classmenu_ocio_a6b99292a5b8c60b5a8a799447fc85f18}{menu\+Ocio} y \hyperlink{classmenu_educacion_a782815ae0152a27aca5d33885f607e81}{menu\+Educacion}.
+
+\hypertarget{classmenu_base_aed2125585944e1dfa0ee7cb0e4f7958c}{}\index{menu\+Base@{menu\+Base}!update@{update}}
+\index{update@{update}!menu\+Base@{menu\+Base}}
+\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Base\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_base_aed2125585944e1dfa0ee7cb0e4f7958c}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classmenu_base_a6de979e3389d5918db62c75d886161d9}{}\index{menu\+Base@{menu\+Base}!btn@{btn}}
+\index{btn@{btn}!menu\+Base@{menu\+Base}}
+\subsubsection[{btn}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf boton\+Imagen}$>$ menu\+Base\+::btn\hspace{0.3cm}{\ttfamily [protected]}}\label{classmenu_base_a6de979e3389d5918db62c75d886161d9}
+
+
+Botones que llevan al usuario a los espacios del menú 
+
+\hypertarget{classmenu_base_a28cf020839a96b7793388baf8a9e054d}{}\index{menu\+Base@{menu\+Base}!btn\+Atras@{btn\+Atras}}
+\index{btn\+Atras@{btn\+Atras}!menu\+Base@{menu\+Base}}
+\subsubsection[{btn\+Atras}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ menu\+Base\+::btn\+Atras\hspace{0.3cm}{\ttfamily [protected]}}\label{classmenu_base_a28cf020839a96b7793388baf8a9e054d}
+
+
+Botón para que el usuario se devuelva en la aplicación. 
+
+\hypertarget{classmenu_base_a07ca6fd4669759542b11d31eada55403}{}\index{menu\+Base@{menu\+Base}!configuraciones@{configuraciones}}
+\index{configuraciones@{configuraciones}!menu\+Base@{menu\+Base}}
+\subsubsection[{configuraciones}]{\setlength{\rightskip}{0pt plus 5cm}ofx\+Xml\+Settings menu\+Base\+::configuraciones\hspace{0.3cm}{\ttfamily [protected]}}\label{classmenu_base_a07ca6fd4669759542b11d31eada55403}
+
+
+Instancia que maneja las configuraciones desde un archivo X\+M\+L. 
+
+\hypertarget{classmenu_base_a8c48cc67dd9d789cf5a06c61333c8db9}{}\index{menu\+Base@{menu\+Base}!fuente@{fuente}}
+\index{fuente@{fuente}!menu\+Base@{menu\+Base}}
+\subsubsection[{fuente}]{\setlength{\rightskip}{0pt plus 5cm}of\+True\+Type\+Font menu\+Base\+::fuente\hspace{0.3cm}{\ttfamily [protected]}}\label{classmenu_base_a8c48cc67dd9d789cf5a06c61333c8db9}
+
+
+Fuente del texto. 
+
+\hypertarget{classmenu_base_a817536aa29cfe8f13d1e7c745e45b31d}{}\index{menu\+Base@{menu\+Base}!logo@{logo}}
+\index{logo@{logo}!menu\+Base@{menu\+Base}}
+\subsubsection[{logo}]{\setlength{\rightskip}{0pt plus 5cm}of\+Image menu\+Base\+::logo\hspace{0.3cm}{\ttfamily [protected]}}\label{classmenu_base_a817536aa29cfe8f13d1e7c745e45b31d}
+
+
+Logo de la aplicación. 
+
+\hypertarget{classmenu_base_a97f2f1c174cadb12ae7b62f672fcde97}{}\index{menu\+Base@{menu\+Base}!logox@{logox}}
+\index{logox@{logox}!menu\+Base@{menu\+Base}}
+\subsubsection[{logox}]{\setlength{\rightskip}{0pt plus 5cm}float menu\+Base\+::logox\hspace{0.3cm}{\ttfamily [protected]}}\label{classmenu_base_a97f2f1c174cadb12ae7b62f672fcde97}
+
+
+Coordenada x del logo. 
+
+\hypertarget{classmenu_base_a8bd56c156201d813c9c6da884cd98296}{}\index{menu\+Base@{menu\+Base}!logoy@{logoy}}
+\index{logoy@{logoy}!menu\+Base@{menu\+Base}}
+\subsubsection[{logoy}]{\setlength{\rightskip}{0pt plus 5cm}float menu\+Base\+::logoy\hspace{0.3cm}{\ttfamily [protected]}}\label{classmenu_base_a8bd56c156201d813c9c6da884cd98296}
+
+
+Coordenada y del logo. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/\hyperlink{menu_base_8h}{menu\+Base.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/\hyperlink{menu_base_8cpp}{menu\+Base.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,220 @@
+\hypertarget{classboton_imagen}{}\section{Referencia de la Clase boton\+Imagen}
+\label{classboton_imagen}\index{boton\+Imagen@{boton\+Imagen}}
+
+
+Botón con imagen y texto.  
+
+
+
+
+{\ttfamily \#include $<$boton\+Imagen.\+h$>$}
+
+Diagrama de herencias de boton\+Imagen\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classboton_imagen}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classboton_imagen_a39ee73ee8807ad4339d6a0a080bc8f6d}{boton\+Imagen} (string, float, string, int, of\+Color, int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Constructor principal de la clase, define tamaño y posición. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen_ad6917e2e059fa4a8247ada624663b19a}{boton\+Imagen} (string, float, string, int, of\+Color)
+\begin{DoxyCompactList}\small\item\em Constructor secundario de la clase, sin tamaño y posición definidos. \end{DoxyCompactList}\item 
+void \hyperlink{classboton_imagen_aca8f9275bf3f03f48d7e34803e0345bf}{set\+Tam} (int, int)
+\begin{DoxyCompactList}\small\item\em Asigna tamaño al botón. \end{DoxyCompactList}\item 
+void \hyperlink{classboton_imagen_a27a090f89bbf2489401f1e6c5286d3ec}{set\+Pos} (int, int)
+\item 
+void \hyperlink{classboton_imagen_aa2f66743b229d99cc06b36f5ad16450d}{draw} ()
+\begin{DoxyCompactList}\small\item\em Dibuja el componente en pantalla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classboton_imagen_a38d03166cf4cc63b616626875fdd817d}{escala}
+\begin{DoxyCompactList}\small\item\em Relación de la imagen con respecto al tamaño del botón. \end{DoxyCompactList}\item 
+of\+Color \hyperlink{classboton_imagen_ab2d8d1388ec4d76dbcd5e9a61436742c}{color\+Fuente}
+\begin{DoxyCompactList}\small\item\em Color del texto. \end{DoxyCompactList}\item 
+of\+True\+Type\+Font \hyperlink{classboton_imagen_a7f0f528e711fd891d186b3bfee192e39}{fuente}
+\begin{DoxyCompactList}\small\item\em Fuente para dibujar el texto. \end{DoxyCompactList}\item 
+string \hyperlink{classboton_imagen_a7118e57f1d4c1d91f2142b908f109f89}{texto}
+\begin{DoxyCompactList}\small\item\em Texto que se va a mostrar en la parte interior del botón. \end{DoxyCompactList}\item 
+of\+Image \hyperlink{classboton_imagen_a5099abcbecf2cc9d6cdb8cbe5b3a6921}{imagen}
+\begin{DoxyCompactList}\small\item\em Imagen que se va a dibujar en el botón. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Botón con imagen y texto. 
+
+Este botón funciona para los entornos que integran pictogramas. Además de tener una imagen el botón puede tener un texto bajo la imagen.
+
+La imagen del botón es escalada para que quepa dentro del botón, tener en consideración que si el botón es cuadrado y la imagen es rectangular se va a perder la proporción de la imagen. Esto es algo que se puede arreglar a la ahora de escalar la imagen en el constructor. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classboton_imagen_a39ee73ee8807ad4339d6a0a080bc8f6d}{}\index{boton\+Imagen@{boton\+Imagen}!boton\+Imagen@{boton\+Imagen}}
+\index{boton\+Imagen@{boton\+Imagen}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{boton\+Imagen(string, float, string, int, of\+Color, int, int, int, int)}]{\setlength{\rightskip}{0pt plus 5cm}boton\+Imagen\+::boton\+Imagen (
+\begin{DoxyParamCaption}
+\item[{string}]{r, }
+\item[{float}]{esc, }
+\item[{string}]{t, }
+\item[{int}]{tam\+Fuente, }
+\item[{of\+Color}]{c, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}\label{classboton_imagen_a39ee73ee8807ad4339d6a0a080bc8f6d}
+
+
+Constructor principal de la clase, define tamaño y posición. 
+
+Inicializa la fuente y guarda las configuraciones necesarias para dibujarse en pantalla.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r} & Localizacion de la imagen \\
+\hline
+{\em esc} & Representa la escala entre la imagen y el tamaño del botón, número real entre 0 y 1 \\
+\hline
+{\em t} & texto del botón \\
+\hline
+{\em tam\+Fuente} & tamaño de la fuente del texto \\
+\hline
+{\em c} & color del texto \\
+\hline
+{\em x} & localización en el eje x \\
+\hline
+{\em y} & localización en el eye y \\
+\hline
+{\em w} & largo del componente \\
+\hline
+{\em h} & ancho del componente \\
+\hline
+\end{DoxyParams}
+\hypertarget{classboton_imagen_ad6917e2e059fa4a8247ada624663b19a}{}\index{boton\+Imagen@{boton\+Imagen}!boton\+Imagen@{boton\+Imagen}}
+\index{boton\+Imagen@{boton\+Imagen}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{boton\+Imagen(string, float, string, int, of\+Color)}]{\setlength{\rightskip}{0pt plus 5cm}boton\+Imagen\+::boton\+Imagen (
+\begin{DoxyParamCaption}
+\item[{string}]{r, }
+\item[{float}]{esc, }
+\item[{string}]{t, }
+\item[{int}]{tam\+Fuente, }
+\item[{of\+Color}]{c}
+\end{DoxyParamCaption}
+)}\label{classboton_imagen_ad6917e2e059fa4a8247ada624663b19a}
+
+
+Constructor secundario de la clase, sin tamaño y posición definidos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r} & Localizacion de la imagen \\
+\hline
+{\em esc} & Representa la escala entre la imagen y el tamaño del botón, número real entre 0 y 1 \\
+\hline
+{\em t} & texto del botón \\
+\hline
+{\em tam\+Fuente} & tamaño de la fuente del texto \\
+\hline
+{\em c} & color del texto \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classboton_imagen_aa2f66743b229d99cc06b36f5ad16450d}{}\index{boton\+Imagen@{boton\+Imagen}!draw@{draw}}
+\index{draw@{draw}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void boton\+Imagen\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classboton_imagen_aa2f66743b229d99cc06b36f5ad16450d}
+
+
+Dibuja el componente en pantalla. 
+
+
+
+Implementa \hyperlink{classcomponente_base_ac6faec0698776f8bfe0e817b9927c0f9}{componente\+Base}.
+
+\hypertarget{classboton_imagen_a27a090f89bbf2489401f1e6c5286d3ec}{}\index{boton\+Imagen@{boton\+Imagen}!set\+Pos@{set\+Pos}}
+\index{set\+Pos@{set\+Pos}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{set\+Pos(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}void boton\+Imagen\+::set\+Pos (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{classboton_imagen_a27a090f89bbf2489401f1e6c5286d3ec}
+
+\begin{DoxyParams}{Parámetros}
+{\em x} & localización en el eje x \\
+\hline
+{\em y} & localización en el eye y \\
+\hline
+\end{DoxyParams}
+\hypertarget{classboton_imagen_aca8f9275bf3f03f48d7e34803e0345bf}{}\index{boton\+Imagen@{boton\+Imagen}!set\+Tam@{set\+Tam}}
+\index{set\+Tam@{set\+Tam}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{set\+Tam(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}void boton\+Imagen\+::set\+Tam (
+\begin{DoxyParamCaption}
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}\label{classboton_imagen_aca8f9275bf3f03f48d7e34803e0345bf}
+
+
+Asigna tamaño al botón. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em w} & largo del componente \\
+\hline
+{\em h} & ancho del componente \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classboton_imagen_ab2d8d1388ec4d76dbcd5e9a61436742c}{}\index{boton\+Imagen@{boton\+Imagen}!color\+Fuente@{color\+Fuente}}
+\index{color\+Fuente@{color\+Fuente}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{color\+Fuente}]{\setlength{\rightskip}{0pt plus 5cm}of\+Color boton\+Imagen\+::color\+Fuente\hspace{0.3cm}{\ttfamily [protected]}}\label{classboton_imagen_ab2d8d1388ec4d76dbcd5e9a61436742c}
+
+
+Color del texto. 
+
+\hypertarget{classboton_imagen_a38d03166cf4cc63b616626875fdd817d}{}\index{boton\+Imagen@{boton\+Imagen}!escala@{escala}}
+\index{escala@{escala}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{escala}]{\setlength{\rightskip}{0pt plus 5cm}float boton\+Imagen\+::escala\hspace{0.3cm}{\ttfamily [protected]}}\label{classboton_imagen_a38d03166cf4cc63b616626875fdd817d}
+
+
+Relación de la imagen con respecto al tamaño del botón. 
+
+\hypertarget{classboton_imagen_a7f0f528e711fd891d186b3bfee192e39}{}\index{boton\+Imagen@{boton\+Imagen}!fuente@{fuente}}
+\index{fuente@{fuente}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{fuente}]{\setlength{\rightskip}{0pt plus 5cm}of\+True\+Type\+Font boton\+Imagen\+::fuente\hspace{0.3cm}{\ttfamily [protected]}}\label{classboton_imagen_a7f0f528e711fd891d186b3bfee192e39}
+
+
+Fuente para dibujar el texto. 
+
+\hypertarget{classboton_imagen_a5099abcbecf2cc9d6cdb8cbe5b3a6921}{}\index{boton\+Imagen@{boton\+Imagen}!imagen@{imagen}}
+\index{imagen@{imagen}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{imagen}]{\setlength{\rightskip}{0pt plus 5cm}of\+Image boton\+Imagen\+::imagen\hspace{0.3cm}{\ttfamily [protected]}}\label{classboton_imagen_a5099abcbecf2cc9d6cdb8cbe5b3a6921}
+
+
+Imagen que se va a dibujar en el botón. 
+
+\hypertarget{classboton_imagen_a7118e57f1d4c1d91f2142b908f109f89}{}\index{boton\+Imagen@{boton\+Imagen}!texto@{texto}}
+\index{texto@{texto}!boton\+Imagen@{boton\+Imagen}}
+\subsubsection[{texto}]{\setlength{\rightskip}{0pt plus 5cm}string boton\+Imagen\+::texto\hspace{0.3cm}{\ttfamily [protected]}}\label{classboton_imagen_a7118e57f1d4c1d91f2142b908f109f89}
+
+
+Texto que se va a mostrar en la parte interior del botón. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/componentes/\hyperlink{boton_imagen_8h}{boton\+Imagen.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/componentes/\hyperlink{boton_imagen_8cpp}{boton\+Imagen.\+cpp}\end{DoxyCompactItemize}

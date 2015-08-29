@@ -1,0 +1,151 @@
+\hypertarget{classcaja_texto}{}\section{Referencia de la Clase caja\+Texto}
+\label{classcaja_texto}\index{caja\+Texto@{caja\+Texto}}
+
+
+Caja para mostrar texto.  
+
+
+
+
+{\ttfamily \#include $<$caja\+Texto.\+h$>$}
+
+Diagrama de herencias de caja\+Texto\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classcaja_texto}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcaja_texto_aee455629d334f28613f43b6a61d16f14}{caja\+Texto} (int, of\+Color, int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classcaja_texto_a5bc02d7f55e12fd32715e4509853a558}{draw} ()
+\begin{DoxyCompactList}\small\item\em Dibuja el componente en pantalla. \end{DoxyCompactList}\item 
+void \hyperlink{classcaja_texto_ae6326da3ec5842eb0ff41208d22b1567}{append\+Texto} (string)
+\begin{DoxyCompactList}\small\item\em Agrega texto al final de la hilera actual. \end{DoxyCompactList}\item 
+void \hyperlink{classcaja_texto_ab9362a01f444db0bed5032b9ec585905}{borrar\+Caracter} ()
+\begin{DoxyCompactList}\small\item\em Borra el último caracter del texto. \end{DoxyCompactList}\item 
+string \hyperlink{classcaja_texto_ab5e4ed49e9aaa7176e9186b085a07621}{get\+Texto} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el texto actual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+of\+Color \hyperlink{classcaja_texto_a281b136399f6b3ee3fedfaa9069bebad}{color\+Fuente}
+\begin{DoxyCompactList}\small\item\em Color del texto. \end{DoxyCompactList}\item 
+of\+True\+Type\+Font \hyperlink{classcaja_texto_aa5cbc731d2fc56d87210d6ae6d2319b0}{fuente}
+\begin{DoxyCompactList}\small\item\em Fuente del texto. \end{DoxyCompactList}\item 
+string \hyperlink{classcaja_texto_a5b62049df6eb5efb5831b57b4958d115}{texto}
+\begin{DoxyCompactList}\small\item\em Texto que se está mostrando en la caja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Caja para mostrar texto. 
+
+El texto está centrado y pensado para mostrar máximo una oración, el soporte para párrafos y barras de scroll no están implementados 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classcaja_texto_aee455629d334f28613f43b6a61d16f14}{}\index{caja\+Texto@{caja\+Texto}!caja\+Texto@{caja\+Texto}}
+\index{caja\+Texto@{caja\+Texto}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{caja\+Texto(int, of\+Color, int, int, int, int)}]{\setlength{\rightskip}{0pt plus 5cm}caja\+Texto\+::caja\+Texto (
+\begin{DoxyParamCaption}
+\item[{int}]{tam\+Fuente, }
+\item[{of\+Color}]{c, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}\label{classcaja_texto_aee455629d334f28613f43b6a61d16f14}
+
+
+Constructor de la clase. 
+
+Inicializa la fuente y guarda las configuraciones necesarias para dibujarse en pantalla. \begin{DoxyVerb}\param tamFuente tamaño de la fuente del texto
+\param c color del texto
+\param x localización en el eje x
+\param y localización en el eye y
+\param w largo del componente
+\param h ancho del componente\end{DoxyVerb}
+ 
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classcaja_texto_ae6326da3ec5842eb0ff41208d22b1567}{}\index{caja\+Texto@{caja\+Texto}!append\+Texto@{append\+Texto}}
+\index{append\+Texto@{append\+Texto}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{append\+Texto(string)}]{\setlength{\rightskip}{0pt plus 5cm}void caja\+Texto\+::append\+Texto (
+\begin{DoxyParamCaption}
+\item[{string}]{t}
+\end{DoxyParamCaption}
+)}\label{classcaja_texto_ae6326da3ec5842eb0ff41208d22b1567}
+
+
+Agrega texto al final de la hilera actual. 
+
+\hypertarget{classcaja_texto_ab9362a01f444db0bed5032b9ec585905}{}\index{caja\+Texto@{caja\+Texto}!borrar\+Caracter@{borrar\+Caracter}}
+\index{borrar\+Caracter@{borrar\+Caracter}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{borrar\+Caracter()}]{\setlength{\rightskip}{0pt plus 5cm}void caja\+Texto\+::borrar\+Caracter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcaja_texto_ab9362a01f444db0bed5032b9ec585905}
+
+
+Borra el último caracter del texto. 
+
+\hypertarget{classcaja_texto_a5bc02d7f55e12fd32715e4509853a558}{}\index{caja\+Texto@{caja\+Texto}!draw@{draw}}
+\index{draw@{draw}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void caja\+Texto\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classcaja_texto_a5bc02d7f55e12fd32715e4509853a558}
+
+
+Dibuja el componente en pantalla. 
+
+
+
+Implementa \hyperlink{classcomponente_base_ac6faec0698776f8bfe0e817b9927c0f9}{componente\+Base}.
+
+\hypertarget{classcaja_texto_ab5e4ed49e9aaa7176e9186b085a07621}{}\index{caja\+Texto@{caja\+Texto}!get\+Texto@{get\+Texto}}
+\index{get\+Texto@{get\+Texto}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{get\+Texto()}]{\setlength{\rightskip}{0pt plus 5cm}string caja\+Texto\+::get\+Texto (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcaja_texto_ab5e4ed49e9aaa7176e9186b085a07621}
+
+
+Devuelve el texto actual. 
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classcaja_texto_a281b136399f6b3ee3fedfaa9069bebad}{}\index{caja\+Texto@{caja\+Texto}!color\+Fuente@{color\+Fuente}}
+\index{color\+Fuente@{color\+Fuente}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{color\+Fuente}]{\setlength{\rightskip}{0pt plus 5cm}of\+Color caja\+Texto\+::color\+Fuente\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_a281b136399f6b3ee3fedfaa9069bebad}
+
+
+Color del texto. 
+
+\hypertarget{classcaja_texto_aa5cbc731d2fc56d87210d6ae6d2319b0}{}\index{caja\+Texto@{caja\+Texto}!fuente@{fuente}}
+\index{fuente@{fuente}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{fuente}]{\setlength{\rightskip}{0pt plus 5cm}of\+True\+Type\+Font caja\+Texto\+::fuente\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_aa5cbc731d2fc56d87210d6ae6d2319b0}
+
+
+Fuente del texto. 
+
+\hypertarget{classcaja_texto_a5b62049df6eb5efb5831b57b4958d115}{}\index{caja\+Texto@{caja\+Texto}!texto@{texto}}
+\index{texto@{texto}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{texto}]{\setlength{\rightskip}{0pt plus 5cm}string caja\+Texto\+::texto\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_a5b62049df6eb5efb5831b57b4958d115}
+
+
+Texto que se está mostrando en la caja. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/componentes/\hyperlink{caja_texto_8h}{caja\+Texto.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/componentes/\hyperlink{caja_texto_8cpp}{caja\+Texto.\+cpp}\end{DoxyCompactItemize}

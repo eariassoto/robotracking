@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>RoboTracking App: Fichero Fuente C:/of_v0.8.4_vs_release/apps/myApps/RoboTrackingApp/src/espacios/espacioPictograma.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RoboTracking App
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Herramientas técnicas para promover la autonomía de personas con movilidad reducida.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cecef1d433a19ac73484cba28be07231.html">espacios</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">espacioPictograma.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="espacio_pictograma_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="espacio_base_8h.html">espacioBase.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="boton_imagen_8h.html">botonImagen.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="boton_simple_8h.html">botonSimple.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sqlite3_manager_8h.html">sqlite3Manager.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> std::vector;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classespacio_pictograma.html">espacioPictograma</a> : <span class="keyword">public</span> <a class="code" href="classespacio_base.html">espacioBase</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classespacio_pictograma.html#a0f02bce6037dbf68a0fa644fd371d70c">espacioPictograma</a>(<a class="code" href="classespacio_base.html">espacioBase</a>*);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classespacio_pictograma.html#a2dc94d6bc4ea2dec4d631d8bb8d8eb58">~espacioPictograma</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span>         <a class="code" href="classespacio_pictograma.html#a88576adb5f56ddc7d2c735f349a4864d">setup</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classespacio_base.html">espacioBase</a>* <a class="code" href="classespacio_pictograma.html#a2ebefcf2c0838ef08d067a39c307ed6d">update</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span>         <a class="code" href="classespacio_pictograma.html#a0f869dd16b4431009825ef13527e40db">draw</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    vector&lt;string&gt; <a class="code" href="classespacio_pictograma.html#a298954d50054dbfe58cccb1b6b0f704d">getPictograma</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span>           <a class="code" href="classespacio_pictograma.html#abfadb8b3f6ec9c8c7558ea6eef22b295">cargarPictogramas</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span>            <a class="code" href="classespacio_pictograma.html#aa1d237a0781e86d2cc44c65c0c500d28">getTamPictograma</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span>           <a class="code" href="classespacio_pictograma.html#a3a9c44580cc4f78eb1793c9479b89e9f">comandoHablar</a>(<span class="keywordtype">string</span> s);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#ae17417de4e3122b89c29119a320888f0">   69</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a> *<a class="code" href="classespacio_pictograma.html#ae17417de4e3122b89c29119a320888f0">btnAtras</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#a9157dd34f8f48cd755f721b288369dfe">   70</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a> *<a class="code" href="classespacio_pictograma.html#a9157dd34f8f48cd755f721b288369dfe">btnAdelante</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#a739c7db68be68b07c10fe93b44a5a4d1">   71</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a> *<a class="code" href="classespacio_pictograma.html#a739c7db68be68b07c10fe93b44a5a4d1">btnHablar</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#ade5373849fab0cb55bc87bc4293e8c04">   72</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a> *<a class="code" href="classespacio_pictograma.html#ade5373849fab0cb55bc87bc4293e8c04">btnSalir</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#aa1f188f89952d7886f1d6f50f38b590f">   73</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a> *<a class="code" href="classespacio_pictograma.html#aa1f188f89952d7886f1d6f50f38b590f">btnBorrar</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#a669d076dad44b310f85b1f5dccf75568">   74</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a> *<a class="code" href="classespacio_pictograma.html#a669d076dad44b310f85b1f5dccf75568">btnBorrarTodo</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#a2e1fdcb75a25332576f897e77d1fe2de">   77</a></span>&#160;    <a class="code" href="classsqlite3_manager.html">sqlite3Manager</a> *<a class="code" href="classespacio_pictograma.html#a2e1fdcb75a25332576f897e77d1fe2de">baseDatos</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#a1bee74237dc5c39e48be1f6773ca854d">   80</a></span>&#160;    vector&lt;botonImagen&gt; <a class="code" href="classespacio_pictograma.html#a1bee74237dc5c39e48be1f6773ca854d">btnCategorias</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#a7c0a60d23d55abbc5bb131fadf0210d4">   83</a></span>&#160;    vector&lt;botonImagen&gt; <a class="code" href="classespacio_pictograma.html#a7c0a60d23d55abbc5bb131fadf0210d4">pictogramasActivos</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#aa59878d6a5fe1ae995756a0a283ec5ae">   85</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classespacio_pictograma.html#aa59878d6a5fe1ae995756a0a283ec5ae">tam</a>, <a class="code" href="classespacio_pictograma.html#ae9d1d84f5ddbeba53dd9aed28e7eb0d5">margen</a>, <a class="code" href="classespacio_pictograma.html#a3e591cd8fdedbf742f55cbc2280295bc">offsetX</a>, <a class="code" href="classespacio_pictograma.html#a9924df4518eadddc04074ac555e7511c">offsetY</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#ae550974a70815794e1c2a94ccc8fd99a">   88</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classespacio_pictograma.html#ae550974a70815794e1c2a94ccc8fd99a">btnAtrasVisible</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#aecebb0c47c0d28f31052d5084e02aec2">   91</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classespacio_pictograma.html#aecebb0c47c0d28f31052d5084e02aec2">btnAdelanteVisible</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#a90f13e054faabc1dc26f9e62fff6f572">   94</a></span>&#160;    vector&lt;vector&lt;string&gt;&gt; <a class="code" href="classespacio_pictograma.html#a90f13e054faabc1dc26f9e62fff6f572">strCategorias</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#af241bdf93ef686631b46fdadf07da04a">  101</a></span>&#160;    vector&lt;vector&lt;vector&lt;string&gt;&gt;&gt; <a class="code" href="classespacio_pictograma.html#af241bdf93ef686631b46fdadf07da04a">strPictogramas</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#a46e6758b5312fa89401ff012aa2d2b92">  104</a></span>&#160;    vector&lt;pair&lt;string, ofImage&gt;&gt; <a class="code" href="classespacio_pictograma.html#a46e6758b5312fa89401ff012aa2d2b92">pictogramasActuales</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#ac977c8f8644a1a3ab7a724c689be0038">  107</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classespacio_pictograma.html#ac977c8f8644a1a3ab7a724c689be0038">indice</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classespacio_pictograma.html#ae61af3d4b032f682e7e686ca0dddbfec">  110</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classespacio_pictograma.html#ae61af3d4b032f682e7e686ca0dddbfec">categoriaActual</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="ttc" id="classespacio_pictograma_html_a3e591cd8fdedbf742f55cbc2280295bc"><div class="ttname"><a href="classespacio_pictograma.html#a3e591cd8fdedbf742f55cbc2280295bc">espacioPictograma::offsetX</a></div><div class="ttdeci">int offsetX</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:85</div></div>
+<div class="ttc" id="sqlite3_manager_8h_html"><div class="ttname"><a href="sqlite3_manager_8h.html">sqlite3Manager.h</a></div></div>
+<div class="ttc" id="classespacio_pictograma_html_a669d076dad44b310f85b1f5dccf75568"><div class="ttname"><a href="classespacio_pictograma.html#a669d076dad44b310f85b1f5dccf75568">espacioPictograma::btnBorrarTodo</a></div><div class="ttdeci">botonImagen * btnBorrarTodo</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:74</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a0f869dd16b4431009825ef13527e40db"><div class="ttname"><a href="classespacio_pictograma.html#a0f869dd16b4431009825ef13527e40db">espacioPictograma::draw</a></div><div class="ttdeci">void draw()</div><div class="ttdoc">Controla las tareas gráficas de cada ciclo de OpenGL. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.cpp:157</div></div>
+<div class="ttc" id="classespacio_pictograma_html_ae61af3d4b032f682e7e686ca0dddbfec"><div class="ttname"><a href="classespacio_pictograma.html#ae61af3d4b032f682e7e686ca0dddbfec">espacioPictograma::categoriaActual</a></div><div class="ttdeci">int categoriaActual</div><div class="ttdoc">Indica la categoría activa en la pantalla. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:110</div></div>
+<div class="ttc" id="classespacio_base_html"><div class="ttname"><a href="classespacio_base.html">espacioBase</a></div><div class="ttdoc">Clase base para todos los espacios de la aplicación. </div><div class="ttdef"><b>Definition:</b> espacioBase.h:16</div></div>
+<div class="ttc" id="classespacio_pictograma_html_ac977c8f8644a1a3ab7a724c689be0038"><div class="ttname"><a href="classespacio_pictograma.html#ac977c8f8644a1a3ab7a724c689be0038">espacioPictograma::indice</a></div><div class="ttdeci">int indice</div><div class="ttdoc">Indica el desplazamiento que ha hehco el usuario en la lista de pictogramas. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:107</div></div>
+<div class="ttc" id="classespacio_pictograma_html_ae550974a70815794e1c2a94ccc8fd99a"><div class="ttname"><a href="classespacio_pictograma.html#ae550974a70815794e1c2a94ccc8fd99a">espacioPictograma::btnAtrasVisible</a></div><div class="ttdeci">bool btnAtrasVisible</div><div class="ttdoc">Determina si el usuario puede devolver la lista de pictogramas. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:88</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a1bee74237dc5c39e48be1f6773ca854d"><div class="ttname"><a href="classespacio_pictograma.html#a1bee74237dc5c39e48be1f6773ca854d">espacioPictograma::btnCategorias</a></div><div class="ttdeci">vector&lt; botonImagen &gt; btnCategorias</div><div class="ttdoc">Lista con las categorias disponibles. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:80</div></div>
+<div class="ttc" id="classespacio_pictograma_html_ade5373849fab0cb55bc87bc4293e8c04"><div class="ttname"><a href="classespacio_pictograma.html#ade5373849fab0cb55bc87bc4293e8c04">espacioPictograma::btnSalir</a></div><div class="ttdeci">botonImagen * btnSalir</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:72</div></div>
+<div class="ttc" id="classespacio_pictograma_html_ae9d1d84f5ddbeba53dd9aed28e7eb0d5"><div class="ttname"><a href="classespacio_pictograma.html#ae9d1d84f5ddbeba53dd9aed28e7eb0d5">espacioPictograma::margen</a></div><div class="ttdeci">int margen</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:85</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a2ebefcf2c0838ef08d067a39c307ed6d"><div class="ttname"><a href="classespacio_pictograma.html#a2ebefcf2c0838ef08d067a39c307ed6d">espacioPictograma::update</a></div><div class="ttdeci">espacioBase * update(float, float, float, float, bool)</div><div class="ttdoc">Controla tareas lógica de cada ciclo de OpenGL. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.cpp:75</div></div>
+<div class="ttc" id="boton_simple_8h_html"><div class="ttname"><a href="boton_simple_8h.html">botonSimple.h</a></div></div>
+<div class="ttc" id="classespacio_pictograma_html_aa1f188f89952d7886f1d6f50f38b590f"><div class="ttname"><a href="classespacio_pictograma.html#aa1f188f89952d7886f1d6f50f38b590f">espacioPictograma::btnBorrar</a></div><div class="ttdeci">botonImagen * btnBorrar</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:73</div></div>
+<div class="ttc" id="classespacio_pictograma_html_aa59878d6a5fe1ae995756a0a283ec5ae"><div class="ttname"><a href="classespacio_pictograma.html#aa59878d6a5fe1ae995756a0a283ec5ae">espacioPictograma::tam</a></div><div class="ttdeci">int tam</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:85</div></div>
+<div class="ttc" id="classsqlite3_manager_html"><div class="ttname"><a href="classsqlite3_manager.html">sqlite3Manager</a></div><div class="ttdoc">Maneja la interacción con la base de datos SQLite. </div><div class="ttdef"><b>Definition:</b> sqlite3Manager.h:23</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a9924df4518eadddc04074ac555e7511c"><div class="ttname"><a href="classespacio_pictograma.html#a9924df4518eadddc04074ac555e7511c">espacioPictograma::offsetY</a></div><div class="ttdeci">int offsetY</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:85</div></div>
+<div class="ttc" id="espacio_base_8h_html"><div class="ttname"><a href="espacio_base_8h.html">espacioBase.h</a></div></div>
+<div class="ttc" id="classespacio_pictograma_html_a298954d50054dbfe58cccb1b6b0f704d"><div class="ttname"><a href="classespacio_pictograma.html#a298954d50054dbfe58cccb1b6b0f704d">espacioPictograma::getPictograma</a></div><div class="ttdeci">vector&lt; string &gt; getPictograma(int)</div><div class="ttdoc">Recupera un pictograma de la lista cuya categoría está activa. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.cpp:209</div></div>
+<div class="ttc" id="classespacio_pictograma_html_aecebb0c47c0d28f31052d5084e02aec2"><div class="ttname"><a href="classespacio_pictograma.html#aecebb0c47c0d28f31052d5084e02aec2">espacioPictograma::btnAdelanteVisible</a></div><div class="ttdeci">bool btnAdelanteVisible</div><div class="ttdoc">Determina si el usuario puede continuar en la lista de pictogramas. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:91</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a9157dd34f8f48cd755f721b288369dfe"><div class="ttname"><a href="classespacio_pictograma.html#a9157dd34f8f48cd755f721b288369dfe">espacioPictograma::btnAdelante</a></div><div class="ttdeci">botonImagen * btnAdelante</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:70</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a2dc94d6bc4ea2dec4d631d8bb8d8eb58"><div class="ttname"><a href="classespacio_pictograma.html#a2dc94d6bc4ea2dec4d631d8bb8d8eb58">espacioPictograma::~espacioPictograma</a></div><div class="ttdeci">~espacioPictograma()</div><div class="ttdoc">Destructor de la clase. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.cpp:24</div></div>
+<div class="ttc" id="classespacio_pictograma_html"><div class="ttname"><a href="classespacio_pictograma.html">espacioPictograma</a></div><div class="ttdoc">Espacio de comunicación por medio de pictogramas. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:26</div></div>
+<div class="ttc" id="classespacio_pictograma_html_af241bdf93ef686631b46fdadf07da04a"><div class="ttname"><a href="classespacio_pictograma.html#af241bdf93ef686631b46fdadf07da04a">espacioPictograma::strPictogramas</a></div><div class="ttdeci">vector&lt; vector&lt; vector&lt; string &gt; &gt; &gt; strPictogramas</div><div class="ttdoc">Lista de matrices con la información de los pictogramas. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:101</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a90f13e054faabc1dc26f9e62fff6f572"><div class="ttname"><a href="classespacio_pictograma.html#a90f13e054faabc1dc26f9e62fff6f572">espacioPictograma::strCategorias</a></div><div class="ttdeci">vector&lt; vector&lt; string &gt; &gt; strCategorias</div><div class="ttdoc">Matriz con la información de las categorías. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:94</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a46e6758b5312fa89401ff012aa2d2b92"><div class="ttname"><a href="classespacio_pictograma.html#a46e6758b5312fa89401ff012aa2d2b92">espacioPictograma::pictogramasActuales</a></div><div class="ttdeci">vector&lt; pair&lt; string, ofImage &gt; &gt; pictogramasActuales</div><div class="ttdoc">Lista con los pictogramas activos en la pantalla. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:104</div></div>
+<div class="ttc" id="classespacio_pictograma_html_ae17417de4e3122b89c29119a320888f0"><div class="ttname"><a href="classespacio_pictograma.html#ae17417de4e3122b89c29119a320888f0">espacioPictograma::btnAtras</a></div><div class="ttdeci">botonImagen * btnAtras</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:69</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a88576adb5f56ddc7d2c735f349a4864d"><div class="ttname"><a href="classespacio_pictograma.html#a88576adb5f56ddc7d2c735f349a4864d">espacioPictograma::setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Método inicial del ciclo de OpenGL. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.cpp:35</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a2e1fdcb75a25332576f897e77d1fe2de"><div class="ttname"><a href="classespacio_pictograma.html#a2e1fdcb75a25332576f897e77d1fe2de">espacioPictograma::baseDatos</a></div><div class="ttdeci">sqlite3Manager * baseDatos</div><div class="ttdoc">Instancia del administrador de la base de datos. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:77</div></div>
+<div class="ttc" id="classespacio_pictograma_html_abfadb8b3f6ec9c8c7558ea6eef22b295"><div class="ttname"><a href="classespacio_pictograma.html#abfadb8b3f6ec9c8c7558ea6eef22b295">espacioPictograma::cargarPictogramas</a></div><div class="ttdeci">void cargarPictogramas()</div><div class="ttdoc">Carga los botones con los pictogramas activos. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.cpp:198</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a3a9c44580cc4f78eb1793c9479b89e9f"><div class="ttname"><a href="classespacio_pictograma.html#a3a9c44580cc4f78eb1793c9479b89e9f">espacioPictograma::comandoHablar</a></div><div class="ttdeci">void comandoHablar(string s)</div><div class="ttdoc">Comando temporal para texto por voz. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.cpp:220</div></div>
+<div class="ttc" id="classespacio_pictograma_html_aa1d237a0781e86d2cc44c65c0c500d28"><div class="ttname"><a href="classespacio_pictograma.html#aa1d237a0781e86d2cc44c65c0c500d28">espacioPictograma::getTamPictograma</a></div><div class="ttdeci">int getTamPictograma()</div><div class="ttdoc">Recupera la cantidad de pictogramas en una lista. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.cpp:215</div></div>
+<div class="ttc" id="classboton_imagen_html"><div class="ttname"><a href="classboton_imagen.html">botonImagen</a></div><div class="ttdoc">Botón con imagen y texto. </div><div class="ttdef"><b>Definition:</b> botonImagen.h:15</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a7c0a60d23d55abbc5bb131fadf0210d4"><div class="ttname"><a href="classespacio_pictograma.html#a7c0a60d23d55abbc5bb131fadf0210d4">espacioPictograma::pictogramasActivos</a></div><div class="ttdeci">vector&lt; botonImagen &gt; pictogramasActivos</div><div class="ttdoc">Lista con los pictogramas activos. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:83</div></div>
+<div class="ttc" id="classespacio_pictograma_html_a739c7db68be68b07c10fe93b44a5a4d1"><div class="ttname"><a href="classespacio_pictograma.html#a739c7db68be68b07c10fe93b44a5a4d1">espacioPictograma::btnHablar</a></div><div class="ttdeci">botonImagen * btnHablar</div><div class="ttdef"><b>Definition:</b> espacioPictograma.h:71</div></div>
+<div class="ttc" id="boton_imagen_8h_html"><div class="ttname"><a href="boton_imagen_8h.html">botonImagen.h</a></div></div>
+<div class="ttc" id="classespacio_pictograma_html_a0f02bce6037dbf68a0fa644fd371d70c"><div class="ttname"><a href="classespacio_pictograma.html#a0f02bce6037dbf68a0fa644fd371d70c">espacioPictograma::espacioPictograma</a></div><div class="ttdeci">espacioPictograma(espacioBase *)</div><div class="ttdoc">Constructor de la clase. </div><div class="ttdef"><b>Definition:</b> espacioPictograma.cpp:3</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

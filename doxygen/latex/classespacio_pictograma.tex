@@ -1,0 +1,324 @@
+\hypertarget{classespacio_pictograma}{}\section{Referencia de la Clase espacio\+Pictograma}
+\label{classespacio_pictograma}\index{espacio\+Pictograma@{espacio\+Pictograma}}
+
+
+Espacio de comunicación por medio de pictogramas.  
+
+
+
+
+{\ttfamily \#include $<$espacio\+Pictograma.\+h$>$}
+
+Diagrama de herencias de espacio\+Pictograma\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classespacio_pictograma}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classespacio_pictograma_a0f02bce6037dbf68a0fa644fd371d70c}{espacio\+Pictograma} (\hyperlink{classespacio_base}{espacio\+Base} $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_pictograma_a2dc94d6bc4ea2dec4d631d8bb8d8eb58}{$\sim$espacio\+Pictograma} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_pictograma_a88576adb5f56ddc7d2c735f349a4864d}{setup} ()
+\begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_pictograma_a2ebefcf2c0838ef08d067a39c307ed6d}{update} (float, float, float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_pictograma_a0f869dd16b4431009825ef13527e40db}{draw} ()
+\begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ string $>$ \hyperlink{classespacio_pictograma_a298954d50054dbfe58cccb1b6b0f704d}{get\+Pictograma} (int)
+\begin{DoxyCompactList}\small\item\em Recupera un pictograma de la lista cuya categoría está activa. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_pictograma_abfadb8b3f6ec9c8c7558ea6eef22b295}{cargar\+Pictogramas} ()
+\begin{DoxyCompactList}\small\item\em Carga los botones con los pictogramas activos. \end{DoxyCompactList}\item 
+int \hyperlink{classespacio_pictograma_aa1d237a0781e86d2cc44c65c0c500d28}{get\+Tam\+Pictograma} ()
+\begin{DoxyCompactList}\small\item\em Recupera la cantidad de pictogramas en una lista. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_pictograma_a3a9c44580cc4f78eb1793c9479b89e9f}{comando\+Hablar} (string s)
+\begin{DoxyCompactList}\small\item\em Comando temporal para texto por voz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_pictograma_ae17417de4e3122b89c29119a320888f0}{btn\+Atras}
+\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_pictograma_a9157dd34f8f48cd755f721b288369dfe}{btn\+Adelante}
+\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_pictograma_a739c7db68be68b07c10fe93b44a5a4d1}{btn\+Hablar}
+\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_pictograma_ade5373849fab0cb55bc87bc4293e8c04}{btn\+Salir}
+\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_pictograma_aa1f188f89952d7886f1d6f50f38b590f}{btn\+Borrar}
+\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_pictograma_a669d076dad44b310f85b1f5dccf75568}{btn\+Borrar\+Todo}
+\item 
+\hyperlink{classsqlite3_manager}{sqlite3\+Manager} $\ast$ \hyperlink{classespacio_pictograma_a2e1fdcb75a25332576f897e77d1fe2de}{base\+Datos}
+\begin{DoxyCompactList}\small\item\em Instancia del administrador de la base de datos. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classboton_imagen}{boton\+Imagen} $>$ \hyperlink{classespacio_pictograma_a1bee74237dc5c39e48be1f6773ca854d}{btn\+Categorias}
+\begin{DoxyCompactList}\small\item\em Lista con las categorias disponibles. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classboton_imagen}{boton\+Imagen} $>$ \hyperlink{classespacio_pictograma_a7c0a60d23d55abbc5bb131fadf0210d4}{pictogramas\+Activos}
+\begin{DoxyCompactList}\small\item\em Lista con los pictogramas activos. \end{DoxyCompactList}\item 
+int \hyperlink{classespacio_pictograma_aa59878d6a5fe1ae995756a0a283ec5ae}{tam}
+\item 
+int \hyperlink{classespacio_pictograma_ae9d1d84f5ddbeba53dd9aed28e7eb0d5}{margen}
+\item 
+int \hyperlink{classespacio_pictograma_a3e591cd8fdedbf742f55cbc2280295bc}{offset\+X}
+\item 
+int \hyperlink{classespacio_pictograma_a9924df4518eadddc04074ac555e7511c}{offset\+Y}
+\item 
+bool \hyperlink{classespacio_pictograma_ae550974a70815794e1c2a94ccc8fd99a}{btn\+Atras\+Visible}
+\begin{DoxyCompactList}\small\item\em Determina si el usuario puede devolver la lista de pictogramas. \end{DoxyCompactList}\item 
+bool \hyperlink{classespacio_pictograma_aecebb0c47c0d28f31052d5084e02aec2}{btn\+Adelante\+Visible}
+\begin{DoxyCompactList}\small\item\em Determina si el usuario puede continuar en la lista de pictogramas. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ string $>$ $>$ \hyperlink{classespacio_pictograma_a90f13e054faabc1dc26f9e62fff6f572}{str\+Categorias}
+\begin{DoxyCompactList}\small\item\em Matriz con la información de las categorías. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ vector$<$ string $>$ $>$ $>$ \hyperlink{classespacio_pictograma_af241bdf93ef686631b46fdadf07da04a}{str\+Pictogramas}
+\begin{DoxyCompactList}\small\item\em Lista de matrices con la información de los pictogramas. \end{DoxyCompactList}\item 
+vector$<$ pair$<$ string, of\+Image $>$ $>$ \hyperlink{classespacio_pictograma_a46e6758b5312fa89401ff012aa2d2b92}{pictogramas\+Actuales}
+\begin{DoxyCompactList}\small\item\em Lista con los pictogramas activos en la pantalla. \end{DoxyCompactList}\item 
+int \hyperlink{classespacio_pictograma_ac977c8f8644a1a3ab7a724c689be0038}{indice}
+\begin{DoxyCompactList}\small\item\em Indica el desplazamiento que ha hehco el usuario en la lista de pictogramas. \end{DoxyCompactList}\item 
+int \hyperlink{classespacio_pictograma_ae61af3d4b032f682e7e686ca0dddbfec}{categoria\+Actual}
+\begin{DoxyCompactList}\small\item\em Indica la categoría activa en la pantalla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Espacio de comunicación por medio de pictogramas. 
+
+En este espacio se utliza la metodología de pictogramas como medio de comunicación. Un pictograma es un dibujo o gráfico que expresa un concepto relacionado con el objeto al que se refiere. (\href{https://es.wikipedia.org/wiki/Pictograma}{\tt https\+://es.\+wikipedia.\+org/wiki/\+Pictograma})
+
+La información de los pictogramas están almacenados en una base de datos sqlite. La estructura del espacio consiste en categorías de pictogramas y sus respectivos gráficos. El usuario puede formar sus oraciones y luego enviarlas a texto por voz.
+
+Los símbolos pictográficos utilizados de A\+R\+A\+S\+A\+A\+C (\href{http://catedu.es/arasaac/}{\tt http\+://catedu.\+es/arasaac/}) son parte de una obra colectiva propiedad de la Diputación General de Aragón y han creados bajo licencia Creative Commons. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classespacio_pictograma_a0f02bce6037dbf68a0fa644fd371d70c}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!espacio\+Pictograma@{espacio\+Pictograma}}
+\index{espacio\+Pictograma@{espacio\+Pictograma}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{espacio\+Pictograma(espacio\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Pictograma\+::espacio\+Pictograma (
+\begin{DoxyParamCaption}
+\item[{{\bf espacio\+Base} $\ast$}]{esp\+Padre}
+\end{DoxyParamCaption}
+)}\label{classespacio_pictograma_a0f02bce6037dbf68a0fa644fd371d70c}
+
+
+Constructor de la clase. 
+
+Carga la información de los programas desde la base de datos \hypertarget{classespacio_pictograma_a2dc94d6bc4ea2dec4d631d8bb8d8eb58}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!````~espacio\+Pictograma@{$\sim$espacio\+Pictograma}}
+\index{````~espacio\+Pictograma@{$\sim$espacio\+Pictograma}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{$\sim$espacio\+Pictograma()}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Pictograma\+::$\sim$espacio\+Pictograma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classespacio_pictograma_a2dc94d6bc4ea2dec4d631d8bb8d8eb58}
+
+
+Destructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classespacio_pictograma_abfadb8b3f6ec9c8c7558ea6eef22b295}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!cargar\+Pictogramas@{cargar\+Pictogramas}}
+\index{cargar\+Pictogramas@{cargar\+Pictogramas}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{cargar\+Pictogramas()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Pictograma\+::cargar\+Pictogramas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_abfadb8b3f6ec9c8c7558ea6eef22b295}
+
+
+Carga los botones con los pictogramas activos. 
+
+Por medio de una variable se mantiene un indice de los pictogramas activos. Por ejemplo, el indice comienza en 0 y por tanto estan activos los pictogramas 0, 1, 2 y 3 de la categoría activa. Si el índice avanza se mostrarían los pictogramas 4, 5, 6 y 7 y así hasta llegar al final de la lista. Con cada cambio de categoría el índice se reinicia. \hypertarget{classespacio_pictograma_a3a9c44580cc4f78eb1793c9479b89e9f}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!comando\+Hablar@{comando\+Hablar}}
+\index{comando\+Hablar@{comando\+Hablar}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{comando\+Hablar(string s)}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Pictograma\+::comando\+Hablar (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a3a9c44580cc4f78eb1793c9479b89e9f}
+
+
+Comando temporal para texto por voz. 
+
+\hypertarget{classespacio_pictograma_a0f869dd16b4431009825ef13527e40db}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!draw@{draw}}
+\index{draw@{draw}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Pictograma\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_pictograma_a0f869dd16b4431009825ef13527e40db}
+
+
+Controla las tareas gráficas de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a01b3e668211b6159784f79a3f5a32d95}{espacio\+Base}.
+
+\hypertarget{classespacio_pictograma_a298954d50054dbfe58cccb1b6b0f704d}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!get\+Pictograma@{get\+Pictograma}}
+\index{get\+Pictograma@{get\+Pictograma}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{get\+Pictograma(int)}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ espacio\+Pictograma\+::get\+Pictograma (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a298954d50054dbfe58cccb1b6b0f704d}
+
+
+Recupera un pictograma de la lista cuya categoría está activa. 
+
+\hypertarget{classespacio_pictograma_aa1d237a0781e86d2cc44c65c0c500d28}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!get\+Tam\+Pictograma@{get\+Tam\+Pictograma}}
+\index{get\+Tam\+Pictograma@{get\+Tam\+Pictograma}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{get\+Tam\+Pictograma()}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Pictograma\+::get\+Tam\+Pictograma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_aa1d237a0781e86d2cc44c65c0c500d28}
+
+
+Recupera la cantidad de pictogramas en una lista. 
+
+\hypertarget{classespacio_pictograma_a88576adb5f56ddc7d2c735f349a4864d}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!setup@{setup}}
+\index{setup@{setup}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Pictograma\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_pictograma_a88576adb5f56ddc7d2c735f349a4864d}
+
+
+Método inicial del ciclo de Open\+G\+L. 
+
+Crea los botones de la categorías, los componentes del espacio y construye los botones de los pictogramas activos. 
+
+Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
+
+\hypertarget{classespacio_pictograma_a2ebefcf2c0838ef08d067a39c307ed6d}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!update@{update}}
+\index{update@{update}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Pictograma\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_pictograma_a2ebefcf2c0838ef08d067a39c307ed6d}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classespacio_pictograma_a2e1fdcb75a25332576f897e77d1fe2de}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!base\+Datos@{base\+Datos}}
+\index{base\+Datos@{base\+Datos}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{base\+Datos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sqlite3\+Manager}$\ast$ espacio\+Pictograma\+::base\+Datos\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a2e1fdcb75a25332576f897e77d1fe2de}
+
+
+Instancia del administrador de la base de datos. 
+
+\hypertarget{classespacio_pictograma_a9157dd34f8f48cd755f721b288369dfe}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!btn\+Adelante@{btn\+Adelante}}
+\index{btn\+Adelante@{btn\+Adelante}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{btn\+Adelante}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Pictograma\+::btn\+Adelante\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a9157dd34f8f48cd755f721b288369dfe}
+\hypertarget{classespacio_pictograma_aecebb0c47c0d28f31052d5084e02aec2}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!btn\+Adelante\+Visible@{btn\+Adelante\+Visible}}
+\index{btn\+Adelante\+Visible@{btn\+Adelante\+Visible}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{btn\+Adelante\+Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool espacio\+Pictograma\+::btn\+Adelante\+Visible\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_aecebb0c47c0d28f31052d5084e02aec2}
+
+
+Determina si el usuario puede continuar en la lista de pictogramas. 
+
+\hypertarget{classespacio_pictograma_ae17417de4e3122b89c29119a320888f0}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!btn\+Atras@{btn\+Atras}}
+\index{btn\+Atras@{btn\+Atras}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{btn\+Atras}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Pictograma\+::btn\+Atras\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_ae17417de4e3122b89c29119a320888f0}
+\hypertarget{classespacio_pictograma_ae550974a70815794e1c2a94ccc8fd99a}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!btn\+Atras\+Visible@{btn\+Atras\+Visible}}
+\index{btn\+Atras\+Visible@{btn\+Atras\+Visible}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{btn\+Atras\+Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool espacio\+Pictograma\+::btn\+Atras\+Visible\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_ae550974a70815794e1c2a94ccc8fd99a}
+
+
+Determina si el usuario puede devolver la lista de pictogramas. 
+
+\hypertarget{classespacio_pictograma_aa1f188f89952d7886f1d6f50f38b590f}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!btn\+Borrar@{btn\+Borrar}}
+\index{btn\+Borrar@{btn\+Borrar}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{btn\+Borrar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Pictograma\+::btn\+Borrar\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_aa1f188f89952d7886f1d6f50f38b590f}
+\hypertarget{classespacio_pictograma_a669d076dad44b310f85b1f5dccf75568}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!btn\+Borrar\+Todo@{btn\+Borrar\+Todo}}
+\index{btn\+Borrar\+Todo@{btn\+Borrar\+Todo}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{btn\+Borrar\+Todo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Pictograma\+::btn\+Borrar\+Todo\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a669d076dad44b310f85b1f5dccf75568}
+\hypertarget{classespacio_pictograma_a1bee74237dc5c39e48be1f6773ca854d}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!btn\+Categorias@{btn\+Categorias}}
+\index{btn\+Categorias@{btn\+Categorias}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{btn\+Categorias}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf boton\+Imagen}$>$ espacio\+Pictograma\+::btn\+Categorias\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a1bee74237dc5c39e48be1f6773ca854d}
+
+
+Lista con las categorias disponibles. 
+
+\hypertarget{classespacio_pictograma_a739c7db68be68b07c10fe93b44a5a4d1}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!btn\+Hablar@{btn\+Hablar}}
+\index{btn\+Hablar@{btn\+Hablar}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{btn\+Hablar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Pictograma\+::btn\+Hablar\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a739c7db68be68b07c10fe93b44a5a4d1}
+\hypertarget{classespacio_pictograma_ade5373849fab0cb55bc87bc4293e8c04}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!btn\+Salir@{btn\+Salir}}
+\index{btn\+Salir@{btn\+Salir}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{btn\+Salir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Pictograma\+::btn\+Salir\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_ade5373849fab0cb55bc87bc4293e8c04}
+\hypertarget{classespacio_pictograma_ae61af3d4b032f682e7e686ca0dddbfec}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!categoria\+Actual@{categoria\+Actual}}
+\index{categoria\+Actual@{categoria\+Actual}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{categoria\+Actual}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Pictograma\+::categoria\+Actual\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_ae61af3d4b032f682e7e686ca0dddbfec}
+
+
+Indica la categoría activa en la pantalla. 
+
+\hypertarget{classespacio_pictograma_ac977c8f8644a1a3ab7a724c689be0038}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!indice@{indice}}
+\index{indice@{indice}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{indice}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Pictograma\+::indice\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_ac977c8f8644a1a3ab7a724c689be0038}
+
+
+Indica el desplazamiento que ha hehco el usuario en la lista de pictogramas. 
+
+\hypertarget{classespacio_pictograma_ae9d1d84f5ddbeba53dd9aed28e7eb0d5}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!margen@{margen}}
+\index{margen@{margen}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{margen}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Pictograma\+::margen\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_ae9d1d84f5ddbeba53dd9aed28e7eb0d5}
+\hypertarget{classespacio_pictograma_a3e591cd8fdedbf742f55cbc2280295bc}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!offset\+X@{offset\+X}}
+\index{offset\+X@{offset\+X}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{offset\+X}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Pictograma\+::offset\+X\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a3e591cd8fdedbf742f55cbc2280295bc}
+\hypertarget{classespacio_pictograma_a9924df4518eadddc04074ac555e7511c}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!offset\+Y@{offset\+Y}}
+\index{offset\+Y@{offset\+Y}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{offset\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Pictograma\+::offset\+Y\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a9924df4518eadddc04074ac555e7511c}
+\hypertarget{classespacio_pictograma_a7c0a60d23d55abbc5bb131fadf0210d4}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!pictogramas\+Activos@{pictogramas\+Activos}}
+\index{pictogramas\+Activos@{pictogramas\+Activos}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{pictogramas\+Activos}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf boton\+Imagen}$>$ espacio\+Pictograma\+::pictogramas\+Activos\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a7c0a60d23d55abbc5bb131fadf0210d4}
+
+
+Lista con los pictogramas activos. 
+
+\hypertarget{classespacio_pictograma_a46e6758b5312fa89401ff012aa2d2b92}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!pictogramas\+Actuales@{pictogramas\+Actuales}}
+\index{pictogramas\+Actuales@{pictogramas\+Actuales}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{pictogramas\+Actuales}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$pair$<$string, of\+Image$>$ $>$ espacio\+Pictograma\+::pictogramas\+Actuales\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a46e6758b5312fa89401ff012aa2d2b92}
+
+
+Lista con los pictogramas activos en la pantalla. 
+
+\hypertarget{classespacio_pictograma_a90f13e054faabc1dc26f9e62fff6f572}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!str\+Categorias@{str\+Categorias}}
+\index{str\+Categorias@{str\+Categorias}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{str\+Categorias}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$string$>$ $>$ espacio\+Pictograma\+::str\+Categorias\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a90f13e054faabc1dc26f9e62fff6f572}
+
+
+Matriz con la información de las categorías. 
+
+\hypertarget{classespacio_pictograma_af241bdf93ef686631b46fdadf07da04a}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!str\+Pictogramas@{str\+Pictogramas}}
+\index{str\+Pictogramas@{str\+Pictogramas}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{str\+Pictogramas}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$vector$<$string$>$ $>$ $>$ espacio\+Pictograma\+::str\+Pictogramas\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_af241bdf93ef686631b46fdadf07da04a}
+
+
+Lista de matrices con la información de los pictogramas. 
+
+La lista 0 corresponde a la categoría 0 y así sucesivamente para las n categorías que esten cargadas en str\+Categorias \hypertarget{classespacio_pictograma_aa59878d6a5fe1ae995756a0a283ec5ae}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!tam@{tam}}
+\index{tam@{tam}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{tam}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Pictograma\+::tam\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_aa59878d6a5fe1ae995756a0a283ec5ae}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_pictograma_8h}{espacio\+Pictograma.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_pictograma_8cpp}{espacio\+Pictograma.\+cpp}\end{DoxyCompactItemize}

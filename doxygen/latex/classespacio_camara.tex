@@ -1,0 +1,211 @@
+\hypertarget{classespacio_camara}{}\section{Referencia de la Clase espacio\+Camara}
+\label{classespacio_camara}\index{espacio\+Camara@{espacio\+Camara}}
+
+
+Espacio para tomar fotos por medio de la cámara.  
+
+
+
+
+{\ttfamily \#include $<$espacio\+Camara.\+h$>$}
+
+Diagrama de herencias de espacio\+Camara\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classespacio_camara}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classespacio_camara_adf85b2cd673cb9eafee260e14b9c9f41}{espacio\+Camara} (\hyperlink{classespacio_base}{espacio\+Base} $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_camara_aa6ac19fb18722f62697bfe43b1b171ce}{$\sim$espacio\+Camara} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_camara_af9b840498c705d9fe3ca8e363b4a535b}{setup} ()
+\begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_camara_a133e544d5bb6015e3d9e6eff4a6d812d}{update} (float, float, float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_camara_a2c3d027a3787a226e00aab10c93f1bbe}{draw} ()
+\begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classespacio_camara_aa357745006c6358ac4919ea079e80caa}{cam\+Width}
+\begin{DoxyCompactList}\small\item\em Largo de la imagen de la cámara. \end{DoxyCompactList}\item 
+int \hyperlink{classespacio_camara_ac9c3980d5710ce9ae83a95a4e7d4bf3a}{cam\+Height}
+\begin{DoxyCompactList}\small\item\em Ancho de la imagen de la cámara. \end{DoxyCompactList}\item 
+double \hyperlink{classespacio_camara_ac94dd88aad08d2077050c79e490d0a37}{cam\+X}
+\begin{DoxyCompactList}\small\item\em Coordenada x de la imagen de la cámara. \end{DoxyCompactList}\item 
+double \hyperlink{classespacio_camara_a0dec829b25bb09c1f70150f885d9843e}{cam\+Y}
+\begin{DoxyCompactList}\small\item\em Coordenada y de la imagen de la cámara. \end{DoxyCompactList}\item 
+of\+Video\+Grabber \hyperlink{classespacio_camara_a005166cb15e10461341d0e28b145134f}{vid\+Grabber}
+\begin{DoxyCompactList}\small\item\em Instancia del manejador de la cámara. \end{DoxyCompactList}\item 
+of\+Image \hyperlink{classespacio_camara_a71d14cf73376b62e3158e90a6f72d18f}{img}
+\begin{DoxyCompactList}\small\item\em Captura de la cámara que se mostrando al usuario. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_camara_a4d7caffe8a3090acf04dc78ed91e923c}{btn\+Atras}
+\begin{DoxyCompactList}\small\item\em Botón para salir al menú \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_camara_a0a33e016b145a3ad2723d6d120260f48}{btn\+Foto}
+\begin{DoxyCompactList}\small\item\em Botón para tomar una foto. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_camara_a3d110b2810a8ba6579857dd7f8a6fe22}{btn\+Galeria}
+\begin{DoxyCompactList}\small\item\em Botón para acceder a la galería. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Espacio para tomar fotos por medio de la cámara. 
+
+Este espacio define un tipo de comunicación para un usuario que posea capacidades de lectoescritura, este espacio puede mejorarse y adaptarse a las necesidades del usuario. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classespacio_camara_adf85b2cd673cb9eafee260e14b9c9f41}{}\index{espacio\+Camara@{espacio\+Camara}!espacio\+Camara@{espacio\+Camara}}
+\index{espacio\+Camara@{espacio\+Camara}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{espacio\+Camara(espacio\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Camara\+::espacio\+Camara (
+\begin{DoxyParamCaption}
+\item[{{\bf espacio\+Base} $\ast$}]{esp\+Padre}
+\end{DoxyParamCaption}
+)}\label{classespacio_camara_adf85b2cd673cb9eafee260e14b9c9f41}
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em espacio\+Padre} & Puntero al menú de la categoría \\
+\hline
+\end{DoxyParams}
+\hypertarget{classespacio_camara_aa6ac19fb18722f62697bfe43b1b171ce}{}\index{espacio\+Camara@{espacio\+Camara}!````~espacio\+Camara@{$\sim$espacio\+Camara}}
+\index{````~espacio\+Camara@{$\sim$espacio\+Camara}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{$\sim$espacio\+Camara()}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Camara\+::$\sim$espacio\+Camara (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classespacio_camara_aa6ac19fb18722f62697bfe43b1b171ce}
+
+
+Destructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classespacio_camara_a2c3d027a3787a226e00aab10c93f1bbe}{}\index{espacio\+Camara@{espacio\+Camara}!draw@{draw}}
+\index{draw@{draw}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Camara\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_camara_a2c3d027a3787a226e00aab10c93f1bbe}
+
+
+Controla las tareas gráficas de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a01b3e668211b6159784f79a3f5a32d95}{espacio\+Base}.
+
+\hypertarget{classespacio_camara_af9b840498c705d9fe3ca8e363b4a535b}{}\index{espacio\+Camara@{espacio\+Camara}!setup@{setup}}
+\index{setup@{setup}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Camara\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_camara_af9b840498c705d9fe3ca8e363b4a535b}
+
+
+Método inicial del ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
+
+\hypertarget{classespacio_camara_a133e544d5bb6015e3d9e6eff4a6d812d}{}\index{espacio\+Camara@{espacio\+Camara}!update@{update}}
+\index{update@{update}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Camara\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_camara_a133e544d5bb6015e3d9e6eff4a6d812d}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classespacio_camara_a4d7caffe8a3090acf04dc78ed91e923c}{}\index{espacio\+Camara@{espacio\+Camara}!btn\+Atras@{btn\+Atras}}
+\index{btn\+Atras@{btn\+Atras}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{btn\+Atras}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Camara\+::btn\+Atras\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_camara_a4d7caffe8a3090acf04dc78ed91e923c}
+
+
+Botón para salir al menú 
+
+\hypertarget{classespacio_camara_a0a33e016b145a3ad2723d6d120260f48}{}\index{espacio\+Camara@{espacio\+Camara}!btn\+Foto@{btn\+Foto}}
+\index{btn\+Foto@{btn\+Foto}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{btn\+Foto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Camara\+::btn\+Foto\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_camara_a0a33e016b145a3ad2723d6d120260f48}
+
+
+Botón para tomar una foto. 
+
+\hypertarget{classespacio_camara_a3d110b2810a8ba6579857dd7f8a6fe22}{}\index{espacio\+Camara@{espacio\+Camara}!btn\+Galeria@{btn\+Galeria}}
+\index{btn\+Galeria@{btn\+Galeria}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{btn\+Galeria}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Camara\+::btn\+Galeria\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_camara_a3d110b2810a8ba6579857dd7f8a6fe22}
+
+
+Botón para acceder a la galería. 
+
+\hypertarget{classespacio_camara_ac9c3980d5710ce9ae83a95a4e7d4bf3a}{}\index{espacio\+Camara@{espacio\+Camara}!cam\+Height@{cam\+Height}}
+\index{cam\+Height@{cam\+Height}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{cam\+Height}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Camara\+::cam\+Height\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_camara_ac9c3980d5710ce9ae83a95a4e7d4bf3a}
+
+
+Ancho de la imagen de la cámara. 
+
+\hypertarget{classespacio_camara_aa357745006c6358ac4919ea079e80caa}{}\index{espacio\+Camara@{espacio\+Camara}!cam\+Width@{cam\+Width}}
+\index{cam\+Width@{cam\+Width}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{cam\+Width}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Camara\+::cam\+Width\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_camara_aa357745006c6358ac4919ea079e80caa}
+
+
+Largo de la imagen de la cámara. 
+
+\hypertarget{classespacio_camara_ac94dd88aad08d2077050c79e490d0a37}{}\index{espacio\+Camara@{espacio\+Camara}!cam\+X@{cam\+X}}
+\index{cam\+X@{cam\+X}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{cam\+X}]{\setlength{\rightskip}{0pt plus 5cm}double espacio\+Camara\+::cam\+X\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_camara_ac94dd88aad08d2077050c79e490d0a37}
+
+
+Coordenada x de la imagen de la cámara. 
+
+\hypertarget{classespacio_camara_a0dec829b25bb09c1f70150f885d9843e}{}\index{espacio\+Camara@{espacio\+Camara}!cam\+Y@{cam\+Y}}
+\index{cam\+Y@{cam\+Y}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{cam\+Y}]{\setlength{\rightskip}{0pt plus 5cm}double espacio\+Camara\+::cam\+Y\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_camara_a0dec829b25bb09c1f70150f885d9843e}
+
+
+Coordenada y de la imagen de la cámara. 
+
+\hypertarget{classespacio_camara_a71d14cf73376b62e3158e90a6f72d18f}{}\index{espacio\+Camara@{espacio\+Camara}!img@{img}}
+\index{img@{img}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{img}]{\setlength{\rightskip}{0pt plus 5cm}of\+Image espacio\+Camara\+::img\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_camara_a71d14cf73376b62e3158e90a6f72d18f}
+
+
+Captura de la cámara que se mostrando al usuario. 
+
+\hypertarget{classespacio_camara_a005166cb15e10461341d0e28b145134f}{}\index{espacio\+Camara@{espacio\+Camara}!vid\+Grabber@{vid\+Grabber}}
+\index{vid\+Grabber@{vid\+Grabber}!espacio\+Camara@{espacio\+Camara}}
+\subsubsection[{vid\+Grabber}]{\setlength{\rightskip}{0pt plus 5cm}of\+Video\+Grabber espacio\+Camara\+::vid\+Grabber\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_camara_a005166cb15e10461341d0e28b145134f}
+
+
+Instancia del manejador de la cámara. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_camara_8h}{espacio\+Camara.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_camara_8cpp}{espacio\+Camara.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,794 @@
+\begin{theindex}
+
+  \item {$\sim$espacio\+Camara}
+    \subitem {espacio\+Camara}, \hyperpage{16}
+  \item {$\sim$espacio\+Pictograma}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {$\sim$espacio\+Si\+No}
+    \subitem {espacio\+Si\+No}, \hyperpage{20}
+  \item {$\sim$espacio\+Tarjetas}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+  \item {$\sim$espacio\+Teclado}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+  \item {$\sim$menu\+Base}
+    \subitem {menu\+Base}, \hyperpage{27}
+  \item {$\sim$menu\+Comunicacion}
+    \subitem {menu\+Comunicacion}, \hyperpage{28}
+  \item {$\sim$menu\+Educacion}
+    \subitem {menu\+Educacion}, \hyperpage{30}
+  \item {$\sim$menu\+Ocio}
+    \subitem {menu\+Ocio}, \hyperpage{31}
+  \item {$\sim$menu\+Principal}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {$\sim$of\+App}
+    \subitem {of\+App}, \hyperpage{35}
+
+  \indexspace
+
+  \item {Acciones}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+  \item {append\+Texto}
+    \subitem {caja\+Texto}, \hyperpage{12}
+
+  \indexspace
+
+  \item {barra\+Lateral}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {borrar\+Caracter}
+    \subitem {caja\+Texto}, \hyperpage{12}
+  \item {boton\+Imagen}, \hyperpage{7}
+    \subitem {boton\+Imagen}, \hyperpage{7, 8}
+    \subitem {color\+Fuente}, \hyperpage{8}
+    \subitem {draw}, \hyperpage{8}
+    \subitem {escala}, \hyperpage{8}
+    \subitem {fuente}, \hyperpage{8}
+    \subitem {hay\+Texto}, \hyperpage{8}
+    \subitem {imagen}, \hyperpage{8}
+    \subitem {set\+Pos}, \hyperpage{8}
+    \subitem {set\+Tam}, \hyperpage{8}
+    \subitem {texto}, \hyperpage{8}
+  \item {boton\+Simple}, \hyperpage{8}
+    \subitem {boton\+Simple}, \hyperpage{9}
+    \subitem {color\+Fuente}, \hyperpage{9}
+    \subitem {draw}, \hyperpage{9}
+    \subitem {fuente}, \hyperpage{9}
+    \subitem {get\+Texto}, \hyperpage{9}
+    \subitem {hay\+Texto}, \hyperpage{9}
+    \subitem {set\+Texto}, \hyperpage{9}
+    \subitem {texto}, \hyperpage{9}
+  \item {boton\+Toggle}, \hyperpage{10}
+    \subitem {boton\+Toggle}, \hyperpage{10}
+    \subitem {escala}, \hyperpage{11}
+    \subitem {h}, \hyperpage{11}
+    \subitem {ruta1}, \hyperpage{11}
+    \subitem {ruta2}, \hyperpage{11}
+    \subitem {state}, \hyperpage{10}
+    \subitem {texto1}, \hyperpage{11}
+    \subitem {texto2}, \hyperpage{11}
+    \subitem {toggle}, \hyperpage{10}
+    \subitem {toggle\+State}, \hyperpage{11}
+    \subitem {update}, \hyperpage{10}
+    \subitem {w}, \hyperpage{11}
+  \item {btn}
+    \subitem {menu\+Base}, \hyperpage{27}
+  \item {btn0}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {btn1}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {btn2}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {btn3}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {btn\+Adelante}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {btn\+Adelante\+Visible}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {btn\+Atras}
+    \subitem {espacio\+Camara}, \hyperpage{17}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+    \subitem {espacio\+Si\+No}, \hyperpage{21}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+    \subitem {menu\+Base}, \hyperpage{27}
+  \item {btn\+Atras\+Visible}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {btn\+Borrar}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+  \item {btn\+Borrar\+Todo}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {btn\+Espacio}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+  \item {btn\+Foto}
+    \subitem {espacio\+Camara}, \hyperpage{17}
+  \item {btn\+Galeria}
+    \subitem {espacio\+Camara}, \hyperpage{17}
+  \item {btn\+Hablar}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+  \item {btn\+Input}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {btn\+Nuevo}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {btn\+Salir}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+    \subitem {menu\+Principal}, \hyperpage{33}
+
+  \indexspace
+
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Base.\+cpp}, 
+		\hyperpage{39}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Base.\+h}, 
+		\hyperpage{39}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Camara.\+cpp}, 
+		\hyperpage{39}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Camara.\+h}, 
+		\hyperpage{39}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Pictograma.\+cpp}, 
+		\hyperpage{40}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Pictograma.\+h}, 
+		\hyperpage{40}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Si\+No.\+cpp}, 
+		\hyperpage{40}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Si\+No.\+h}, 
+		\hyperpage{40}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Tarjetas.\+cpp}, 
+		\hyperpage{40}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Tarjetas.\+h}, 
+		\hyperpage{41}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Teclado.\+cpp}, 
+		\hyperpage{41}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/espacio\+Teclado.\+h}, 
+		\hyperpage{41}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/main.\+cpp}, 
+		\hyperpage{41}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Base.\+cpp}, 
+		\hyperpage{42}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Base.\+h}, 
+		\hyperpage{42}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Comunicacion.\+cpp}, 
+		\hyperpage{42}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Comunicacion.\+h}, 
+		\hyperpage{42}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Cotidiana.\+cpp}, 
+		\hyperpage{43}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Cotidiana.\+h}, 
+		\hyperpage{43}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Educacion.\+cpp}, 
+		\hyperpage{43}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Educacion.\+h}, 
+		\hyperpage{43}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Ocio.\+cpp}, 
+		\hyperpage{43}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Ocio.\+h}, 
+		\hyperpage{43}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Principal.\+cpp}, 
+		\hyperpage{44}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/menu\+Principal.\+h}, 
+		\hyperpage{44}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/of\+App.\+cpp}, 
+		\hyperpage{44}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/of\+App.\+h}, 
+		\hyperpage{44}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/boton\+Imagen.\+cpp}, 
+		\hyperpage{45}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/boton\+Imagen.\+h}, 
+		\hyperpage{45}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/boton\+Simple.\+cpp}, 
+		\hyperpage{45}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/boton\+Simple.\+h}, 
+		\hyperpage{45}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/boton\+Toggle.\+cpp}, 
+		\hyperpage{45}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/boton\+Toggle.\+h}, 
+		\hyperpage{46}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/caja\+Texto.\+cpp}, 
+		\hyperpage{46}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/caja\+Texto.\+h}, 
+		\hyperpage{46}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/componente\+Base.\+cpp}, 
+		\hyperpage{46}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/componente\+Base.\+h}, 
+		\hyperpage{46}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/componentes/fabrica\+Componentes.\+h}, 
+		\hyperpage{47}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/conexiones/conexion\+Yun.\+cpp}, 
+		\hyperpage{47}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/conexiones/conexion\+Yun.\+h}, 
+		\hyperpage{47}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/manejo\+Sonido/manejo\+Sonido.\+cpp}, 
+		\hyperpage{47}
+  \item {C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/manejo\+Sonido/manejo\+Sonido.\+h}, 
+		\hyperpage{48}
+  \item {c\+Texto}
+    \subitem {espacio\+Teclado}, \hyperpage{25}
+  \item {caja\+Texto}, \hyperpage{11}
+    \subitem {append\+Texto}, \hyperpage{12}
+    \subitem {borrar\+Caracter}, \hyperpage{12}
+    \subitem {caja\+Texto}, \hyperpage{12}
+    \subitem {color\+Fuente}, \hyperpage{12}
+    \subitem {draw}, \hyperpage{12}
+    \subitem {fuente}, \hyperpage{12}
+    \subitem {get\+Texto}, \hyperpage{12}
+    \subitem {texto}, \hyperpage{12}
+  \item {cam\+Height}
+    \subitem {espacio\+Camara}, \hyperpage{17}
+  \item {cam\+Width}
+    \subitem {espacio\+Camara}, \hyperpage{17}
+  \item {cam\+X}
+    \subitem {espacio\+Camara}, \hyperpage{17}
+  \item {cam\+Y}
+    \subitem {espacio\+Camara}, \hyperpage{17}
+  \item {cargar}
+    \subitem {manejo\+Sonido}, \hyperpage{26}
+  \item {cargar\+Pictogramas}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {cargar\+Tarjeta}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+  \item {cat\+Actual}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {Categorias}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+  \item {color\+Fuente}
+    \subitem {boton\+Imagen}, \hyperpage{8}
+    \subitem {boton\+Simple}, \hyperpage{9}
+    \subitem {caja\+Texto}, \hyperpage{12}
+  \item {comando\+Hablar}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+  \item {componente\+Base}, \hyperpage{12}
+    \subitem {componente\+Base}, \hyperpage{13}
+    \subitem {draw}, \hyperpage{13}
+    \subitem {get\+Millisec}, \hyperpage{13}
+    \subitem {le\+Queda\+Tiempo}, \hyperpage{13}
+    \subitem {mouse\+Dentro}, \hyperpage{13}
+    \subitem {mouse\+En\+Cuadro}, \hyperpage{13}
+    \subitem {porcentaje\+Tiempo}, \hyperpage{13}
+    \subitem {set\+Pos}, \hyperpage{13}
+    \subitem {set\+Tam}, \hyperpage{13}
+    \subitem {setup}, \hyperpage{13}
+    \subitem {tiempo}, \hyperpage{13}
+    \subitem {tiempo\+Max}, \hyperpage{13}
+    \subitem {update}, \hyperpage{13}
+  \item {componentes}
+    \subitem {espacio\+Teclado}, \hyperpage{25}
+  \item {conexion\+Yun}, \hyperpage{14}
+    \subitem {conexion\+Yun}, \hyperpage{14}
+    \subitem {conf}, \hyperpage{14}
+    \subitem {direccion\+Base}, \hyperpage{14}
+    \subitem {enviar\+Peticion}, \hyperpage{14}
+  \item {conf}
+    \subitem {conexion\+Yun}, \hyperpage{14}
+  \item {configuraciones}
+    \subitem {espacio\+Teclado}, \hyperpage{25}
+    \subitem {menu\+Base}, \hyperpage{27}
+  \item {controller}
+    \subitem {of\+App}, \hyperpage{37}
+  \item {correcto}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {Cortesia}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Descripcion}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+  \item {direccion\+Base}
+    \subitem {conexion\+Yun}, \hyperpage{14}
+  \item {drag\+Event}
+    \subitem {of\+App}, \hyperpage{35}
+  \item {draw}
+    \subitem {boton\+Imagen}, \hyperpage{8}
+    \subitem {boton\+Simple}, \hyperpage{9}
+    \subitem {caja\+Texto}, \hyperpage{12}
+    \subitem {componente\+Base}, \hyperpage{13}
+    \subitem {espacio\+Base}, \hyperpage{15}
+    \subitem {espacio\+Camara}, \hyperpage{16}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+    \subitem {espacio\+Si\+No}, \hyperpage{21}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+    \subitem {menu\+Base}, \hyperpage{27}
+    \subitem {menu\+Principal}, \hyperpage{33}
+    \subitem {of\+App}, \hyperpage{35}
+
+  \indexspace
+
+  \item {Emociones}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+  \item {enviar\+Peticion}
+    \subitem {conexion\+Yun}, \hyperpage{14}
+  \item {escala}
+    \subitem {boton\+Imagen}, \hyperpage{8}
+    \subitem {boton\+Toggle}, \hyperpage{11}
+  \item {esp\+Camara}
+    \subitem {menu\+Ocio}, \hyperpage{32}
+  \item {esp\+Pictograma}
+    \subitem {menu\+Comunicacion}, \hyperpage{29}
+  \item {esp\+Si\+No}
+    \subitem {menu\+Comunicacion}, \hyperpage{29}
+  \item {esp\+Teclado}
+    \subitem {menu\+Comunicacion}, \hyperpage{29}
+  \item {espacio\+Activo}
+    \subitem {of\+App}, \hyperpage{37}
+  \item {espacio\+Base}, \hyperpage{14}
+    \subitem {draw}, \hyperpage{15}
+    \subitem {espacio\+Base}, \hyperpage{15}
+    \subitem {espacio\+Padre}, \hyperpage{15}
+    \subitem {setup}, \hyperpage{15}
+    \subitem {tam\+Barra}, \hyperpage{15}
+    \subitem {update}, \hyperpage{15}
+  \item {espacio\+Camara}, \hyperpage{16}
+    \subitem {$\sim$espacio\+Camara}, \hyperpage{16}
+    \subitem {btn\+Atras}, \hyperpage{17}
+    \subitem {btn\+Foto}, \hyperpage{17}
+    \subitem {btn\+Galeria}, \hyperpage{17}
+    \subitem {cam\+Height}, \hyperpage{17}
+    \subitem {cam\+Width}, \hyperpage{17}
+    \subitem {cam\+X}, \hyperpage{17}
+    \subitem {cam\+Y}, \hyperpage{17}
+    \subitem {draw}, \hyperpage{16}
+    \subitem {espacio\+Camara}, \hyperpage{16}
+    \subitem {img}, \hyperpage{17}
+    \subitem {setup}, \hyperpage{16}
+    \subitem {update}, \hyperpage{16}
+    \subitem {vid\+Grabber}, \hyperpage{17}
+  \item {espacio\+Padre}
+    \subitem {espacio\+Base}, \hyperpage{15}
+  \item {espacio\+Pictograma}, \hyperpage{17}
+    \subitem {$\sim$espacio\+Pictograma}, \hyperpage{19}
+    \subitem {Acciones}, \hyperpage{18}
+    \subitem {barra\+Lateral}, \hyperpage{19}
+    \subitem {btn\+Adelante}, \hyperpage{19}
+    \subitem {btn\+Adelante\+Visible}, \hyperpage{19}
+    \subitem {btn\+Atras}, \hyperpage{19}
+    \subitem {btn\+Atras\+Visible}, \hyperpage{19}
+    \subitem {btn\+Borrar}, \hyperpage{19}
+    \subitem {btn\+Borrar\+Todo}, \hyperpage{19}
+    \subitem {btn\+Hablar}, \hyperpage{19}
+    \subitem {btn\+Salir}, \hyperpage{19}
+    \subitem {cargar\+Pictogramas}, \hyperpage{19}
+    \subitem {cat\+Actual}, \hyperpage{19}
+    \subitem {Categorias}, \hyperpage{18}
+    \subitem {comando\+Hablar}, \hyperpage{19}
+    \subitem {Cortesia}, \hyperpage{18}
+    \subitem {Descripcion}, \hyperpage{18}
+    \subitem {draw}, \hyperpage{19}
+    \subitem {Emociones}, \hyperpage{18}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+    \subitem {Frases}, \hyperpage{18}
+    \subitem {get\+Pictograma}, \hyperpage{19}
+    \subitem {get\+Tam\+Pictograma}, \hyperpage{19}
+    \subitem {indice}, \hyperpage{19}
+    \subitem {margen}, \hyperpage{19}
+    \subitem {offset\+X}, \hyperpage{19}
+    \subitem {offset\+Y}, \hyperpage{20}
+    \subitem {Otros}, \hyperpage{18}
+    \subitem {Personas}, \hyperpage{18}
+    \subitem {pictograma}, \hyperpage{20}
+    \subitem {pictogramas\+Actuales}, \hyperpage{20}
+    \subitem {Preguntas}, \hyperpage{18}
+    \subitem {setup}, \hyperpage{19}
+    \subitem {str\+Categorias}, \hyperpage{20}
+    \subitem {str\+Pictogramas}, \hyperpage{20}
+    \subitem {Sustantivos}, \hyperpage{18}
+    \subitem {tam}, \hyperpage{20}
+    \subitem {update}, \hyperpage{19}
+  \item {espacio\+Si\+No}, \hyperpage{20}
+    \subitem {$\sim$espacio\+Si\+No}, \hyperpage{20}
+    \subitem {btn\+Atras}, \hyperpage{21}
+    \subitem {draw}, \hyperpage{21}
+    \subitem {espacio\+Si\+No}, \hyperpage{20}
+    \subitem {fuente\+Si\+No}, \hyperpage{21}
+    \subitem {setup}, \hyperpage{21}
+    \subitem {update}, \hyperpage{21}
+  \item {espacio\+Tarjetas}, \hyperpage{21}
+    \subitem {$\sim$espacio\+Tarjetas}, \hyperpage{22}
+    \subitem {btn0}, \hyperpage{22}
+    \subitem {btn1}, \hyperpage{22}
+    \subitem {btn2}, \hyperpage{22}
+    \subitem {btn3}, \hyperpage{23}
+    \subitem {btn\+Atras}, \hyperpage{23}
+    \subitem {btn\+Nuevo}, \hyperpage{23}
+    \subitem {cargar\+Tarjeta}, \hyperpage{22}
+    \subitem {correcto}, \hyperpage{23}
+    \subitem {draw}, \hyperpage{22}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+    \subitem {fuente\+Resp}, \hyperpage{23}
+    \subitem {fuente\+Resp2}, \hyperpage{23}
+    \subitem {fuente\+Resp3}, \hyperpage{23}
+    \subitem {i0}, \hyperpage{23}
+    \subitem {i1}, \hyperpage{23}
+    \subitem {i2}, \hyperpage{23}
+    \subitem {i3}, \hyperpage{23}
+    \subitem {img}, \hyperpage{23}
+    \subitem {incorrecto}, \hyperpage{23}
+    \subitem {resp}, \hyperpage{23}
+    \subitem {rutas}, \hyperpage{23}
+    \subitem {setup}, \hyperpage{22}
+    \subitem {update}, \hyperpage{22}
+    \subitem {validar\+Respuesta}, \hyperpage{22}
+  \item {espacio\+Teclado}, \hyperpage{23}
+    \subitem {$\sim$espacio\+Teclado}, \hyperpage{24}
+    \subitem {btn\+Borrar}, \hyperpage{24}
+    \subitem {btn\+Espacio}, \hyperpage{24}
+    \subitem {btn\+Hablar}, \hyperpage{24}
+    \subitem {btn\+Salir}, \hyperpage{24}
+    \subitem {c\+Texto}, \hyperpage{25}
+    \subitem {comando\+Hablar}, \hyperpage{24}
+    \subitem {componentes}, \hyperpage{25}
+    \subitem {configuraciones}, \hyperpage{25}
+    \subitem {draw}, \hyperpage{24}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+    \subitem {fab\+Componentes}, \hyperpage{25}
+    \subitem {setup}, \hyperpage{24}
+    \subitem {tam\+Componentes}, \hyperpage{25}
+    \subitem {update}, \hyperpage{24}
+  \item {eventos}
+    \subitem {menu\+Base}, \hyperpage{27}
+    \subitem {menu\+Comunicacion}, \hyperpage{28}
+    \subitem {menu\+Cotidiana}, \hyperpage{29}
+    \subitem {menu\+Educacion}, \hyperpage{30}
+    \subitem {menu\+Ocio}, \hyperpage{31}
+
+  \indexspace
+
+  \item {fab\+Componentes}
+    \subitem {espacio\+Teclado}, \hyperpage{25}
+  \item {fabrica\+Componentes}, \hyperpage{25}
+    \subitem {fabrica\+Componentes}, \hyperpage{25}
+    \subitem {obtener\+Boton\+Id}, \hyperpage{25}
+    \subitem {obtener\+Caja\+Texto}, \hyperpage{25}
+    \subitem {obtener\+Componentes}, \hyperpage{25}
+  \item {Frases}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+  \item {fuente}
+    \subitem {boton\+Imagen}, \hyperpage{8}
+    \subitem {boton\+Simple}, \hyperpage{9}
+    \subitem {caja\+Texto}, \hyperpage{12}
+    \subitem {menu\+Base}, \hyperpage{27}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {fuente\+Resp}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {fuente\+Resp2}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {fuente\+Resp3}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {fuente\+Si\+No}
+    \subitem {espacio\+Si\+No}, \hyperpage{21}
+
+  \indexspace
+
+  \item {get\+Millisec}
+    \subitem {componente\+Base}, \hyperpage{13}
+  \item {get\+Pictograma}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {get\+Tam\+Pictograma}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {get\+Texto}
+    \subitem {boton\+Simple}, \hyperpage{9}
+    \subitem {caja\+Texto}, \hyperpage{12}
+  \item {got\+Message}
+    \subitem {of\+App}, \hyperpage{36}
+
+  \indexspace
+
+  \item {h}
+    \subitem {boton\+Toggle}, \hyperpage{11}
+  \item {hand\+Pressed}
+    \subitem {of\+App}, \hyperpage{37}
+  \item {hay\+Texto}
+    \subitem {boton\+Imagen}, \hyperpage{8}
+    \subitem {boton\+Simple}, \hyperpage{9}
+
+  \indexspace
+
+  \item {i0}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {i1}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {i2}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {i3}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {imagen}
+    \subitem {boton\+Imagen}, \hyperpage{8}
+  \item {img}
+    \subitem {espacio\+Camara}, \hyperpage{17}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {incorrecto}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {indice}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {input\+Mode}
+    \subitem {of\+App}, \hyperpage{37}
+
+  \indexspace
+
+  \item {key\+Pressed}
+    \subitem {of\+App}, \hyperpage{36}
+  \item {key\+Released}
+    \subitem {of\+App}, \hyperpage{36}
+
+  \indexspace
+
+  \item {last\+Frame}
+    \subitem {of\+App}, \hyperpage{37}
+  \item {le\+Queda\+Tiempo}
+    \subitem {componente\+Base}, \hyperpage{13}
+  \item {leap\+X}
+    \subitem {of\+App}, \hyperpage{37}
+  \item {leap\+Y}
+    \subitem {of\+App}, \hyperpage{37}
+  \item {logo}
+    \subitem {menu\+Base}, \hyperpage{27}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {logox}
+    \subitem {menu\+Base}, \hyperpage{27}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {logoy}
+    \subitem {menu\+Base}, \hyperpage{28}
+    \subitem {menu\+Principal}, \hyperpage{33}
+
+  \indexspace
+
+  \item {m\+Comunicacion}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {m\+Cotidiana}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {m\+Educacion}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {m\+Ocio}
+    \subitem {menu\+Principal}, \hyperpage{33}
+  \item {m\+Principal}
+    \subitem {of\+App}, \hyperpage{37}
+  \item {main}
+    \subitem {main.\+cpp}, \hyperpage{42}
+  \item {main.\+cpp}
+    \subitem {main}, \hyperpage{42}
+  \item {manejo\+Sonido}, \hyperpage{25}
+    \subitem {cargar}, \hyperpage{26}
+    \subitem {manejo\+Sonido}, \hyperpage{26}
+    \subitem {reproducir}, \hyperpage{26}
+    \subitem {sp}, \hyperpage{26}
+  \item {margen}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {menu\+Base}, \hyperpage{26}
+    \subitem {$\sim$menu\+Base}, \hyperpage{27}
+    \subitem {btn}, \hyperpage{27}
+    \subitem {btn\+Atras}, \hyperpage{27}
+    \subitem {configuraciones}, \hyperpage{27}
+    \subitem {draw}, \hyperpage{27}
+    \subitem {eventos}, \hyperpage{27}
+    \subitem {fuente}, \hyperpage{27}
+    \subitem {logo}, \hyperpage{27}
+    \subitem {logox}, \hyperpage{27}
+    \subitem {logoy}, \hyperpage{28}
+    \subitem {menu\+Base}, \hyperpage{27}
+    \subitem {setup}, \hyperpage{27}
+    \subitem {update}, \hyperpage{27}
+  \item {menu\+Comunicacion}, \hyperpage{28}
+    \subitem {$\sim$menu\+Comunicacion}, \hyperpage{28}
+    \subitem {esp\+Pictograma}, \hyperpage{29}
+    \subitem {esp\+Si\+No}, \hyperpage{29}
+    \subitem {esp\+Teclado}, \hyperpage{29}
+    \subitem {eventos}, \hyperpage{28}
+    \subitem {menu\+Comunicacion}, \hyperpage{28}
+    \subitem {setup}, \hyperpage{28}
+  \item {menu\+Cotidiana}, \hyperpage{29}
+    \subitem {eventos}, \hyperpage{29}
+    \subitem {menu\+Cotidiana}, \hyperpage{29}
+  \item {menu\+Educacion}, \hyperpage{30}
+    \subitem {$\sim$menu\+Educacion}, \hyperpage{30}
+    \subitem {eventos}, \hyperpage{30}
+    \subitem {menu\+Educacion}, \hyperpage{30}
+    \subitem {setup}, \hyperpage{30}
+    \subitem {tarjetas}, \hyperpage{31}
+  \item {menu\+Ocio}, \hyperpage{31}
+    \subitem {$\sim$menu\+Ocio}, \hyperpage{31}
+    \subitem {esp\+Camara}, \hyperpage{32}
+    \subitem {eventos}, \hyperpage{31}
+    \subitem {menu\+Ocio}, \hyperpage{31}
+    \subitem {setup}, \hyperpage{31}
+  \item {menu\+Principal}, \hyperpage{32}
+    \subitem {$\sim$menu\+Principal}, \hyperpage{33}
+    \subitem {btn0}, \hyperpage{33}
+    \subitem {btn1}, \hyperpage{33}
+    \subitem {btn2}, \hyperpage{33}
+    \subitem {btn3}, \hyperpage{33}
+    \subitem {btn\+Input}, \hyperpage{33}
+    \subitem {btn\+Salir}, \hyperpage{33}
+    \subitem {draw}, \hyperpage{33}
+    \subitem {fuente}, \hyperpage{33}
+    \subitem {logo}, \hyperpage{33}
+    \subitem {logox}, \hyperpage{33}
+    \subitem {logoy}, \hyperpage{33}
+    \subitem {m\+Comunicacion}, \hyperpage{33}
+    \subitem {m\+Cotidiana}, \hyperpage{33}
+    \subitem {m\+Educacion}, \hyperpage{33}
+    \subitem {m\+Ocio}, \hyperpage{33}
+    \subitem {menu\+Principal}, \hyperpage{33}
+    \subitem {setup}, \hyperpage{33}
+    \subitem {update}, \hyperpage{33}
+    \subitem {vision\+Mode}, \hyperpage{33}
+  \item {mouse\+Dentro}
+    \subitem {componente\+Base}, \hyperpage{13}
+  \item {mouse\+Dragged}
+    \subitem {of\+App}, \hyperpage{36}
+  \item {mouse\+En\+Cuadro}
+    \subitem {componente\+Base}, \hyperpage{13}
+  \item {mouse\+Moved}
+    \subitem {of\+App}, \hyperpage{36}
+  \item {mouse\+Pressed}
+    \subitem {of\+App}, \hyperpage{36}
+  \item {mouse\+Released}
+    \subitem {of\+App}, \hyperpage{36}
+
+  \indexspace
+
+  \item {obtener\+Boton\+Id}
+    \subitem {fabrica\+Componentes}, \hyperpage{25}
+  \item {obtener\+Caja\+Texto}
+    \subitem {fabrica\+Componentes}, \hyperpage{25}
+  \item {obtener\+Componentes}
+    \subitem {fabrica\+Componentes}, \hyperpage{25}
+  \item {of\+App}, \hyperpage{34}
+    \subitem {$\sim$of\+App}, \hyperpage{35}
+    \subitem {controller}, \hyperpage{37}
+    \subitem {drag\+Event}, \hyperpage{35}
+    \subitem {draw}, \hyperpage{35}
+    \subitem {espacio\+Activo}, \hyperpage{37}
+    \subitem {got\+Message}, \hyperpage{36}
+    \subitem {hand\+Pressed}, \hyperpage{37}
+    \subitem {input\+Mode}, \hyperpage{37}
+    \subitem {key\+Pressed}, \hyperpage{36}
+    \subitem {key\+Released}, \hyperpage{36}
+    \subitem {last\+Frame}, \hyperpage{37}
+    \subitem {leap\+X}, \hyperpage{37}
+    \subitem {leap\+Y}, \hyperpage{37}
+    \subitem {m\+Principal}, \hyperpage{37}
+    \subitem {mouse\+Dragged}, \hyperpage{36}
+    \subitem {mouse\+Moved}, \hyperpage{36}
+    \subitem {mouse\+Pressed}, \hyperpage{36}
+    \subitem {mouse\+Released}, \hyperpage{36}
+    \subitem {of\+App}, \hyperpage{35}
+    \subitem {setup}, \hyperpage{36}
+    \subitem {tam\+X}, \hyperpage{37}
+    \subitem {tam\+Y}, \hyperpage{37}
+    \subitem {update}, \hyperpage{36}
+    \subitem {window\+Resized}, \hyperpage{36}
+  \item {offset\+X}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+  \item {offset\+Y}
+    \subitem {espacio\+Pictograma}, \hyperpage{20}
+  \item {Otros}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Personas}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+  \item {pictograma}
+    \subitem {espacio\+Pictograma}, \hyperpage{20}
+  \item {pictogramas\+Actuales}
+    \subitem {espacio\+Pictograma}, \hyperpage{20}
+  \item {porcentaje\+Tiempo}
+    \subitem {componente\+Base}, \hyperpage{13}
+  \item {Preguntas}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+
+  \indexspace
+
+  \item {reproducir}
+    \subitem {manejo\+Sonido}, \hyperpage{26}
+  \item {resp}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+  \item {ruta1}
+    \subitem {boton\+Toggle}, \hyperpage{11}
+  \item {ruta2}
+    \subitem {boton\+Toggle}, \hyperpage{11}
+  \item {rutas}
+    \subitem {espacio\+Tarjetas}, \hyperpage{23}
+
+  \indexspace
+
+  \item {set\+Pos}
+    \subitem {boton\+Imagen}, \hyperpage{8}
+    \subitem {componente\+Base}, \hyperpage{13}
+  \item {set\+Tam}
+    \subitem {boton\+Imagen}, \hyperpage{8}
+    \subitem {componente\+Base}, \hyperpage{13}
+  \item {set\+Texto}
+    \subitem {boton\+Simple}, \hyperpage{9}
+  \item {setup}
+    \subitem {componente\+Base}, \hyperpage{13}
+    \subitem {espacio\+Base}, \hyperpage{15}
+    \subitem {espacio\+Camara}, \hyperpage{16}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+    \subitem {espacio\+Si\+No}, \hyperpage{21}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+    \subitem {menu\+Base}, \hyperpage{27}
+    \subitem {menu\+Comunicacion}, \hyperpage{28}
+    \subitem {menu\+Educacion}, \hyperpage{30}
+    \subitem {menu\+Ocio}, \hyperpage{31}
+    \subitem {menu\+Principal}, \hyperpage{33}
+    \subitem {of\+App}, \hyperpage{36}
+  \item {sp}
+    \subitem {manejo\+Sonido}, \hyperpage{26}
+  \item {state}
+    \subitem {boton\+Toggle}, \hyperpage{10}
+  \item {str\+Categorias}
+    \subitem {espacio\+Pictograma}, \hyperpage{20}
+  \item {str\+Pictogramas}
+    \subitem {espacio\+Pictograma}, \hyperpage{20}
+  \item {Sustantivos}
+    \subitem {espacio\+Pictograma}, \hyperpage{18}
+
+  \indexspace
+
+  \item {tam}
+    \subitem {espacio\+Pictograma}, \hyperpage{20}
+  \item {tam\+Barra}
+    \subitem {espacio\+Base}, \hyperpage{15}
+  \item {tam\+Componentes}
+    \subitem {espacio\+Teclado}, \hyperpage{25}
+  \item {tam\+X}
+    \subitem {of\+App}, \hyperpage{37}
+  \item {tam\+Y}
+    \subitem {of\+App}, \hyperpage{37}
+  \item {tarjetas}
+    \subitem {menu\+Educacion}, \hyperpage{31}
+  \item {texto}
+    \subitem {boton\+Imagen}, \hyperpage{8}
+    \subitem {boton\+Simple}, \hyperpage{9}
+    \subitem {caja\+Texto}, \hyperpage{12}
+  \item {texto1}
+    \subitem {boton\+Toggle}, \hyperpage{11}
+  \item {texto2}
+    \subitem {boton\+Toggle}, \hyperpage{11}
+  \item {tiempo}
+    \subitem {componente\+Base}, \hyperpage{13}
+  \item {tiempo\+Max}
+    \subitem {componente\+Base}, \hyperpage{13}
+  \item {toggle}
+    \subitem {boton\+Toggle}, \hyperpage{10}
+  \item {toggle\+State}
+    \subitem {boton\+Toggle}, \hyperpage{11}
+
+  \indexspace
+
+  \item {update}
+    \subitem {boton\+Toggle}, \hyperpage{10}
+    \subitem {componente\+Base}, \hyperpage{13}
+    \subitem {espacio\+Base}, \hyperpage{15}
+    \subitem {espacio\+Camara}, \hyperpage{16}
+    \subitem {espacio\+Pictograma}, \hyperpage{19}
+    \subitem {espacio\+Si\+No}, \hyperpage{21}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+    \subitem {espacio\+Teclado}, \hyperpage{24}
+    \subitem {menu\+Base}, \hyperpage{27}
+    \subitem {menu\+Principal}, \hyperpage{33}
+    \subitem {of\+App}, \hyperpage{36}
+
+  \indexspace
+
+  \item {validar\+Respuesta}
+    \subitem {espacio\+Tarjetas}, \hyperpage{22}
+  \item {vid\+Grabber}
+    \subitem {espacio\+Camara}, \hyperpage{17}
+  \item {vision\+Mode}
+    \subitem {menu\+Principal}, \hyperpage{33}
+
+  \indexspace
+
+  \item {w}
+    \subitem {boton\+Toggle}, \hyperpage{11}
+  \item {window\+Resized}
+    \subitem {of\+App}, \hyperpage{36}
+
+\end{theindex}

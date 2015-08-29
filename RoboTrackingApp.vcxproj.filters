@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
+      <Filter>addons\ofxXmlSettings\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp">
+      <Filter>addons\ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp">
+      <Filter>addons\ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp">
+      <Filter>addons\ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\espacios\espacioBase.cpp">
+      <Filter>src\espacios</Filter>
+    </ClCompile>
+    <ClCompile Include="src\espacios\espacioCamara.cpp">
+      <Filter>src\espacios</Filter>
+    </ClCompile>
+    <ClCompile Include="src\espacios\espacioSiNo.cpp">
+      <Filter>src\espacios</Filter>
+    </ClCompile>
+    <ClCompile Include="src\espacios\espacioTeclado.cpp">
+      <Filter>src\espacios</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utilidades\manejoSonido\manejoSonido.cpp">
+      <Filter>src\utilidades\manejoSonido</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utilidades\conexiones\conexionYun.cpp">
+      <Filter>src\utilidades\conexiones</Filter>
+    </ClCompile>
+    <ClCompile Include="src\espacios\espacioPictograma.cpp">
+      <Filter>src\espacios</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menus\menuBase.cpp">
+      <Filter>src\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menus\menuPrincipal.cpp">
+      <Filter>src\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menus\menuComunicacion.cpp">
+      <Filter>src\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menus\menuCotidiana.cpp">
+      <Filter>src\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menus\menuEducacion.cpp">
+      <Filter>src\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menus\menuOcio.cpp">
+      <Filter>src\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\espacios\espacioTarjetas.cpp">
+      <Filter>src\espacios</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utilidades\sqlite3Manager\sqlite3Manager.cpp">
+      <Filter>src\utilidades\sqlite3Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\componentes\botonImagen.cpp">
+      <Filter>src\componentes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\componentes\botonSimple.cpp">
+      <Filter>src\componentes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\componentes\botonToggle.cpp">
+      <Filter>src\componentes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\componentes\cajaTexto.cpp">
+      <Filter>src\componentes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\componentes\componenteBase.cpp">
+      <Filter>src\componentes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxXmlSettings">
+      <UniqueIdentifier>{877F005D-13E6-0592-1D97-F2E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxXmlSettings\src">
+      <UniqueIdentifier>{CCB2AC63-49D2-977C-CFE8-AEAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxXmlSettings\libs">
+      <UniqueIdentifier>{687714A8-1662-FA1C-261F-50F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\espacios">
+      <UniqueIdentifier>{6a3f8895-b5fd-48ff-bbda-9d7dba0d5c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utilidades">
+      <UniqueIdentifier>{42046324-ff66-4a8a-948e-c2e8de16e196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utilidades\conexiones">
+      <UniqueIdentifier>{5e957a78-09a3-46e0-9eb6-7efdfb5c8142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utilidades\manejoSonido">
+      <UniqueIdentifier>{c6da6011-5a92-4483-a217-b150939125c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\menus">
+      <UniqueIdentifier>{f9a4941a-4e7d-4d96-bb97-5da7e6e08c2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utilidades\sqlite3Manager">
+      <UniqueIdentifier>{46d97438-2549-460e-b66e-cafd77876f43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\componentes">
+      <UniqueIdentifier>{02e21cc7-5463-4b6e-a018-9c4340af49d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h">
+      <Filter>addons\ofxXmlSettings\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h">
+      <Filter>addons\ofxXmlSettings\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\espacios\espacioBase.h">
+      <Filter>src\espacios</Filter>
+    </ClInclude>
+    <ClInclude Include="src\espacios\espacioCamara.h">
+      <Filter>src\espacios</Filter>
+    </ClInclude>
+    <ClInclude Include="src\espacios\espacioSiNo.h">
+      <Filter>src\espacios</Filter>
+    </ClInclude>
+    <ClInclude Include="src\espacios\espacioTeclado.h">
+      <Filter>src\espacios</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utilidades\conexiones\conexionYun.h">
+      <Filter>src\utilidades\conexiones</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utilidades\manejoSonido\manejoSonido.h">
+      <Filter>src\utilidades\manejoSonido</Filter>
+    </ClInclude>
+    <ClInclude Include="src\espacios\espacioPictograma.h">
+      <Filter>src\espacios</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menus\menuBase.h">
+      <Filter>src\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menus\menuPrincipal.h">
+      <Filter>src\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menus\menuComunicacion.h">
+      <Filter>src\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menus\menuCotidiana.h">
+      <Filter>src\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menus\menuEducacion.h">
+      <Filter>src\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menus\menuOcio.h">
+      <Filter>src\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\espacios\espacioTarjetas.h">
+      <Filter>src\espacios</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utilidades\sqlite3Manager\sqlite3Manager.h">
+      <Filter>src\utilidades\sqlite3Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\componentes\botonImagen.h">
+      <Filter>src\componentes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\componentes\botonSimple.h">
+      <Filter>src\componentes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\componentes\botonToggle.h">
+      <Filter>src\componentes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\componentes\cajaTexto.h">
+      <Filter>src\componentes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\componentes\componenteBase.h">
+      <Filter>src\componentes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\componentes\fabricaComponentes.h">
+      <Filter>src\componentes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>

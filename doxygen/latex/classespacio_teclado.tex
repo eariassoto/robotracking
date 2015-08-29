@@ -1,0 +1,232 @@
+\hypertarget{classespacio_teclado}{}\section{Referencia de la Clase espacio\+Teclado}
+\label{classespacio_teclado}\index{espacio\+Teclado@{espacio\+Teclado}}
+
+
+Espacio de comunicación por medio de lecto escritura.  
+
+
+
+
+{\ttfamily \#include $<$espacio\+Teclado.\+h$>$}
+
+Diagrama de herencias de espacio\+Teclado\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classespacio_teclado}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classespacio_teclado_a7bdaaa950b5673a464f322382aaf95cd}{espacio\+Teclado} (string, \hyperlink{classespacio_base}{espacio\+Base} $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_teclado_a98b147b70f0ce7a5bc6805d786f84cc4}{$\sim$espacio\+Teclado} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_teclado_ac6bad9b2d302639b45fbee4aed2f094d}{setup} ()
+\begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_teclado_a0d5aa4cb23a134cfce3f00709fd2f831}{update} (float, float, float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_teclado_a1215fd9d4030c2642d2fbe6a4cf86589}{draw} ()
+\begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classespacio_teclado_a02159fdf23f2e54c39be99dce372011f}{comando\+Hablar} (string)
+\begin{DoxyCompactList}\small\item\em Envía el texto al sintetizador de voz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+ofx\+Xml\+Settings \hyperlink{classespacio_teclado_af215829331b2ed6d0a4485eab2a37311}{configuraciones}
+\begin{DoxyCompactList}\small\item\em Instancia del manejador del archivo de configuraciones. \end{DoxyCompactList}\item 
+\hyperlink{classfabrica_componentes}{fabrica\+Componentes} \hyperlink{classespacio_teclado_aaa53bfd0abe00de252f38c299174f0d1}{fab\+Componentes}
+\begin{DoxyCompactList}\small\item\em Fabrica los componentes a partir de las configuraciones. \end{DoxyCompactList}\item 
+int \hyperlink{classespacio_teclado_ac6f638174ab5143b45b5a0658f6782e9}{cantidad\+Componentes}
+\begin{DoxyCompactList}\small\item\em Cantidad de componentes en la pantalla. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classcomponente_base}{componente\+Base} $\ast$ $>$ \hyperlink{classespacio_teclado_aad1549ce795db466bad7c47a5f82582c}{componentes}
+\begin{DoxyCompactList}\small\item\em Lista con los componentes cargados de las configuraciones. \end{DoxyCompactList}\item 
+\hyperlink{classcaja_texto}{caja\+Texto} $\ast$ \hyperlink{classespacio_teclado_ac4d882599a627a2d26aa19280fb1cf28}{c\+Texto}
+\begin{DoxyCompactList}\small\item\em Caja de texto para mostrar la hilera que produce el usuario. \end{DoxyCompactList}\item 
+\hyperlink{classboton_simple}{boton\+Simple} $\ast$ \hyperlink{classespacio_teclado_a68242d035fdf24a605e21d798ecf1a93}{btn\+Borrar}
+\begin{DoxyCompactList}\small\item\em Botón para borrar el último caracter. \end{DoxyCompactList}\item 
+\hyperlink{classboton_simple}{boton\+Simple} $\ast$ \hyperlink{classespacio_teclado_abf7bb12c95256d20e421831fea3d23e1}{btn\+Espacio}
+\begin{DoxyCompactList}\small\item\em Botón para insertar un nuevo espacio. \end{DoxyCompactList}\item 
+\hyperlink{classboton_simple}{boton\+Simple} $\ast$ \hyperlink{classespacio_teclado_a401d7d71c05c9f234010e33adfe51d04}{btn\+Hablar}
+\begin{DoxyCompactList}\small\item\em Botón para pasar la hilera a voz. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_teclado_a82d9f915e17ee3491992da61a0d28a8f}{btn\+Salir}
+\begin{DoxyCompactList}\small\item\em Botón para salir al menú \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Espacio de comunicación por medio de lecto escritura. 
+
+Este espacio define un tipo de comunicación para un usuario que posea capacidades de lectoescritura, este espacio puede mejorarse y adaptarse a las necesidades del usuario. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classespacio_teclado_a7bdaaa950b5673a464f322382aaf95cd}{}\index{espacio\+Teclado@{espacio\+Teclado}!espacio\+Teclado@{espacio\+Teclado}}
+\index{espacio\+Teclado@{espacio\+Teclado}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{espacio\+Teclado(string, espacio\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Teclado\+::espacio\+Teclado (
+\begin{DoxyParamCaption}
+\item[{string}]{conf\+Path, }
+\item[{{\bf espacio\+Base} $\ast$}]{esp\+Padre}
+\end{DoxyParamCaption}
+)}\label{classespacio_teclado_a7bdaaa950b5673a464f322382aaf95cd}
+
+
+Constructor de la clase. 
+
+Esta clase implementa un archivo de configuración para cargar los botones. Como el espacio implementa un teclado con muchos botones es mejor definirlos dinámicamente.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em conf\+Path} & archivo de configuración \\
+\hline
+{\em espacio\+Padre} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classespacio_teclado_a98b147b70f0ce7a5bc6805d786f84cc4}{}\index{espacio\+Teclado@{espacio\+Teclado}!````~espacio\+Teclado@{$\sim$espacio\+Teclado}}
+\index{````~espacio\+Teclado@{$\sim$espacio\+Teclado}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{$\sim$espacio\+Teclado()}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Teclado\+::$\sim$espacio\+Teclado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classespacio_teclado_a98b147b70f0ce7a5bc6805d786f84cc4}
+
+
+Destructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classespacio_teclado_a02159fdf23f2e54c39be99dce372011f}{}\index{espacio\+Teclado@{espacio\+Teclado}!comando\+Hablar@{comando\+Hablar}}
+\index{comando\+Hablar@{comando\+Hablar}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{comando\+Hablar(string)}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Teclado\+::comando\+Hablar (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_a02159fdf23f2e54c39be99dce372011f}
+
+
+Envía el texto al sintetizador de voz. 
+
+\hypertarget{classespacio_teclado_a1215fd9d4030c2642d2fbe6a4cf86589}{}\index{espacio\+Teclado@{espacio\+Teclado}!draw@{draw}}
+\index{draw@{draw}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Teclado\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_teclado_a1215fd9d4030c2642d2fbe6a4cf86589}
+
+
+Controla las tareas gráficas de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a01b3e668211b6159784f79a3f5a32d95}{espacio\+Base}.
+
+\hypertarget{classespacio_teclado_ac6bad9b2d302639b45fbee4aed2f094d}{}\index{espacio\+Teclado@{espacio\+Teclado}!setup@{setup}}
+\index{setup@{setup}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Teclado\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_teclado_ac6bad9b2d302639b45fbee4aed2f094d}
+
+
+Método inicial del ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
+
+\hypertarget{classespacio_teclado_a0d5aa4cb23a134cfce3f00709fd2f831}{}\index{espacio\+Teclado@{espacio\+Teclado}!update@{update}}
+\index{update@{update}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Teclado\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_teclado_a0d5aa4cb23a134cfce3f00709fd2f831}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classespacio_teclado_a68242d035fdf24a605e21d798ecf1a93}{}\index{espacio\+Teclado@{espacio\+Teclado}!btn\+Borrar@{btn\+Borrar}}
+\index{btn\+Borrar@{btn\+Borrar}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{btn\+Borrar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Simple}$\ast$ espacio\+Teclado\+::btn\+Borrar\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_a68242d035fdf24a605e21d798ecf1a93}
+
+
+Botón para borrar el último caracter. 
+
+\hypertarget{classespacio_teclado_abf7bb12c95256d20e421831fea3d23e1}{}\index{espacio\+Teclado@{espacio\+Teclado}!btn\+Espacio@{btn\+Espacio}}
+\index{btn\+Espacio@{btn\+Espacio}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{btn\+Espacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Simple}$\ast$ espacio\+Teclado\+::btn\+Espacio\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_abf7bb12c95256d20e421831fea3d23e1}
+
+
+Botón para insertar un nuevo espacio. 
+
+\hypertarget{classespacio_teclado_a401d7d71c05c9f234010e33adfe51d04}{}\index{espacio\+Teclado@{espacio\+Teclado}!btn\+Hablar@{btn\+Hablar}}
+\index{btn\+Hablar@{btn\+Hablar}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{btn\+Hablar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Simple}$\ast$ espacio\+Teclado\+::btn\+Hablar\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_a401d7d71c05c9f234010e33adfe51d04}
+
+
+Botón para pasar la hilera a voz. 
+
+\hypertarget{classespacio_teclado_a82d9f915e17ee3491992da61a0d28a8f}{}\index{espacio\+Teclado@{espacio\+Teclado}!btn\+Salir@{btn\+Salir}}
+\index{btn\+Salir@{btn\+Salir}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{btn\+Salir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Teclado\+::btn\+Salir\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_a82d9f915e17ee3491992da61a0d28a8f}
+
+
+Botón para salir al menú 
+
+\hypertarget{classespacio_teclado_ac6f638174ab5143b45b5a0658f6782e9}{}\index{espacio\+Teclado@{espacio\+Teclado}!cantidad\+Componentes@{cantidad\+Componentes}}
+\index{cantidad\+Componentes@{cantidad\+Componentes}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{cantidad\+Componentes}]{\setlength{\rightskip}{0pt plus 5cm}int espacio\+Teclado\+::cantidad\+Componentes\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_ac6f638174ab5143b45b5a0658f6782e9}
+
+
+Cantidad de componentes en la pantalla. 
+
+\hypertarget{classespacio_teclado_aad1549ce795db466bad7c47a5f82582c}{}\index{espacio\+Teclado@{espacio\+Teclado}!componentes@{componentes}}
+\index{componentes@{componentes}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{componentes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf componente\+Base}$\ast$$>$ espacio\+Teclado\+::componentes\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_aad1549ce795db466bad7c47a5f82582c}
+
+
+Lista con los componentes cargados de las configuraciones. 
+
+\hypertarget{classespacio_teclado_af215829331b2ed6d0a4485eab2a37311}{}\index{espacio\+Teclado@{espacio\+Teclado}!configuraciones@{configuraciones}}
+\index{configuraciones@{configuraciones}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{configuraciones}]{\setlength{\rightskip}{0pt plus 5cm}ofx\+Xml\+Settings espacio\+Teclado\+::configuraciones\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_af215829331b2ed6d0a4485eab2a37311}
+
+
+Instancia del manejador del archivo de configuraciones. 
+
+\hypertarget{classespacio_teclado_ac4d882599a627a2d26aa19280fb1cf28}{}\index{espacio\+Teclado@{espacio\+Teclado}!c\+Texto@{c\+Texto}}
+\index{c\+Texto@{c\+Texto}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{c\+Texto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf caja\+Texto}$\ast$ espacio\+Teclado\+::c\+Texto\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_ac4d882599a627a2d26aa19280fb1cf28}
+
+
+Caja de texto para mostrar la hilera que produce el usuario. 
+
+\hypertarget{classespacio_teclado_aaa53bfd0abe00de252f38c299174f0d1}{}\index{espacio\+Teclado@{espacio\+Teclado}!fab\+Componentes@{fab\+Componentes}}
+\index{fab\+Componentes@{fab\+Componentes}!espacio\+Teclado@{espacio\+Teclado}}
+\subsubsection[{fab\+Componentes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fabrica\+Componentes} espacio\+Teclado\+::fab\+Componentes\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_teclado_aaa53bfd0abe00de252f38c299174f0d1}
+
+
+Fabrica los componentes a partir de las configuraciones. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_teclado_8h}{espacio\+Teclado.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_teclado_8cpp}{espacio\+Teclado.\+cpp}\end{DoxyCompactItemize}

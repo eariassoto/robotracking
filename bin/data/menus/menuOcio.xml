@@ -1,0 +1,43 @@
+<menu>
+	<tamBoton>275</tamBoton>
+	<yBoton>210</yBoton>
+	<botonImagen>
+		<ruta>img/mOcio/carro.png</ruta>
+		<escala>0.725</escala>
+		<texto>
+			<tamano>24</tamano>
+			<color>
+				<r>0</r>
+				<g>0</g>
+				<b>0</b>
+			</color>
+			<hilera>Carro RC</hilera>
+		</texto>
+   </botonImagen>
+   <botonImagen>
+		<ruta>img/mOcio/juegos.png</ruta>
+		<escala>0.725</escala>
+		<texto>
+			<tamano>24</tamano>
+			<color>
+				<r>0</r>
+				<g>0</g>
+				<b>0</b>
+			</color>
+			<hilera>Juegos</hilera>
+		</texto>
+   </botonImagen>
+   <botonImagen>
+		<ruta>img/mOcio/camara.png</ruta>
+		<escala>0.725</escala>
+		<texto>
+			<tamano>24</tamano>
+			<color>
+				<r>0</r>
+				<g>0</g>
+				<b>0</b>
+			</color>
+			<hilera>Fotos</hilera>
+		</texto>
+   </botonImagen>
+</menu>

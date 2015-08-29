@@ -1,0 +1,264 @@
+\hypertarget{classboton_toggle}{}\section{Referencia de la Clase boton\+Toggle}
+\label{classboton_toggle}\index{boton\+Toggle@{boton\+Toggle}}
+
+
+Botón que alterna dos imagenes y textos.  
+
+
+
+
+{\ttfamily \#include $<$boton\+Toggle.\+h$>$}
+
+Diagrama de herencias de boton\+Toggle\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classboton_toggle}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classboton_toggle_a53ca0ae03d7125318e8b88993f8ed936}{boton\+Toggle} (string, string, float, string, string, int, of\+Color, int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Constructor principal de la clase, define tamaño y posición. \end{DoxyCompactList}\item 
+\hyperlink{classboton_toggle_ad193dda2df6e4399a3171a2d5ecc612f}{boton\+Toggle} (string, string, float, string, string, int, of\+Color)
+\begin{DoxyCompactList}\small\item\em Constructor secundario de la clase, sin tamaño y posición definidos. \end{DoxyCompactList}\item 
+bool \hyperlink{classboton_toggle_a067fa2bd02fd019d5c6c062ec8d521c0}{update} (float, float, float, float, bool)
+\begin{DoxyCompactList}\small\item\em Implementa el cambio de imagen y texto si el usuario hizo clic. \end{DoxyCompactList}\item 
+bool \hyperlink{classboton_toggle_a6da75216bda1e716f10cb1baec792cd0}{state} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el estado del botón. \end{DoxyCompactList}\item 
+void \hyperlink{classboton_toggle_a5a24ccd035199173e96b36a9dec4927f}{toggle} ()
+\begin{DoxyCompactList}\small\item\em Cambia el estado del botón. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classboton_toggle_a16e1fc2e8c6b3bfc76f1de28f9623740}{toggle\+State}
+\begin{DoxyCompactList}\small\item\em Define el estado del botón, se inicializa en false. \end{DoxyCompactList}\item 
+string \hyperlink{classboton_toggle_acd9a4699cc7fcb3facda61450bafa25f}{ruta1}
+\begin{DoxyCompactList}\small\item\em Localización de la imagen del estado 1. \end{DoxyCompactList}\item 
+string \hyperlink{classboton_toggle_a29e4c1705e45c20f62a77176b7b2ae2d}{ruta2}
+\begin{DoxyCompactList}\small\item\em Localización de la imagen del estado 2. \end{DoxyCompactList}\item 
+string \hyperlink{classboton_toggle_abd3f33fb266429ad6697518506bedce8}{texto1}
+\begin{DoxyCompactList}\small\item\em Texto del estado 1. \end{DoxyCompactList}\item 
+string \hyperlink{classboton_toggle_a838680f64548815ecac688f7bd3cb59c}{texto2}
+\begin{DoxyCompactList}\small\item\em Texto del estado 2. \end{DoxyCompactList}\item 
+float \hyperlink{classboton_toggle_aec530290e05f262e49cd41ea80914bfb}{escala}
+\begin{DoxyCompactList}\small\item\em Escalas de las imagenes. \end{DoxyCompactList}\item 
+int \hyperlink{classboton_toggle_aa76dc9adf8e8b4513bf839a061ce2129}{w}
+\begin{DoxyCompactList}\small\item\em Largo del botón. \end{DoxyCompactList}\item 
+int \hyperlink{classboton_toggle_a1e88ceaf2b11a3f376f1bed5751bcbe2}{h}
+\begin{DoxyCompactList}\small\item\em Ancho del botón. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Botón que alterna dos imagenes y textos. 
+
+Este botón implementa la funcionalidad de alternar estados. Se definen dos pares de imagenes y textos. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classboton_toggle_a53ca0ae03d7125318e8b88993f8ed936}{}\index{boton\+Toggle@{boton\+Toggle}!boton\+Toggle@{boton\+Toggle}}
+\index{boton\+Toggle@{boton\+Toggle}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{boton\+Toggle(string, string, float, string, string, int, of\+Color, int, int, int, int)}]{\setlength{\rightskip}{0pt plus 5cm}boton\+Toggle\+::boton\+Toggle (
+\begin{DoxyParamCaption}
+\item[{string}]{r1, }
+\item[{string}]{r2, }
+\item[{float}]{esc, }
+\item[{string}]{t1, }
+\item[{string}]{t2, }
+\item[{int}]{tam\+Fuente, }
+\item[{of\+Color}]{c, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{w\+\_\+, }
+\item[{int}]{h\+\_\+}
+\end{DoxyParamCaption}
+)}\label{classboton_toggle_a53ca0ae03d7125318e8b88993f8ed936}
+
+
+Constructor principal de la clase, define tamaño y posición. 
+
+Inicializa la fuente y guarda las configuraciones necesarias para dibujarse en pantalla.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r1} & Localizacion de la imagen 1 \\
+\hline
+{\em r2} & Localizacion de la imagen 2 \\
+\hline
+{\em esc} & Representa la escala entre la imagen y el tamaño del botón, número real entre 0 y 1 \\
+\hline
+{\em t1} & texto 1 del botón \\
+\hline
+{\em t2} & texto 2 del botón \\
+\hline
+{\em tam\+Fuente} & tamaño de la fuente del texto \\
+\hline
+{\em c} & color del texto \\
+\hline
+{\em x} & localización en el eje x \\
+\hline
+{\em y} & localización en el eye y \\
+\hline
+{\em w\+\_\+} & largo del componente \\
+\hline
+{\em h\+\_\+} & ancho del componente \\
+\hline
+\end{DoxyParams}
+\hypertarget{classboton_toggle_ad193dda2df6e4399a3171a2d5ecc612f}{}\index{boton\+Toggle@{boton\+Toggle}!boton\+Toggle@{boton\+Toggle}}
+\index{boton\+Toggle@{boton\+Toggle}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{boton\+Toggle(string, string, float, string, string, int, of\+Color)}]{\setlength{\rightskip}{0pt plus 5cm}boton\+Toggle\+::boton\+Toggle (
+\begin{DoxyParamCaption}
+\item[{string}]{r1, }
+\item[{string}]{r2, }
+\item[{float}]{esc, }
+\item[{string}]{t1, }
+\item[{string}]{t2, }
+\item[{int}]{tam\+Fuente, }
+\item[{of\+Color}]{c}
+\end{DoxyParamCaption}
+)}\label{classboton_toggle_ad193dda2df6e4399a3171a2d5ecc612f}
+
+
+Constructor secundario de la clase, sin tamaño y posición definidos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em r1} & Localizacion de la imagen 1 \\
+\hline
+{\em r2} & Localizacion de la imagen 2 \\
+\hline
+{\em esc} & Representa la escala entre la imagen y el tamaño del botón, número real entre 0 y 1 \\
+\hline
+{\em t1} & texto 1 del botón \\
+\hline
+{\em t2} & texto 2 del botón \\
+\hline
+{\em tam\+Fuente} & tamaño de la fuente del texto \\
+\hline
+{\em c} & color del texto \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classboton_toggle_a6da75216bda1e716f10cb1baec792cd0}{}\index{boton\+Toggle@{boton\+Toggle}!state@{state}}
+\index{state@{state}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{state()}]{\setlength{\rightskip}{0pt plus 5cm}bool boton\+Toggle\+::state (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classboton_toggle_a6da75216bda1e716f10cb1baec792cd0}
+
+
+Devuelve el estado del botón. 
+
+\begin{DoxyReturn}{Devuelve}
+true si el botón está en el estado 2 
+\end{DoxyReturn}
+\hypertarget{classboton_toggle_a5a24ccd035199173e96b36a9dec4927f}{}\index{boton\+Toggle@{boton\+Toggle}!toggle@{toggle}}
+\index{toggle@{toggle}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{toggle()}]{\setlength{\rightskip}{0pt plus 5cm}void boton\+Toggle\+::toggle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classboton_toggle_a5a24ccd035199173e96b36a9dec4927f}
+
+
+Cambia el estado del botón. 
+
+\hypertarget{classboton_toggle_a067fa2bd02fd019d5c6c062ec8d521c0}{}\index{boton\+Toggle@{boton\+Toggle}!update@{update}}
+\index{update@{update}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}bool boton\+Toggle\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{x\+M, }
+\item[{float}]{y\+M, }
+\item[{float}]{x\+L, }
+\item[{float}]{y\+L, }
+\item[{bool}]{c}
+\end{DoxyParamCaption}
+)}\label{classboton_toggle_a067fa2bd02fd019d5c6c062ec8d521c0}
+
+
+Implementa el cambio de imagen y texto si el usuario hizo clic. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em x\+M} & coordenada x de la entrada visual \\
+\hline
+{\em y\+M} & coordenada y de la entrada visual \\
+\hline
+{\em x\+L} & coordenada x del componente de gestos \\
+\hline
+{\em y\+L} & coordenada y del componente de gestos \\
+\hline
+{\em c} & indica si el usuario ha hecho el gesto para el clic\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el usuario hizo clic sobre el componente 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classboton_toggle_aec530290e05f262e49cd41ea80914bfb}{}\index{boton\+Toggle@{boton\+Toggle}!escala@{escala}}
+\index{escala@{escala}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{escala}]{\setlength{\rightskip}{0pt plus 5cm}float boton\+Toggle\+::escala\hspace{0.3cm}{\ttfamily [private]}}\label{classboton_toggle_aec530290e05f262e49cd41ea80914bfb}
+
+
+Escalas de las imagenes. 
+
+\hypertarget{classboton_toggle_a1e88ceaf2b11a3f376f1bed5751bcbe2}{}\index{boton\+Toggle@{boton\+Toggle}!h@{h}}
+\index{h@{h}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}int boton\+Toggle\+::h\hspace{0.3cm}{\ttfamily [private]}}\label{classboton_toggle_a1e88ceaf2b11a3f376f1bed5751bcbe2}
+
+
+Ancho del botón. 
+
+\hypertarget{classboton_toggle_acd9a4699cc7fcb3facda61450bafa25f}{}\index{boton\+Toggle@{boton\+Toggle}!ruta1@{ruta1}}
+\index{ruta1@{ruta1}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{ruta1}]{\setlength{\rightskip}{0pt plus 5cm}string boton\+Toggle\+::ruta1\hspace{0.3cm}{\ttfamily [private]}}\label{classboton_toggle_acd9a4699cc7fcb3facda61450bafa25f}
+
+
+Localización de la imagen del estado 1. 
+
+\hypertarget{classboton_toggle_a29e4c1705e45c20f62a77176b7b2ae2d}{}\index{boton\+Toggle@{boton\+Toggle}!ruta2@{ruta2}}
+\index{ruta2@{ruta2}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{ruta2}]{\setlength{\rightskip}{0pt plus 5cm}string boton\+Toggle\+::ruta2\hspace{0.3cm}{\ttfamily [private]}}\label{classboton_toggle_a29e4c1705e45c20f62a77176b7b2ae2d}
+
+
+Localización de la imagen del estado 2. 
+
+\hypertarget{classboton_toggle_abd3f33fb266429ad6697518506bedce8}{}\index{boton\+Toggle@{boton\+Toggle}!texto1@{texto1}}
+\index{texto1@{texto1}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{texto1}]{\setlength{\rightskip}{0pt plus 5cm}string boton\+Toggle\+::texto1\hspace{0.3cm}{\ttfamily [private]}}\label{classboton_toggle_abd3f33fb266429ad6697518506bedce8}
+
+
+Texto del estado 1. 
+
+\hypertarget{classboton_toggle_a838680f64548815ecac688f7bd3cb59c}{}\index{boton\+Toggle@{boton\+Toggle}!texto2@{texto2}}
+\index{texto2@{texto2}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{texto2}]{\setlength{\rightskip}{0pt plus 5cm}string boton\+Toggle\+::texto2\hspace{0.3cm}{\ttfamily [private]}}\label{classboton_toggle_a838680f64548815ecac688f7bd3cb59c}
+
+
+Texto del estado 2. 
+
+\hypertarget{classboton_toggle_a16e1fc2e8c6b3bfc76f1de28f9623740}{}\index{boton\+Toggle@{boton\+Toggle}!toggle\+State@{toggle\+State}}
+\index{toggle\+State@{toggle\+State}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{toggle\+State}]{\setlength{\rightskip}{0pt plus 5cm}bool boton\+Toggle\+::toggle\+State\hspace{0.3cm}{\ttfamily [private]}}\label{classboton_toggle_a16e1fc2e8c6b3bfc76f1de28f9623740}
+
+
+Define el estado del botón, se inicializa en false. 
+
+\hypertarget{classboton_toggle_aa76dc9adf8e8b4513bf839a061ce2129}{}\index{boton\+Toggle@{boton\+Toggle}!w@{w}}
+\index{w@{w}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}int boton\+Toggle\+::w\hspace{0.3cm}{\ttfamily [private]}}\label{classboton_toggle_aa76dc9adf8e8b4513bf839a061ce2129}
+
+
+Largo del botón. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/componentes/\hyperlink{boton_toggle_8h}{boton\+Toggle.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/componentes/\hyperlink{boton_toggle_8cpp}{boton\+Toggle.\+cpp}\end{DoxyCompactItemize}

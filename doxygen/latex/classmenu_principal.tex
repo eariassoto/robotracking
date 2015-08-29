@@ -1,0 +1,270 @@
+\hypertarget{classmenu_principal}{}\section{Referencia de la Clase menu\+Principal}
+\label{classmenu_principal}\index{menu\+Principal@{menu\+Principal}}
+
+
+Menú principal de la aplicación.  
+
+
+
+
+{\ttfamily \#include $<$menu\+Principal.\+h$>$}
+
+Diagrama de herencias de menu\+Principal\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmenu_principal}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmenu_principal_a52d757f677ea4f87a1def3a2259e3052}{menu\+Principal} (bool)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classmenu_principal_aec2f0d44f0cd26e5c9ddfea5141ba0a1}{$\sim$menu\+Principal} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classmenu_principal_af392d4bbd2d1851b565441ed9dccbae8}{setup} ()
+\begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_principal_a69aa5c82d822246305ec9eb0ae60b546}{update} (float, float, float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classmenu_principal_ac76c28146574b4b72364cb877b5cd83f}{draw} ()
+\begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmenu_principal_a4fe6b875a2b261f24768a479b725c855}{vision\+Mode}
+\begin{DoxyCompactList}\small\item\em true si el modo de reconocimiento es visión \end{DoxyCompactList}\item 
+\hyperlink{classboton_toggle}{boton\+Toggle} $\ast$ \hyperlink{classmenu_principal_aea487ca8d9e0d1df2fda6a563ca0f04c}{btn\+Input}
+\begin{DoxyCompactList}\small\item\em Botón paa cambiar el modo de reconocimiento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmenu_comunicacion}{menu\+Comunicacion} $\ast$ \hyperlink{classmenu_principal_af820d04d0e35fa1f4c552af95d5e3036}{m\+Comunicacion}
+\begin{DoxyCompactList}\small\item\em Instancia del menú de comunicación. \end{DoxyCompactList}\item 
+\hyperlink{classmenu_cotidiana}{menu\+Cotidiana} $\ast$ \hyperlink{classmenu_principal_a67ce856e4bf6566b0e2dc4f6c1471e19}{m\+Cotidiana}
+\begin{DoxyCompactList}\small\item\em Instancia del menú de vida cotidiana. \end{DoxyCompactList}\item 
+\hyperlink{classmenu_ocio}{menu\+Ocio} $\ast$ \hyperlink{classmenu_principal_a8e372431b14d13de965f84dc0593e08a}{m\+Ocio}
+\begin{DoxyCompactList}\small\item\em Instancia del menú de ocio. \end{DoxyCompactList}\item 
+\hyperlink{classmenu_educacion}{menu\+Educacion} $\ast$ \hyperlink{classmenu_principal_a495c578e5fba7f2453f963e88c193b5d}{m\+Educacion}
+\begin{DoxyCompactList}\small\item\em Instancia del menú de educación. \end{DoxyCompactList}\item 
+of\+True\+Type\+Font \hyperlink{classmenu_principal_a23f1de2b0d66522eae4ce63763d31ce6}{fuente}
+\begin{DoxyCompactList}\small\item\em Fuente del texto. \end{DoxyCompactList}\item 
+of\+Image \hyperlink{classmenu_principal_aa5ec7fdf5031285aab08c58e0fecbd82}{logo}
+\begin{DoxyCompactList}\small\item\em Logo de la aplicación. \end{DoxyCompactList}\item 
+float \hyperlink{classmenu_principal_aca0ebae92aafb9026c9aace3e23463fb}{logox}
+\begin{DoxyCompactList}\small\item\em Coordenada x del logo. \end{DoxyCompactList}\item 
+float \hyperlink{classmenu_principal_a1f1f6764a1253e7fa12f9cee448f29b9}{logoy}
+\begin{DoxyCompactList}\small\item\em Coordenada y del logo. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classmenu_principal_a731ca834c77af1bade609b3bc28ab02c}{btn\+Comunicacion}
+\begin{DoxyCompactList}\small\item\em Botón de la categoría comunicación. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classmenu_principal_ab26a999803f322e9c9f05acd53125a8c}{btn\+Educacion}
+\begin{DoxyCompactList}\small\item\em Botón de la categoría educación. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classmenu_principal_a9c27d54b3333900acd941d889019ba1a}{btn\+Cotidiana}
+\begin{DoxyCompactList}\small\item\em Botón de la categoría vida cotidiana. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classmenu_principal_a488846721d51f37a0ce23bb19372c0b1}{btn\+Ocio}
+\begin{DoxyCompactList}\small\item\em Botón de la categoría ocio. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classmenu_principal_a9415d04ae2ac0a7927c32c95acdcb9ca}{btn\+Salir}
+\begin{DoxyCompactList}\small\item\em Botón para salir de la aplicación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Menú principal de la aplicación. 
+
+Este menú no tiene archivo de configuración sino que los botones están definidos manualmente. Cualquier submenú nuevo deber ser agregado acá. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classmenu_principal_a52d757f677ea4f87a1def3a2259e3052}{}\index{menu\+Principal@{menu\+Principal}!menu\+Principal@{menu\+Principal}}
+\index{menu\+Principal@{menu\+Principal}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{menu\+Principal(bool)}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Principal\+::menu\+Principal (
+\begin{DoxyParamCaption}
+\item[{bool}]{v\+M}
+\end{DoxyParamCaption}
+)}\label{classmenu_principal_a52d757f677ea4f87a1def3a2259e3052}
+
+
+Constructor de la clase. 
+
+Define el modo en que el usuario va a interactuar, ya sea por visión o por gestos.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em v\+M} & Indica el modo de reconociento que se va a utilizar \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmenu_principal_aec2f0d44f0cd26e5c9ddfea5141ba0a1}{}\index{menu\+Principal@{menu\+Principal}!````~menu\+Principal@{$\sim$menu\+Principal}}
+\index{````~menu\+Principal@{$\sim$menu\+Principal}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{$\sim$menu\+Principal()}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Principal\+::$\sim$menu\+Principal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmenu_principal_aec2f0d44f0cd26e5c9ddfea5141ba0a1}
+
+
+Destructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classmenu_principal_ac76c28146574b4b72364cb877b5cd83f}{}\index{menu\+Principal@{menu\+Principal}!draw@{draw}}
+\index{draw@{draw}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void menu\+Principal\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_principal_ac76c28146574b4b72364cb877b5cd83f}
+
+
+Controla las tareas gráficas de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a01b3e668211b6159784f79a3f5a32d95}{espacio\+Base}.
+
+\hypertarget{classmenu_principal_af392d4bbd2d1851b565441ed9dccbae8}{}\index{menu\+Principal@{menu\+Principal}!setup@{setup}}
+\index{setup@{setup}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void menu\+Principal\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_principal_af392d4bbd2d1851b565441ed9dccbae8}
+
+
+Método inicial del ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
+
+\hypertarget{classmenu_principal_a69aa5c82d822246305ec9eb0ae60b546}{}\index{menu\+Principal@{menu\+Principal}!update@{update}}
+\index{update@{update}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Principal\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_principal_a69aa5c82d822246305ec9eb0ae60b546}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classmenu_principal_a731ca834c77af1bade609b3bc28ab02c}{}\index{menu\+Principal@{menu\+Principal}!btn\+Comunicacion@{btn\+Comunicacion}}
+\index{btn\+Comunicacion@{btn\+Comunicacion}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{btn\+Comunicacion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ menu\+Principal\+::btn\+Comunicacion\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a731ca834c77af1bade609b3bc28ab02c}
+
+
+Botón de la categoría comunicación. 
+
+\hypertarget{classmenu_principal_a9c27d54b3333900acd941d889019ba1a}{}\index{menu\+Principal@{menu\+Principal}!btn\+Cotidiana@{btn\+Cotidiana}}
+\index{btn\+Cotidiana@{btn\+Cotidiana}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{btn\+Cotidiana}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ menu\+Principal\+::btn\+Cotidiana\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a9c27d54b3333900acd941d889019ba1a}
+
+
+Botón de la categoría vida cotidiana. 
+
+\hypertarget{classmenu_principal_ab26a999803f322e9c9f05acd53125a8c}{}\index{menu\+Principal@{menu\+Principal}!btn\+Educacion@{btn\+Educacion}}
+\index{btn\+Educacion@{btn\+Educacion}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{btn\+Educacion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ menu\+Principal\+::btn\+Educacion\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_ab26a999803f322e9c9f05acd53125a8c}
+
+
+Botón de la categoría educación. 
+
+\hypertarget{classmenu_principal_aea487ca8d9e0d1df2fda6a563ca0f04c}{}\index{menu\+Principal@{menu\+Principal}!btn\+Input@{btn\+Input}}
+\index{btn\+Input@{btn\+Input}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{btn\+Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Toggle}$\ast$ menu\+Principal\+::btn\+Input}\label{classmenu_principal_aea487ca8d9e0d1df2fda6a563ca0f04c}
+
+
+Botón paa cambiar el modo de reconocimiento. 
+
+\hypertarget{classmenu_principal_a488846721d51f37a0ce23bb19372c0b1}{}\index{menu\+Principal@{menu\+Principal}!btn\+Ocio@{btn\+Ocio}}
+\index{btn\+Ocio@{btn\+Ocio}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{btn\+Ocio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ menu\+Principal\+::btn\+Ocio\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a488846721d51f37a0ce23bb19372c0b1}
+
+
+Botón de la categoría ocio. 
+
+\hypertarget{classmenu_principal_a9415d04ae2ac0a7927c32c95acdcb9ca}{}\index{menu\+Principal@{menu\+Principal}!btn\+Salir@{btn\+Salir}}
+\index{btn\+Salir@{btn\+Salir}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{btn\+Salir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ menu\+Principal\+::btn\+Salir\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a9415d04ae2ac0a7927c32c95acdcb9ca}
+
+
+Botón para salir de la aplicación. 
+
+\hypertarget{classmenu_principal_a23f1de2b0d66522eae4ce63763d31ce6}{}\index{menu\+Principal@{menu\+Principal}!fuente@{fuente}}
+\index{fuente@{fuente}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{fuente}]{\setlength{\rightskip}{0pt plus 5cm}of\+True\+Type\+Font menu\+Principal\+::fuente\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a23f1de2b0d66522eae4ce63763d31ce6}
+
+
+Fuente del texto. 
+
+\hypertarget{classmenu_principal_aa5ec7fdf5031285aab08c58e0fecbd82}{}\index{menu\+Principal@{menu\+Principal}!logo@{logo}}
+\index{logo@{logo}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{logo}]{\setlength{\rightskip}{0pt plus 5cm}of\+Image menu\+Principal\+::logo\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_aa5ec7fdf5031285aab08c58e0fecbd82}
+
+
+Logo de la aplicación. 
+
+\hypertarget{classmenu_principal_aca0ebae92aafb9026c9aace3e23463fb}{}\index{menu\+Principal@{menu\+Principal}!logox@{logox}}
+\index{logox@{logox}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{logox}]{\setlength{\rightskip}{0pt plus 5cm}float menu\+Principal\+::logox\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_aca0ebae92aafb9026c9aace3e23463fb}
+
+
+Coordenada x del logo. 
+
+\hypertarget{classmenu_principal_a1f1f6764a1253e7fa12f9cee448f29b9}{}\index{menu\+Principal@{menu\+Principal}!logoy@{logoy}}
+\index{logoy@{logoy}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{logoy}]{\setlength{\rightskip}{0pt plus 5cm}float menu\+Principal\+::logoy\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a1f1f6764a1253e7fa12f9cee448f29b9}
+
+
+Coordenada y del logo. 
+
+\hypertarget{classmenu_principal_af820d04d0e35fa1f4c552af95d5e3036}{}\index{menu\+Principal@{menu\+Principal}!m\+Comunicacion@{m\+Comunicacion}}
+\index{m\+Comunicacion@{m\+Comunicacion}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{m\+Comunicacion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf menu\+Comunicacion}$\ast$ menu\+Principal\+::m\+Comunicacion\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_af820d04d0e35fa1f4c552af95d5e3036}
+
+
+Instancia del menú de comunicación. 
+
+\hypertarget{classmenu_principal_a67ce856e4bf6566b0e2dc4f6c1471e19}{}\index{menu\+Principal@{menu\+Principal}!m\+Cotidiana@{m\+Cotidiana}}
+\index{m\+Cotidiana@{m\+Cotidiana}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{m\+Cotidiana}]{\setlength{\rightskip}{0pt plus 5cm}{\bf menu\+Cotidiana}$\ast$ menu\+Principal\+::m\+Cotidiana\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a67ce856e4bf6566b0e2dc4f6c1471e19}
+
+
+Instancia del menú de vida cotidiana. 
+
+\hypertarget{classmenu_principal_a495c578e5fba7f2453f963e88c193b5d}{}\index{menu\+Principal@{menu\+Principal}!m\+Educacion@{m\+Educacion}}
+\index{m\+Educacion@{m\+Educacion}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{m\+Educacion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf menu\+Educacion}$\ast$ menu\+Principal\+::m\+Educacion\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a495c578e5fba7f2453f963e88c193b5d}
+
+
+Instancia del menú de educación. 
+
+\hypertarget{classmenu_principal_a8e372431b14d13de965f84dc0593e08a}{}\index{menu\+Principal@{menu\+Principal}!m\+Ocio@{m\+Ocio}}
+\index{m\+Ocio@{m\+Ocio}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{m\+Ocio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf menu\+Ocio}$\ast$ menu\+Principal\+::m\+Ocio\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a8e372431b14d13de965f84dc0593e08a}
+
+
+Instancia del menú de ocio. 
+
+\hypertarget{classmenu_principal_a4fe6b875a2b261f24768a479b725c855}{}\index{menu\+Principal@{menu\+Principal}!vision\+Mode@{vision\+Mode}}
+\index{vision\+Mode@{vision\+Mode}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{vision\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool menu\+Principal\+::vision\+Mode}\label{classmenu_principal_a4fe6b875a2b261f24768a479b725c855}
+
+
+true si el modo de reconocimiento es visión 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/\hyperlink{menu_principal_8h}{menu\+Principal.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/\hyperlink{menu_principal_8cpp}{menu\+Principal.\+cpp}\end{DoxyCompactItemize}

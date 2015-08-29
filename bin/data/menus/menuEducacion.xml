@@ -1,0 +1,18 @@
+<menu>
+	<tamBoton>375</tamBoton>
+	<yBoton>210</yBoton>
+	<botonImagen>
+		<ruta>img/mEducacion/tarjetas.png</ruta>
+		<escala>0.725</escala>
+		<texto>
+			<tamano>24</tamano>
+			<color>
+				<r>0</r>
+				<g>0</g>
+				<b>0</b>
+			</color>
+			<hilera>Tarjetas</hilera>
+		</texto>
+   </botonImagen>
+
+</menu>

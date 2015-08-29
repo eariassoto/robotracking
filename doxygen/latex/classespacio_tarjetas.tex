@@ -1,0 +1,291 @@
+\hypertarget{classespacio_tarjetas}{}\section{Referencia de la Clase espacio\+Tarjetas}
+\label{classespacio_tarjetas}\index{espacio\+Tarjetas@{espacio\+Tarjetas}}
+
+
+Espacio educativo donde se identifican pictogramas con su definición en palabras.  
+
+
+
+
+{\ttfamily \#include $<$espacio\+Tarjetas.\+h$>$}
+
+Diagrama de herencias de espacio\+Tarjetas\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classespacio_tarjetas}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classespacio_tarjetas_a4fadd23e0a493467f5c28deecdbb975c}{espacio\+Tarjetas} (\hyperlink{classespacio_base}{espacio\+Base} $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_tarjetas_a2b5ef7680cf2193c561814d90fcc1500}{$\sim$espacio\+Tarjetas} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_tarjetas_a0dc8d9154c4de90daab303a4fab5fd90}{setup} ()
+\begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_tarjetas_a61d5cd1dcc3538b9eafe7a6ab7d6e6e5}{update} (float, float, float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_tarjetas_a53e047fce1e887a4dfc49ff31388867d}{draw} ()
+\begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classespacio_tarjetas_a14b6c40ed3154459f9b1ec511f176613}{cargar\+Tarjeta} ()
+\begin{DoxyCompactList}\small\item\em Carga un ejercicio en pantalla. \end{DoxyCompactList}\item 
+void \hyperlink{classespacio_tarjetas_a826269ec11513bc1c471d9aa51288a47}{validar\+Respuesta} (\hyperlink{classboton_simple}{boton\+Simple} $\ast$)
+\begin{DoxyCompactList}\small\item\em Verifica si la respuesta elegida por el usuario es correcta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ string $>$ $>$ \hyperlink{classespacio_tarjetas_a4f544a79ef84de1cd86c659fad6c762c}{tarjetas}
+\begin{DoxyCompactList}\small\item\em Lista con todos los pictogramas posibles. \end{DoxyCompactList}\item 
+of\+Image \hyperlink{classespacio_tarjetas_afa80c75849eae23d80adb0d66ffbd540}{img}
+\begin{DoxyCompactList}\small\item\em Pictograma activo que se le muestra al usuario. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{classespacio_tarjetas_a3f296834b82b6e44ebc15999d949b547}{resp}
+\begin{DoxyCompactList}\small\item\em Respuestas para el pictograma activo. \end{DoxyCompactList}\item 
+of\+True\+Type\+Font \hyperlink{classespacio_tarjetas_a0ae5d7269e77bc44651ca7c8f3435ef9}{fuente\+Resp}
+\begin{DoxyCompactList}\small\item\em Tipo de fuente 1. \end{DoxyCompactList}\item 
+of\+True\+Type\+Font \hyperlink{classespacio_tarjetas_a69c647527325428e7cb3e0c40d8f6bea}{fuente\+Resp2}
+\begin{DoxyCompactList}\small\item\em Tipo de fuente 2. \end{DoxyCompactList}\item 
+of\+True\+Type\+Font \hyperlink{classespacio_tarjetas_abec283907dd3683168265677e9df9659}{fuente\+Resp3}
+\begin{DoxyCompactList}\small\item\em Tipo de fuente 3. \end{DoxyCompactList}\item 
+\hyperlink{classboton_imagen}{boton\+Imagen} $\ast$ \hyperlink{classespacio_tarjetas_afc558908c2d0b48e3d7917722ff05a4d}{btn\+Atras}
+\begin{DoxyCompactList}\small\item\em Botón para ir al menú de la categoría. \end{DoxyCompactList}\item 
+\hyperlink{classboton_simple}{boton\+Simple} $\ast$ \hyperlink{classespacio_tarjetas_a1b66f906dbd856b501412a42c50da0af}{btn0}
+\begin{DoxyCompactList}\small\item\em Botón para la opción 1. \end{DoxyCompactList}\item 
+\hyperlink{classboton_simple}{boton\+Simple} $\ast$ \hyperlink{classespacio_tarjetas_a6f9729b868bcfef80cd3c71e22950425}{btn1}
+\begin{DoxyCompactList}\small\item\em Botón para la opción 2. \end{DoxyCompactList}\item 
+\hyperlink{classboton_simple}{boton\+Simple} $\ast$ \hyperlink{classespacio_tarjetas_ab0d28914026c02d7bd073d79e9c2f84e}{btn2}
+\begin{DoxyCompactList}\small\item\em Botón para la opción 3. \end{DoxyCompactList}\item 
+\hyperlink{classboton_simple}{boton\+Simple} $\ast$ \hyperlink{classespacio_tarjetas_a4653cac995a8e25b99d45403b626bb70}{btn3}
+\begin{DoxyCompactList}\small\item\em Botón para la opción 4. \end{DoxyCompactList}\item 
+\hyperlink{classboton_simple}{boton\+Simple} $\ast$ \hyperlink{classespacio_tarjetas_aa306e2b163d2a22805517fb24a728212}{btn\+Nuevo}
+\begin{DoxyCompactList}\small\item\em Botón para un nuevo ejercicio. \end{DoxyCompactList}\item 
+bool \hyperlink{classespacio_tarjetas_a4c37d0072ed7e82f1133641d8cdae713}{correcto}
+\begin{DoxyCompactList}\small\item\em Indica si el usuario encontró la solución. \end{DoxyCompactList}\item 
+bool \hyperlink{classespacio_tarjetas_aec7ea4a5a0e9f386d8d256f2444ebfaf}{incorrecto}
+\begin{DoxyCompactList}\small\item\em Indica si el usuario escogió una respuesta incorrecta. \end{DoxyCompactList}\item 
+\hyperlink{classsqlite3_manager}{sqlite3\+Manager} $\ast$ \hyperlink{classespacio_tarjetas_ae26629329afda23bc6252054dcad92d3}{base\+Datos}
+\begin{DoxyCompactList}\small\item\em Instancia del administrador de la base de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Espacio educativo donde se identifican pictogramas con su definición en palabras. 
+
+El usuario tiene acceso a un estilo de marque con equis, en el cual se le muesta un pictograma y 4 palabra(s). Una de la las opciones es correcta. Cuando el usuario acierta, puede volver a intentar con otro pictograma distinto.
+
+Los símbolos pictográficos utilizados de A\+R\+A\+S\+A\+A\+C (\href{http://catedu.es/arasaac/}{\tt http\+://catedu.\+es/arasaac/}) son parte de una obra colectiva propiedad de la Diputación General de Aragón y han creados bajo licencia Creative Commons. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classespacio_tarjetas_a4fadd23e0a493467f5c28deecdbb975c}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\index{espacio\+Tarjetas@{espacio\+Tarjetas}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{espacio\+Tarjetas(espacio\+Base $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Tarjetas\+::espacio\+Tarjetas (
+\begin{DoxyParamCaption}
+\item[{{\bf espacio\+Base} $\ast$}]{esp\+Padre}
+\end{DoxyParamCaption}
+)}\label{classespacio_tarjetas_a4fadd23e0a493467f5c28deecdbb975c}
+
+
+Constructor de la clase. 
+
+\hypertarget{classespacio_tarjetas_a2b5ef7680cf2193c561814d90fcc1500}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!````~espacio\+Tarjetas@{$\sim$espacio\+Tarjetas}}
+\index{````~espacio\+Tarjetas@{$\sim$espacio\+Tarjetas}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{$\sim$espacio\+Tarjetas()}]{\setlength{\rightskip}{0pt plus 5cm}espacio\+Tarjetas\+::$\sim$espacio\+Tarjetas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classespacio_tarjetas_a2b5ef7680cf2193c561814d90fcc1500}
+
+
+Destructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classespacio_tarjetas_a14b6c40ed3154459f9b1ec511f176613}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!cargar\+Tarjeta@{cargar\+Tarjeta}}
+\index{cargar\+Tarjeta@{cargar\+Tarjeta}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{cargar\+Tarjeta()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Tarjetas\+::cargar\+Tarjeta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a14b6c40ed3154459f9b1ec511f176613}
+
+
+Carga un ejercicio en pantalla. 
+
+\hypertarget{classespacio_tarjetas_a53e047fce1e887a4dfc49ff31388867d}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!draw@{draw}}
+\index{draw@{draw}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Tarjetas\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_tarjetas_a53e047fce1e887a4dfc49ff31388867d}
+
+
+Controla las tareas gráficas de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a01b3e668211b6159784f79a3f5a32d95}{espacio\+Base}.
+
+\hypertarget{classespacio_tarjetas_a0dc8d9154c4de90daab303a4fab5fd90}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!setup@{setup}}
+\index{setup@{setup}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Tarjetas\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_tarjetas_a0dc8d9154c4de90daab303a4fab5fd90}
+
+
+Método inicial del ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
+
+\hypertarget{classespacio_tarjetas_a61d5cd1dcc3538b9eafe7a6ab7d6e6e5}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!update@{update}}
+\index{update@{update}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Tarjetas\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{float}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_tarjetas_a61d5cd1dcc3538b9eafe7a6ab7d6e6e5}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L. 
+
+
+
+Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+
+\hypertarget{classespacio_tarjetas_a826269ec11513bc1c471d9aa51288a47}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!validar\+Respuesta@{validar\+Respuesta}}
+\index{validar\+Respuesta@{validar\+Respuesta}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{validar\+Respuesta(boton\+Simple $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Tarjetas\+::validar\+Respuesta (
+\begin{DoxyParamCaption}
+\item[{{\bf boton\+Simple} $\ast$}]{btn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a826269ec11513bc1c471d9aa51288a47}
+
+
+Verifica si la respuesta elegida por el usuario es correcta. 
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classespacio_tarjetas_ae26629329afda23bc6252054dcad92d3}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!base\+Datos@{base\+Datos}}
+\index{base\+Datos@{base\+Datos}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{base\+Datos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sqlite3\+Manager}$\ast$ espacio\+Tarjetas\+::base\+Datos\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_ae26629329afda23bc6252054dcad92d3}
+
+
+Instancia del administrador de la base de datos. 
+
+\hypertarget{classespacio_tarjetas_a1b66f906dbd856b501412a42c50da0af}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!btn0@{btn0}}
+\index{btn0@{btn0}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{btn0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Simple}$\ast$ espacio\+Tarjetas\+::btn0\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a1b66f906dbd856b501412a42c50da0af}
+
+
+Botón para la opción 1. 
+
+\hypertarget{classespacio_tarjetas_a6f9729b868bcfef80cd3c71e22950425}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!btn1@{btn1}}
+\index{btn1@{btn1}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{btn1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Simple}$\ast$ espacio\+Tarjetas\+::btn1\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a6f9729b868bcfef80cd3c71e22950425}
+
+
+Botón para la opción 2. 
+
+\hypertarget{classespacio_tarjetas_ab0d28914026c02d7bd073d79e9c2f84e}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!btn2@{btn2}}
+\index{btn2@{btn2}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{btn2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Simple}$\ast$ espacio\+Tarjetas\+::btn2\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_ab0d28914026c02d7bd073d79e9c2f84e}
+
+
+Botón para la opción 3. 
+
+\hypertarget{classespacio_tarjetas_a4653cac995a8e25b99d45403b626bb70}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!btn3@{btn3}}
+\index{btn3@{btn3}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{btn3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Simple}$\ast$ espacio\+Tarjetas\+::btn3\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a4653cac995a8e25b99d45403b626bb70}
+
+
+Botón para la opción 4. 
+
+\hypertarget{classespacio_tarjetas_afc558908c2d0b48e3d7917722ff05a4d}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!btn\+Atras@{btn\+Atras}}
+\index{btn\+Atras@{btn\+Atras}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{btn\+Atras}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Imagen}$\ast$ espacio\+Tarjetas\+::btn\+Atras\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_afc558908c2d0b48e3d7917722ff05a4d}
+
+
+Botón para ir al menú de la categoría. 
+
+\hypertarget{classespacio_tarjetas_aa306e2b163d2a22805517fb24a728212}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!btn\+Nuevo@{btn\+Nuevo}}
+\index{btn\+Nuevo@{btn\+Nuevo}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{btn\+Nuevo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Simple}$\ast$ espacio\+Tarjetas\+::btn\+Nuevo\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_aa306e2b163d2a22805517fb24a728212}
+
+
+Botón para un nuevo ejercicio. 
+
+\hypertarget{classespacio_tarjetas_a4c37d0072ed7e82f1133641d8cdae713}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!correcto@{correcto}}
+\index{correcto@{correcto}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{correcto}]{\setlength{\rightskip}{0pt plus 5cm}bool espacio\+Tarjetas\+::correcto\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a4c37d0072ed7e82f1133641d8cdae713}
+
+
+Indica si el usuario encontró la solución. 
+
+\hypertarget{classespacio_tarjetas_a0ae5d7269e77bc44651ca7c8f3435ef9}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!fuente\+Resp@{fuente\+Resp}}
+\index{fuente\+Resp@{fuente\+Resp}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{fuente\+Resp}]{\setlength{\rightskip}{0pt plus 5cm}of\+True\+Type\+Font espacio\+Tarjetas\+::fuente\+Resp\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a0ae5d7269e77bc44651ca7c8f3435ef9}
+
+
+Tipo de fuente 1. 
+
+\hypertarget{classespacio_tarjetas_a69c647527325428e7cb3e0c40d8f6bea}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!fuente\+Resp2@{fuente\+Resp2}}
+\index{fuente\+Resp2@{fuente\+Resp2}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{fuente\+Resp2}]{\setlength{\rightskip}{0pt plus 5cm}of\+True\+Type\+Font espacio\+Tarjetas\+::fuente\+Resp2\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a69c647527325428e7cb3e0c40d8f6bea}
+
+
+Tipo de fuente 2. 
+
+\hypertarget{classespacio_tarjetas_abec283907dd3683168265677e9df9659}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!fuente\+Resp3@{fuente\+Resp3}}
+\index{fuente\+Resp3@{fuente\+Resp3}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{fuente\+Resp3}]{\setlength{\rightskip}{0pt plus 5cm}of\+True\+Type\+Font espacio\+Tarjetas\+::fuente\+Resp3\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_abec283907dd3683168265677e9df9659}
+
+
+Tipo de fuente 3. 
+
+\hypertarget{classespacio_tarjetas_afa80c75849eae23d80adb0d66ffbd540}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!img@{img}}
+\index{img@{img}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{img}]{\setlength{\rightskip}{0pt plus 5cm}of\+Image espacio\+Tarjetas\+::img\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_afa80c75849eae23d80adb0d66ffbd540}
+
+
+Pictograma activo que se le muestra al usuario. 
+
+\hypertarget{classespacio_tarjetas_aec7ea4a5a0e9f386d8d256f2444ebfaf}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!incorrecto@{incorrecto}}
+\index{incorrecto@{incorrecto}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{incorrecto}]{\setlength{\rightskip}{0pt plus 5cm}bool espacio\+Tarjetas\+::incorrecto\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_aec7ea4a5a0e9f386d8d256f2444ebfaf}
+
+
+Indica si el usuario escogió una respuesta incorrecta. 
+
+\hypertarget{classespacio_tarjetas_a3f296834b82b6e44ebc15999d949b547}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!resp@{resp}}
+\index{resp@{resp}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{resp}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ espacio\+Tarjetas\+::resp\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a3f296834b82b6e44ebc15999d949b547}
+
+
+Respuestas para el pictograma activo. 
+
+\hypertarget{classespacio_tarjetas_a4f544a79ef84de1cd86c659fad6c762c}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!tarjetas@{tarjetas}}
+\index{tarjetas@{tarjetas}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{tarjetas}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$string$>$ $>$ espacio\+Tarjetas\+::tarjetas\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a4f544a79ef84de1cd86c659fad6c762c}
+
+
+Lista con todos los pictogramas posibles. 
+
+Esta lista se carga por medio de la base de datos sqlite 
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_tarjetas_8h}{espacio\+Tarjetas.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/espacios/\hyperlink{espacio_tarjetas_8cpp}{espacio\+Tarjetas.\+cpp}\end{DoxyCompactItemize}

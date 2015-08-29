@@ -1,0 +1,232 @@
+\hypertarget{classcomponente_base}{}\section{Referencia de la Clase componente\+Base}
+\label{classcomponente_base}\index{componente\+Base@{componente\+Base}}
+
+
+Esquema base de los componentes de los espacios.  
+
+
+
+
+{\ttfamily \#include $<$componente\+Base.\+h$>$}
+
+Diagrama de herencias de componente\+Base\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classcomponente_base}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcomponente_base_a98286225e2be6f2080fe7d409e077a96}{componente\+Base} (int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classcomponente_base_af9d40a15747b13d6cf6ac2b7b658a9d4}{set\+Tam} (int, int)
+\begin{DoxyCompactList}\small\item\em Cambia el tamaño del componente. \end{DoxyCompactList}\item 
+void \hyperlink{classcomponente_base_a3797a3ebadf03c8374d9c7a9460bc645}{set\+Pos} (int, int)
+\begin{DoxyCompactList}\small\item\em Reposiciona el componente. \end{DoxyCompactList}\item 
+bool \hyperlink{classcomponente_base_a288dc05f1eb5748ba3a24ad651623d49}{update} (float, float, float, float, bool)
+\begin{DoxyCompactList}\small\item\em Actualiza el componente. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcomponente_base_ac6faec0698776f8bfe0e817b9927c0f9}{draw} ()=0
+\begin{DoxyCompactList}\small\item\em Dibuja el componente en pantalla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classcomponente_base_a2ca6628fb724d45687646a364ad68888}{mouse\+En\+Cuadro} (float, float)
+\begin{DoxyCompactList}\small\item\em Indica si las coordenadas dadas están dentro del componente. \end{DoxyCompactList}\item 
+long long int \hyperlink{classcomponente_base_a72b7c9497aa4af988a91d16446d26c34}{get\+Millisec} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el tiempo actual en milisegundos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classcomponente_base_ab03e8ff7fb596e34738ba00d455e37f5}{le\+Queda\+Tiempo}
+\begin{DoxyCompactList}\small\item\em Indica si el usuario está fijando su atención y no ha terminado el tiempo máximo. \end{DoxyCompactList}\item 
+bool \hyperlink{classcomponente_base_a3cd688b2120c9545e25b490911e66717}{mouse\+Dentro}
+\begin{DoxyCompactList}\small\item\em Indice si el mouse está dentro del componente. \end{DoxyCompactList}\item 
+long long int \hyperlink{classcomponente_base_a6c1aa628629954f831209628e3dfcb2b}{tiempo}
+\begin{DoxyCompactList}\small\item\em Tiempo actual cuando el usuario fija su atención en el componente. \end{DoxyCompactList}\item 
+int \hyperlink{classcomponente_base_a0edb9230fa502947fd80006463f9ce25}{tiempo\+Max}
+\begin{DoxyCompactList}\small\item\em Tiempo máximo para activar el componente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Esquema base de los componentes de los espacios. 
+
+Los espacios están orientados al uso de botones con texto y/o imágenes para la interacción con el usuario. Esta clase hereda de of\+Rectangle para tener instancias de elementos rectangulares. Si se deseara un componente con otra forma geométrica es recomendable quitarle la herencia a esta clase y hacer una clase base para los componentes rectangulares. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classcomponente_base_a98286225e2be6f2080fe7d409e077a96}{}\index{componente\+Base@{componente\+Base}!componente\+Base@{componente\+Base}}
+\index{componente\+Base@{componente\+Base}!componente\+Base@{componente\+Base}}
+\subsubsection[{componente\+Base(int, int, int, int)}]{\setlength{\rightskip}{0pt plus 5cm}componente\+Base\+::componente\+Base (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+x, }
+\item[{int}]{\+\_\+y, }
+\item[{int}]{\+\_\+w, }
+\item[{int}]{\+\_\+h}
+\end{DoxyParamCaption}
+)}\label{classcomponente_base_a98286225e2be6f2080fe7d409e077a96}
+
+
+Constructor de la clase. 
+
+Todas las inicializaciones se realizan en este método. Por simpleza se omite la implementación de los métodos setup()
+
+
+\begin{DoxyParams}{Parámetros}
+{\em \+\_\+x} & localización en el eje x \\
+\hline
+{\em \+\_\+y} & localización en el eye y \\
+\hline
+{\em \+\_\+w} & largo del componente \\
+\hline
+{\em \+\_\+h} & ancho del componente \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classcomponente_base_ac6faec0698776f8bfe0e817b9927c0f9}{}\index{componente\+Base@{componente\+Base}!draw@{draw}}
+\index{draw@{draw}!componente\+Base@{componente\+Base}}
+\subsubsection[{draw()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void componente\+Base\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classcomponente_base_ac6faec0698776f8bfe0e817b9927c0f9}
+
+
+Dibuja el componente en pantalla. 
+
+
+
+Implementado en \hyperlink{classboton_imagen_aa2f66743b229d99cc06b36f5ad16450d}{boton\+Imagen}, \hyperlink{classboton_simple_a64baaac5439d0ad0d2ec1a11e23a8ad2}{boton\+Simple} y \hyperlink{classcaja_texto_a5bc02d7f55e12fd32715e4509853a558}{caja\+Texto}.
+
+\hypertarget{classcomponente_base_a72b7c9497aa4af988a91d16446d26c34}{}\index{componente\+Base@{componente\+Base}!get\+Millisec@{get\+Millisec}}
+\index{get\+Millisec@{get\+Millisec}!componente\+Base@{componente\+Base}}
+\subsubsection[{get\+Millisec()}]{\setlength{\rightskip}{0pt plus 5cm}long long int componente\+Base\+::get\+Millisec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_a72b7c9497aa4af988a91d16446d26c34}
+
+
+Devuelve el tiempo actual en milisegundos. 
+
+\hypertarget{classcomponente_base_a2ca6628fb724d45687646a364ad68888}{}\index{componente\+Base@{componente\+Base}!mouse\+En\+Cuadro@{mouse\+En\+Cuadro}}
+\index{mouse\+En\+Cuadro@{mouse\+En\+Cuadro}!componente\+Base@{componente\+Base}}
+\subsubsection[{mouse\+En\+Cuadro(float, float)}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::mouse\+En\+Cuadro (
+\begin{DoxyParamCaption}
+\item[{float}]{x\+M, }
+\item[{float}]{y\+M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_a2ca6628fb724d45687646a364ad68888}
+
+
+Indica si las coordenadas dadas están dentro del componente. 
+
+\hypertarget{classcomponente_base_a3797a3ebadf03c8374d9c7a9460bc645}{}\index{componente\+Base@{componente\+Base}!set\+Pos@{set\+Pos}}
+\index{set\+Pos@{set\+Pos}!componente\+Base@{componente\+Base}}
+\subsubsection[{set\+Pos(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}void componente\+Base\+::set\+Pos (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+x, }
+\item[{int}]{\+\_\+y}
+\end{DoxyParamCaption}
+)}\label{classcomponente_base_a3797a3ebadf03c8374d9c7a9460bc645}
+
+
+Reposiciona el componente. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em \+\_\+x} & localización en el eje x \\
+\hline
+{\em \+\_\+y} & localización en el eye y \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcomponente_base_af9d40a15747b13d6cf6ac2b7b658a9d4}{}\index{componente\+Base@{componente\+Base}!set\+Tam@{set\+Tam}}
+\index{set\+Tam@{set\+Tam}!componente\+Base@{componente\+Base}}
+\subsubsection[{set\+Tam(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}void componente\+Base\+::set\+Tam (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+w, }
+\item[{int}]{\+\_\+h}
+\end{DoxyParamCaption}
+)}\label{classcomponente_base_af9d40a15747b13d6cf6ac2b7b658a9d4}
+
+
+Cambia el tamaño del componente. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em \+\_\+w} & largo del componente \\
+\hline
+{\em \+\_\+h} & ancho del componente \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcomponente_base_a288dc05f1eb5748ba3a24ad651623d49}{}\index{componente\+Base@{componente\+Base}!update@{update}}
+\index{update@{update}!componente\+Base@{componente\+Base}}
+\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{x\+In, }
+\item[{float}]{y\+In, }
+\item[{float}]{x\+Lea, }
+\item[{float}]{y\+Lea, }
+\item[{bool}]{clic}
+\end{DoxyParamCaption}
+)}\label{classcomponente_base_a288dc05f1eb5748ba3a24ad651623d49}
+
+
+Actualiza el componente. 
+
+Valida la interacción del usuario con el componente. En caso de reconocimiento visual se usa un temporizador. Cuando el usuario fija su atención en el componente corre un temporizador, si el usuario mantiene dicha atención por ese tiempo se activa el componente. En caso de reconocimiento de gestos se utilizan la posición de entrada y un boolean que indica si el usuario hizo clic.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em x\+In} & coordenada x de la entrada visual \\
+\hline
+{\em y\+In} & coordenada y de la entrada visual \\
+\hline
+{\em x\+Lea} & coordenada x del componente de gestos \\
+\hline
+{\em y\+Lea} & coordenada y del componente de gestos \\
+\hline
+{\em clic} & indica si el usuario ha hecho el gesto para el clic\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el usuario hizo clic sobre el componente 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classcomponente_base_ab03e8ff7fb596e34738ba00d455e37f5}{}\index{componente\+Base@{componente\+Base}!le\+Queda\+Tiempo@{le\+Queda\+Tiempo}}
+\index{le\+Queda\+Tiempo@{le\+Queda\+Tiempo}!componente\+Base@{componente\+Base}}
+\subsubsection[{le\+Queda\+Tiempo}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::le\+Queda\+Tiempo\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_ab03e8ff7fb596e34738ba00d455e37f5}
+
+
+Indica si el usuario está fijando su atención y no ha terminado el tiempo máximo. 
+
+\hypertarget{classcomponente_base_a3cd688b2120c9545e25b490911e66717}{}\index{componente\+Base@{componente\+Base}!mouse\+Dentro@{mouse\+Dentro}}
+\index{mouse\+Dentro@{mouse\+Dentro}!componente\+Base@{componente\+Base}}
+\subsubsection[{mouse\+Dentro}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::mouse\+Dentro\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_a3cd688b2120c9545e25b490911e66717}
+
+
+Indice si el mouse está dentro del componente. 
+
+\hypertarget{classcomponente_base_a6c1aa628629954f831209628e3dfcb2b}{}\index{componente\+Base@{componente\+Base}!tiempo@{tiempo}}
+\index{tiempo@{tiempo}!componente\+Base@{componente\+Base}}
+\subsubsection[{tiempo}]{\setlength{\rightskip}{0pt plus 5cm}long long int componente\+Base\+::tiempo\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_a6c1aa628629954f831209628e3dfcb2b}
+
+
+Tiempo actual cuando el usuario fija su atención en el componente. 
+
+\hypertarget{classcomponente_base_a0edb9230fa502947fd80006463f9ce25}{}\index{componente\+Base@{componente\+Base}!tiempo\+Max@{tiempo\+Max}}
+\index{tiempo\+Max@{tiempo\+Max}!componente\+Base@{componente\+Base}}
+\subsubsection[{tiempo\+Max}]{\setlength{\rightskip}{0pt plus 5cm}int componente\+Base\+::tiempo\+Max\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_a0edb9230fa502947fd80006463f9ce25}
+
+
+Tiempo máximo para activar el componente. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/componentes/\hyperlink{componente_base_8h}{componente\+Base.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/componentes/\hyperlink{componente_base_8cpp}{componente\+Base.\+cpp}\end{DoxyCompactItemize}

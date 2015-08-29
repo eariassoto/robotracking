@@ -1,0 +1,308 @@
+\hypertarget{classof_app}{}\section{Referencia de la Clase of\+App}
+\label{classof_app}\index{of\+App@{of\+App}}
+
+
+Clase base que coordina la interacción entre el ciclo de Open\+G\+L y la aplicación como tal.  
+
+
+
+
+{\ttfamily \#include $<$of\+App.\+h$>$}
+
+Diagrama de herencias de of\+App\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classof_app}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classof_app_a8e51b68c569cf4839163fd7470d50260}{of\+App} (int, int)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classof_app_a46d5e370034c47f5fc1a530bcb331c27}{$\sim$of\+App} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_af68eaa1366244f7a541cd08e02199c12}{setup} ()
+\begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_afef41ea4aee5a22ea530afba33ae7a7b}{update} ()
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_a75dd45437b9e317db73d8daef1ad49f8}{draw} ()
+\begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_a957d3197364bbac8e67eaa4f15b28ad3}{key\+Pressed} (int key)
+\begin{DoxyCompactList}\small\item\em Se activa cada vez que el usuario presiona una tecla. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_aa1503a87453bcfdd395fe4acca5d91a0}{key\+Released} (int key)
+\begin{DoxyCompactList}\small\item\em Se activa cada vez que el usuario suelta una tecla. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_a158b41a606310db4633fdb817b21047c}{mouse\+Moved} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Se activa cuando el mouse se mueve de posición. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_a1ec53d1be799dc275806ff6c6548cd83}{mouse\+Dragged} (int x, int y, int button)
+\begin{DoxyCompactList}\small\item\em Se activa cuando el usuario arrastra el mouse dejando cierto botón apretado. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_a2c2ea9c160231e55424dfd98466ef27d}{mouse\+Pressed} (int x, int y, int button)
+\begin{DoxyCompactList}\small\item\em Se activa cuando el usuario presiona un botón del mouse. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_aa3131f1554fc49eaa9ee0f284e48129b}{mouse\+Released} (int x, int y, int button)
+\begin{DoxyCompactList}\small\item\em Se activa cuando el usuario suelta un botón del mouse. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_ae4dc1ec1513dcbe48bc78a5e4c3fac0f}{window\+Resized} (int w, int h)
+\begin{DoxyCompactList}\small\item\em Se activa cuando la ventana cambia de tamaño. \end{DoxyCompactList}\item 
+void \hyperlink{classof_app_aada5a79556321801567752a0e5a69bda}{drag\+Event} (of\+Drag\+Info drag\+Info)
+\item 
+void \hyperlink{classof_app_a885672a72340a5e998af1d16718dc766}{got\+Message} (of\+Message msg)
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classof_app_ac06e7f62949f8d76a68ea3020ff21da3}{input\+Mode}
+\begin{DoxyCompactList}\small\item\em Define el modo actual de entrada (visión o gestos) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Controller $\ast$ \hyperlink{classof_app_aaca01b1fe9aa8a406ca09a5c4ede5f99}{controller}
+\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classof_app_a1e3e4e9da97b2a839dd1255c65f73453}{espacio\+Activo}
+\begin{DoxyCompactList}\small\item\em Instancia del espacio activo en la pantalla. \end{DoxyCompactList}\item 
+\hyperlink{classmenu_principal}{menu\+Principal} $\ast$ \hyperlink{classof_app_a9ba8bf05bd3a0932461179f47759b83d}{m\+Principal}
+\begin{DoxyCompactList}\small\item\em Instancia del menú principal de la aplicación. \end{DoxyCompactList}\item 
+int \hyperlink{classof_app_a07b648bd42ef7fda31bf208ccd18d5f8}{tam\+X}
+\item 
+int \hyperlink{classof_app_ac1e9d00b0014a47490688c3b298a67c9}{tam\+Y}
+\item 
+int \hyperlink{classof_app_ae5beab7e06a1bedf3a988264d501984c}{leap\+X}
+\item 
+int \hyperlink{classof_app_a96ce450adbe65fbf40bb099435d7b27d}{leap\+Y}
+\item 
+bool \hyperlink{classof_app_acd3a56a2f96cc74a240b84649179e79f}{hand\+Pressed}
+\item 
+Frame \hyperlink{classof_app_a49ee00759b6afa60298b89befa53664f}{last\+Frame}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase base que coordina la interacción entre el ciclo de Open\+G\+L y la aplicación como tal. 
+
+Esta clase se maneja por medio de los eventos establecidos por Open\+G\+L. Cualquier espacio de la aplicacion debe tener al menos implementado los métodos \hyperlink{classof_app_af68eaa1366244f7a541cd08e02199c12}{setup()}, \hyperlink{classof_app_afef41ea4aee5a22ea530afba33ae7a7b}{update()} y \hyperlink{classof_app_a75dd45437b9e317db73d8daef1ad49f8}{draw()} para que puedan ser inicializados y dibujados en pantalla. Las demás funciones de Open\+G\+L se definen pero se dejan vacías. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classof_app_a8e51b68c569cf4839163fd7470d50260}{}\index{of\+App@{of\+App}!of\+App@{of\+App}}
+\index{of\+App@{of\+App}!of\+App@{of\+App}}
+\subsubsection[{of\+App(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}of\+App\+::of\+App (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{classof_app_a8e51b68c569cf4839163fd7470d50260}
+
+
+Constructor de la clase. 
+
+Por defecto, inicia la aplicación en modo visión, sin embargo puede definirse un parámetro de constructor para definir el modo desde el main o leerlo desde un archivo de configuración.
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em x} & tamaño del largo de la ventana de la aplicación \\
+\hline
+\mbox{\tt in}  & {\em y} & tamaño del ancho de la ventana de la apliación \\
+\hline
+\end{DoxyParams}
+\hypertarget{classof_app_a46d5e370034c47f5fc1a530bcb331c27}{}\index{of\+App@{of\+App}!````~of\+App@{$\sim$of\+App}}
+\index{````~of\+App@{$\sim$of\+App}!of\+App@{of\+App}}
+\subsubsection[{$\sim$of\+App()}]{\setlength{\rightskip}{0pt plus 5cm}of\+App\+::$\sim$of\+App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classof_app_a46d5e370034c47f5fc1a530bcb331c27}
+
+
+Destructor de la clase. 
+
+Borra a m\+Principal 
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classof_app_aada5a79556321801567752a0e5a69bda}{}\index{of\+App@{of\+App}!drag\+Event@{drag\+Event}}
+\index{drag\+Event@{drag\+Event}!of\+App@{of\+App}}
+\subsubsection[{drag\+Event(of\+Drag\+Info drag\+Info)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::drag\+Event (
+\begin{DoxyParamCaption}
+\item[{of\+Drag\+Info}]{drag\+Info}
+\end{DoxyParamCaption}
+)}\label{classof_app_aada5a79556321801567752a0e5a69bda}
+\hypertarget{classof_app_a75dd45437b9e317db73d8daef1ad49f8}{}\index{of\+App@{of\+App}!draw@{draw}}
+\index{draw@{draw}!of\+App@{of\+App}}
+\subsubsection[{draw()}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classof_app_a75dd45437b9e317db73d8daef1ad49f8}
+
+
+Controla las tareas gráficas de cada ciclo de Open\+G\+L. 
+
+Aquí se realizan todas la tareas de dibujar elementos en pantalla. Este método dibuja la representación de la entrada (ya sea por pupilas o por gestos). Además se encarga de llamar al \hyperlink{classof_app_a75dd45437b9e317db73d8daef1ad49f8}{draw()} del espacio activo.
+
+La forma en la que se dibuja en la pantalla es por orden de llamados. Las cosas que se llamen a dibujar de primero van a quedar \char`\"{}al fondo\char`\"{}. \hypertarget{classof_app_a885672a72340a5e998af1d16718dc766}{}\index{of\+App@{of\+App}!got\+Message@{got\+Message}}
+\index{got\+Message@{got\+Message}!of\+App@{of\+App}}
+\subsubsection[{got\+Message(of\+Message msg)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::got\+Message (
+\begin{DoxyParamCaption}
+\item[{of\+Message}]{msg}
+\end{DoxyParamCaption}
+)}\label{classof_app_a885672a72340a5e998af1d16718dc766}
+\hypertarget{classof_app_a957d3197364bbac8e67eaa4f15b28ad3}{}\index{of\+App@{of\+App}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!of\+App@{of\+App}}
+\subsubsection[{key\+Pressed(int key)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::key\+Pressed (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)}\label{classof_app_a957d3197364bbac8e67eaa4f15b28ad3}
+
+
+Se activa cada vez que el usuario presiona una tecla. 
+
+\hypertarget{classof_app_aa1503a87453bcfdd395fe4acca5d91a0}{}\index{of\+App@{of\+App}!key\+Released@{key\+Released}}
+\index{key\+Released@{key\+Released}!of\+App@{of\+App}}
+\subsubsection[{key\+Released(int key)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::key\+Released (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)}\label{classof_app_aa1503a87453bcfdd395fe4acca5d91a0}
+
+
+Se activa cada vez que el usuario suelta una tecla. 
+
+\hypertarget{classof_app_a1ec53d1be799dc275806ff6c6548cd83}{}\index{of\+App@{of\+App}!mouse\+Dragged@{mouse\+Dragged}}
+\index{mouse\+Dragged@{mouse\+Dragged}!of\+App@{of\+App}}
+\subsubsection[{mouse\+Dragged(int x, int y, int button)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::mouse\+Dragged (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{button}
+\end{DoxyParamCaption}
+)}\label{classof_app_a1ec53d1be799dc275806ff6c6548cd83}
+
+
+Se activa cuando el usuario arrastra el mouse dejando cierto botón apretado. 
+
+\hypertarget{classof_app_a158b41a606310db4633fdb817b21047c}{}\index{of\+App@{of\+App}!mouse\+Moved@{mouse\+Moved}}
+\index{mouse\+Moved@{mouse\+Moved}!of\+App@{of\+App}}
+\subsubsection[{mouse\+Moved(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::mouse\+Moved (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{classof_app_a158b41a606310db4633fdb817b21047c}
+
+
+Se activa cuando el mouse se mueve de posición. 
+
+\hypertarget{classof_app_a2c2ea9c160231e55424dfd98466ef27d}{}\index{of\+App@{of\+App}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!of\+App@{of\+App}}
+\subsubsection[{mouse\+Pressed(int x, int y, int button)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::mouse\+Pressed (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{button}
+\end{DoxyParamCaption}
+)}\label{classof_app_a2c2ea9c160231e55424dfd98466ef27d}
+
+
+Se activa cuando el usuario presiona un botón del mouse. 
+
+\hypertarget{classof_app_aa3131f1554fc49eaa9ee0f284e48129b}{}\index{of\+App@{of\+App}!mouse\+Released@{mouse\+Released}}
+\index{mouse\+Released@{mouse\+Released}!of\+App@{of\+App}}
+\subsubsection[{mouse\+Released(int x, int y, int button)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::mouse\+Released (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{button}
+\end{DoxyParamCaption}
+)}\label{classof_app_aa3131f1554fc49eaa9ee0f284e48129b}
+
+
+Se activa cuando el usuario suelta un botón del mouse. 
+
+\hypertarget{classof_app_af68eaa1366244f7a541cd08e02199c12}{}\index{of\+App@{of\+App}!setup@{setup}}
+\index{setup@{setup}!of\+App@{of\+App}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classof_app_af68eaa1366244f7a541cd08e02199c12}
+
+
+Método inicial del ciclo de Open\+G\+L. 
+
+Se pretende que se inicialize todo lo necesario para empezar a dibujar los componentes necesarios de la aplicación.
+
+No se deben confundir tareas de constructor puesto que acá solo se inicializa lo referente a tareas gráficas. \hypertarget{classof_app_afef41ea4aee5a22ea530afba33ae7a7b}{}\index{of\+App@{of\+App}!update@{update}}
+\index{update@{update}!of\+App@{of\+App}}
+\subsubsection[{update()}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classof_app_afef41ea4aee5a22ea530afba33ae7a7b}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L. 
+
+En cada ciclo de Open\+G\+L este método se llama antes de \hyperlink{classof_app_a75dd45437b9e317db73d8daef1ad49f8}{draw()} para actualizar las tareas lógicas de la interfaz gráfica.
+
+Se puede ver esta instancia como un método padre porque invoca al update del espacio que está activo al momento de ejecución. \hypertarget{classof_app_ae4dc1ec1513dcbe48bc78a5e4c3fac0f}{}\index{of\+App@{of\+App}!window\+Resized@{window\+Resized}}
+\index{window\+Resized@{window\+Resized}!of\+App@{of\+App}}
+\subsubsection[{window\+Resized(int w, int h)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::window\+Resized (
+\begin{DoxyParamCaption}
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}\label{classof_app_ae4dc1ec1513dcbe48bc78a5e4c3fac0f}
+
+
+Se activa cuando la ventana cambia de tamaño. 
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classof_app_aaca01b1fe9aa8a406ca09a5c4ede5f99}{}\index{of\+App@{of\+App}!controller@{controller}}
+\index{controller@{controller}!of\+App@{of\+App}}
+\subsubsection[{controller}]{\setlength{\rightskip}{0pt plus 5cm}Controller$\ast$ of\+App\+::controller\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_aaca01b1fe9aa8a406ca09a5c4ede5f99}
+\hypertarget{classof_app_a1e3e4e9da97b2a839dd1255c65f73453}{}\index{of\+App@{of\+App}!espacio\+Activo@{espacio\+Activo}}
+\index{espacio\+Activo@{espacio\+Activo}!of\+App@{of\+App}}
+\subsubsection[{espacio\+Activo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base}$\ast$ of\+App\+::espacio\+Activo\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a1e3e4e9da97b2a839dd1255c65f73453}
+
+
+Instancia del espacio activo en la pantalla. 
+
+Este puntero se mueve dinámicamente. Si un espacio necesita cambiar a otro solo necesita modificar el puntero hacia el espacio que se quiere activar y el ciclo de Open\+G\+L se encarga de invocar a sus debidos métodos.
+
+Si el puntero llega alguna vez a ser 0 representa la salida del programa. \hypertarget{classof_app_acd3a56a2f96cc74a240b84649179e79f}{}\index{of\+App@{of\+App}!hand\+Pressed@{hand\+Pressed}}
+\index{hand\+Pressed@{hand\+Pressed}!of\+App@{of\+App}}
+\subsubsection[{hand\+Pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool of\+App\+::hand\+Pressed\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_acd3a56a2f96cc74a240b84649179e79f}
+\hypertarget{classof_app_ac06e7f62949f8d76a68ea3020ff21da3}{}\index{of\+App@{of\+App}!input\+Mode@{input\+Mode}}
+\index{input\+Mode@{input\+Mode}!of\+App@{of\+App}}
+\subsubsection[{input\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool of\+App\+::input\+Mode}\label{classof_app_ac06e7f62949f8d76a68ea3020ff21da3}
+
+
+Define el modo actual de entrada (visión o gestos) 
+
+\hypertarget{classof_app_a49ee00759b6afa60298b89befa53664f}{}\index{of\+App@{of\+App}!last\+Frame@{last\+Frame}}
+\index{last\+Frame@{last\+Frame}!of\+App@{of\+App}}
+\subsubsection[{last\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}Frame of\+App\+::last\+Frame\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a49ee00759b6afa60298b89befa53664f}
+\hypertarget{classof_app_ae5beab7e06a1bedf3a988264d501984c}{}\index{of\+App@{of\+App}!leap\+X@{leap\+X}}
+\index{leap\+X@{leap\+X}!of\+App@{of\+App}}
+\subsubsection[{leap\+X}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::leap\+X\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_ae5beab7e06a1bedf3a988264d501984c}
+\hypertarget{classof_app_a96ce450adbe65fbf40bb099435d7b27d}{}\index{of\+App@{of\+App}!leap\+Y@{leap\+Y}}
+\index{leap\+Y@{leap\+Y}!of\+App@{of\+App}}
+\subsubsection[{leap\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::leap\+Y\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a96ce450adbe65fbf40bb099435d7b27d}
+\hypertarget{classof_app_a9ba8bf05bd3a0932461179f47759b83d}{}\index{of\+App@{of\+App}!m\+Principal@{m\+Principal}}
+\index{m\+Principal@{m\+Principal}!of\+App@{of\+App}}
+\subsubsection[{m\+Principal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf menu\+Principal}$\ast$ of\+App\+::m\+Principal\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a9ba8bf05bd3a0932461179f47759b83d}
+
+
+Instancia del menú principal de la aplicación. 
+
+\hypertarget{classof_app_a07b648bd42ef7fda31bf208ccd18d5f8}{}\index{of\+App@{of\+App}!tam\+X@{tam\+X}}
+\index{tam\+X@{tam\+X}!of\+App@{of\+App}}
+\subsubsection[{tam\+X}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::tam\+X\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a07b648bd42ef7fda31bf208ccd18d5f8}
+\hypertarget{classof_app_ac1e9d00b0014a47490688c3b298a67c9}{}\index{of\+App@{of\+App}!tam\+Y@{tam\+Y}}
+\index{tam\+Y@{tam\+Y}!of\+App@{of\+App}}
+\subsubsection[{tam\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::tam\+Y\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_ac1e9d00b0014a47490688c3b298a67c9}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/\hyperlink{of_app_8h}{of\+App.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/\hyperlink{of_app_8cpp}{of\+App.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,144 @@
+\hypertarget{classmenu_comunicacion}{}\section{Referencia de la Clase menu\+Comunicacion}
+\label{classmenu_comunicacion}\index{menu\+Comunicacion@{menu\+Comunicacion}}
+
+
+Menú de la categoría comunicación.  
+
+
+
+
+{\ttfamily \#include $<$menu\+Comunicacion.\+h$>$}
+
+Diagrama de herencias de menu\+Comunicacion\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmenu_comunicacion}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmenu_comunicacion_a9a96fdc1109e1b41e4928f35833cd445}{menu\+Comunicacion} (\hyperlink{classespacio_base}{espacio\+Base} $\ast$m\+Padre)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classmenu_comunicacion_a16b316cb60f2a95ae40bdc1a7fe26777}{$\sim$menu\+Comunicacion} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classmenu_comunicacion_a9e42e30977954e20c304261a9f1be5e1}{setup} ()
+\begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_comunicacion_a7386759ca2897f5ce031bf4c166fa8a1}{eventos} (int)
+\begin{DoxyCompactList}\small\item\em Maneja los eventos de los botones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classespacio_teclado}{espacio\+Teclado} $\ast$ \hyperlink{classmenu_comunicacion_a01b499ef3e349868508abfd4f856bbea}{esp\+Teclado}
+\begin{DoxyCompactList}\small\item\em Instancia del espacio teclado. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_pictograma}{espacio\+Pictograma} $\ast$ \hyperlink{classmenu_comunicacion_ac00c26aae43f331167e102e2b6d7b86c}{esp\+Pictograma}
+\begin{DoxyCompactList}\small\item\em Instancia del espacio pictogramas. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_si_no}{espacio\+Si\+No} $\ast$ \hyperlink{classmenu_comunicacion_ab9fc64713344f895347473d97f555a8e}{esp\+Si\+No}
+\begin{DoxyCompactList}\small\item\em Instancia del espacio si/no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+\subsection{Descripción detallada}
+Menú de la categoría comunicación. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classmenu_comunicacion_a9a96fdc1109e1b41e4928f35833cd445}{}\index{menu\+Comunicacion@{menu\+Comunicacion}!menu\+Comunicacion@{menu\+Comunicacion}}
+\index{menu\+Comunicacion@{menu\+Comunicacion}!menu\+Comunicacion@{menu\+Comunicacion}}
+\subsubsection[{menu\+Comunicacion(espacio\+Base $\ast$m\+Padre)}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Comunicacion\+::menu\+Comunicacion (
+\begin{DoxyParamCaption}
+\item[{{\bf espacio\+Base} $\ast$}]{m\+Padre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmenu_comunicacion_a9a96fdc1109e1b41e4928f35833cd445}
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em m\+Padre} & puntero al menú principal \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmenu_comunicacion_a16b316cb60f2a95ae40bdc1a7fe26777}{}\index{menu\+Comunicacion@{menu\+Comunicacion}!````~menu\+Comunicacion@{$\sim$menu\+Comunicacion}}
+\index{````~menu\+Comunicacion@{$\sim$menu\+Comunicacion}!menu\+Comunicacion@{menu\+Comunicacion}}
+\subsubsection[{$\sim$menu\+Comunicacion()}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Comunicacion\+::$\sim$menu\+Comunicacion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmenu_comunicacion_a16b316cb60f2a95ae40bdc1a7fe26777}
+
+
+Destructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classmenu_comunicacion_a7386759ca2897f5ce031bf4c166fa8a1}{}\index{menu\+Comunicacion@{menu\+Comunicacion}!eventos@{eventos}}
+\index{eventos@{eventos}!menu\+Comunicacion@{menu\+Comunicacion}}
+\subsubsection[{eventos(int)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Comunicacion\+::eventos (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\label{classmenu_comunicacion_a7386759ca2897f5ce031bf4c166fa8a1}
+
+
+Maneja los eventos de los botones. 
+
+Cada menú tiene una cantidad determinada de botones. Para cada uno de ellos se implementa un evento que se dispara cuando el usuario hace clic
+
+
+\begin{DoxyParams}{Parámetros}
+{\em index} & Indice del boton en la lista btn \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{classmenu_base_a5a88a45efd3bc47b4731fb21749a97d5}{menu\+Base}.
+
+\hypertarget{classmenu_comunicacion_a9e42e30977954e20c304261a9f1be5e1}{}\index{menu\+Comunicacion@{menu\+Comunicacion}!setup@{setup}}
+\index{setup@{setup}!menu\+Comunicacion@{menu\+Comunicacion}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void menu\+Comunicacion\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_comunicacion_a9e42e30977954e20c304261a9f1be5e1}
+
+
+Método inicial del ciclo de Open\+G\+L. 
+
+
+
+Reimplementado de \hyperlink{classmenu_base_a8d6e8078f62721431e095cb50bbcf40e}{menu\+Base}.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classmenu_comunicacion_ac00c26aae43f331167e102e2b6d7b86c}{}\index{menu\+Comunicacion@{menu\+Comunicacion}!esp\+Pictograma@{esp\+Pictograma}}
+\index{esp\+Pictograma@{esp\+Pictograma}!menu\+Comunicacion@{menu\+Comunicacion}}
+\subsubsection[{esp\+Pictograma}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Pictograma}$\ast$ menu\+Comunicacion\+::esp\+Pictograma\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_comunicacion_ac00c26aae43f331167e102e2b6d7b86c}
+
+
+Instancia del espacio pictogramas. 
+
+\hypertarget{classmenu_comunicacion_ab9fc64713344f895347473d97f555a8e}{}\index{menu\+Comunicacion@{menu\+Comunicacion}!esp\+Si\+No@{esp\+Si\+No}}
+\index{esp\+Si\+No@{esp\+Si\+No}!menu\+Comunicacion@{menu\+Comunicacion}}
+\subsubsection[{esp\+Si\+No}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Si\+No}$\ast$ menu\+Comunicacion\+::esp\+Si\+No\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_comunicacion_ab9fc64713344f895347473d97f555a8e}
+
+
+Instancia del espacio si/no. 
+
+\hypertarget{classmenu_comunicacion_a01b499ef3e349868508abfd4f856bbea}{}\index{menu\+Comunicacion@{menu\+Comunicacion}!esp\+Teclado@{esp\+Teclado}}
+\index{esp\+Teclado@{esp\+Teclado}!menu\+Comunicacion@{menu\+Comunicacion}}
+\subsubsection[{esp\+Teclado}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Teclado}$\ast$ menu\+Comunicacion\+::esp\+Teclado\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_comunicacion_a01b499ef3e349868508abfd4f856bbea}
+
+
+Instancia del espacio teclado. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/\hyperlink{menu_comunicacion_8h}{menu\+Comunicacion.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/menus/\hyperlink{menu_comunicacion_8cpp}{menu\+Comunicacion.\+cpp}\end{DoxyCompactItemize}

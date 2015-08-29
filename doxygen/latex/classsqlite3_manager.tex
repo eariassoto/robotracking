@@ -1,0 +1,119 @@
+\hypertarget{classsqlite3_manager}{}\section{Referencia de la Clase sqlite3\+Manager}
+\label{classsqlite3_manager}\index{sqlite3\+Manager@{sqlite3\+Manager}}
+
+
+Maneja la interacción con la base de datos S\+Q\+Lite.  
+
+
+
+
+{\ttfamily \#include $<$sqlite3\+Manager.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsqlite3_manager_ae1ae1bbb453ea690ef68f5ea1a9b39ed}{sqlite3\+Manager} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classsqlite3_manager_ad03a31151cbc5ccc52f0c2936bddb34b}{$\sim$sqlite3\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ string $>$ $>$ \hyperlink{classsqlite3_manager_ad619df24f9d979b179df8a472340a31e}{execute\+Statement} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Ejecuta una sentencia S\+Q\+L. \end{DoxyCompactList}\item 
+void \hyperlink{classsqlite3_manager_ac3b8080a48f4fa15df51d32f66f169eb}{print\+Table} (vector$<$ vector$<$ string $>$$>$)
+\begin{DoxyCompactList}\small\item\em Imprime una tabla en consola. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+sqlite3 $\ast$ \hyperlink{classsqlite3_manager_a9ccf7ca16db10c327a05a5a90f6ee1a5}{db}
+\begin{DoxyCompactList}\small\item\em Instancia de la base de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Maneja la interacción con la base de datos S\+Q\+Lite. 
+
+S\+Q\+Lite es un sistema que implementa un motor S\+Q\+L para manejar una base de datos local. Esta clase engloba las operaciones necesarias para interactuar con un sistema sqlite3 de forma amigable. No están implementadas todas las funcionalidades que S\+Q\+Lite ofrece, sin embargo se motiva a que esta clase sea extendida y reutilizada.
+
+Para más información visitar \href{https://www.sqlite.org/}{\tt https\+://www.\+sqlite.\+org/} y \href{http://www.tutorialspoint.com/sqlite/sqlite_c_cpp.htm}{\tt http\+://www.\+tutorialspoint.\+com/sqlite/sqlite\+\_\+c\+\_\+cpp.\+htm} para una mejor referencia del A\+P\+I C/\+C++.
+
+Para crear y poblar la base de datos es mucho más cómodo utilizar una herramienta de terceros para armar las tablas e insertar datos en un ambiente al estilo D\+B\+M\+S. Se recomienda el uso de la herramienta S\+Q\+Lite\+Spy 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classsqlite3_manager_ae1ae1bbb453ea690ef68f5ea1a9b39ed}{}\index{sqlite3\+Manager@{sqlite3\+Manager}!sqlite3\+Manager@{sqlite3\+Manager}}
+\index{sqlite3\+Manager@{sqlite3\+Manager}!sqlite3\+Manager@{sqlite3\+Manager}}
+\subsubsection[{sqlite3\+Manager(char $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}sqlite3\+Manager\+::sqlite3\+Manager (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{db\+Location}
+\end{DoxyParamCaption}
+)}\label{classsqlite3_manager_ae1ae1bbb453ea690ef68f5ea1a9b39ed}
+
+
+Constructor de la clase. 
+
+Dado un archivo con formado S\+Q\+Lite lo abre para poder ejecutar operaciones sobre la base de datos.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em db\+Location} & Lugar dentro del proyecto donde se encuentra ubicada la base de datos. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsqlite3_manager_ad03a31151cbc5ccc52f0c2936bddb34b}{}\index{sqlite3\+Manager@{sqlite3\+Manager}!````~sqlite3\+Manager@{$\sim$sqlite3\+Manager}}
+\index{````~sqlite3\+Manager@{$\sim$sqlite3\+Manager}!sqlite3\+Manager@{sqlite3\+Manager}}
+\subsubsection[{$\sim$sqlite3\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}sqlite3\+Manager\+::$\sim$sqlite3\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsqlite3_manager_ad03a31151cbc5ccc52f0c2936bddb34b}
+
+
+Destructor de la clase. 
+
+Cierra la referencia a la base de datos. 
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classsqlite3_manager_ad619df24f9d979b179df8a472340a31e}{}\index{sqlite3\+Manager@{sqlite3\+Manager}!execute\+Statement@{execute\+Statement}}
+\index{execute\+Statement@{execute\+Statement}!sqlite3\+Manager@{sqlite3\+Manager}}
+\subsubsection[{execute\+Statement(char $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ vector$<$ string $>$ $>$ sqlite3\+Manager\+::execute\+Statement (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sql}
+\end{DoxyParamCaption}
+)}\label{classsqlite3_manager_ad619df24f9d979b179df8a472340a31e}
+
+
+Ejecuta una sentencia S\+Q\+L. 
+
+Dada una instruccion se asegura que pueda ser ejecuta y la realiza. Si hay filas en la respuesta las almacena en una matriz de hileras. Notese que de esta forma todo queda almacenado como hileras.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em sql} & Instrucción para ser ejecutada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Matriz con n filas y m columnas 
+\end{DoxyReturn}
+\hypertarget{classsqlite3_manager_ac3b8080a48f4fa15df51d32f66f169eb}{}\index{sqlite3\+Manager@{sqlite3\+Manager}!print\+Table@{print\+Table}}
+\index{print\+Table@{print\+Table}!sqlite3\+Manager@{sqlite3\+Manager}}
+\subsubsection[{print\+Table(vector$<$ vector$<$ string $>$$>$)}]{\setlength{\rightskip}{0pt plus 5cm}void sqlite3\+Manager\+::print\+Table (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ string $>$$>$}]{table}
+\end{DoxyParamCaption}
+)}\label{classsqlite3_manager_ac3b8080a48f4fa15df51d32f66f169eb}
+
+
+Imprime una tabla en consola. 
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classsqlite3_manager_a9ccf7ca16db10c327a05a5a90f6ee1a5}{}\index{sqlite3\+Manager@{sqlite3\+Manager}!db@{db}}
+\index{db@{db}!sqlite3\+Manager@{sqlite3\+Manager}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}sqlite3$\ast$ sqlite3\+Manager\+::db\hspace{0.3cm}{\ttfamily [private]}}\label{classsqlite3_manager_a9ccf7ca16db10c327a05a5a90f6ee1a5}
+
+
+Instancia de la base de datos. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/sqlite3\+Manager/\hyperlink{sqlite3_manager_8h}{sqlite3\+Manager.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/utilidades/sqlite3\+Manager/\hyperlink{sqlite3_manager_8cpp}{sqlite3\+Manager.\+cpp}\end{DoxyCompactItemize}

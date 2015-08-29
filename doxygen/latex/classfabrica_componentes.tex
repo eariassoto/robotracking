@@ -1,0 +1,116 @@
+\hypertarget{classfabrica_componentes}{}\section{Referencia de la Clase fabrica\+Componentes}
+\label{classfabrica_componentes}\index{fabrica\+Componentes@{fabrica\+Componentes}}
+
+
+Utilidad para generar componentes a partir de archivos de configuración.  
+
+
+
+
+{\ttfamily \#include $<$fabrica\+Componentes.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfabrica_componentes_a460be5076a70e15652163591eb5820bf}{fabrica\+Componentes} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classcomponente_base}{componente\+Base} $\ast$ $>$ \hyperlink{classfabrica_componentes_a05e1fdd9e97037c6e94778479ea4c062}{obtener\+Componentes} (ofx\+Xml\+Settings \&conf, string parent\+Tag)
+\begin{DoxyCompactList}\small\item\em Genera una lista de componentes a partir de un archivo de configuración. \end{DoxyCompactList}\item 
+\hyperlink{classcaja_texto}{caja\+Texto} $\ast$ \hyperlink{classfabrica_componentes_a995031bf966e21773d7dc1777dae811c}{obtener\+Caja\+Texto} (ofx\+Xml\+Settings \&conf)
+\begin{DoxyCompactList}\small\item\em Busca y crea una caja de texto definida en el archivo de configuración. \end{DoxyCompactList}\item 
+\hyperlink{classboton_simple}{boton\+Simple} $\ast$ \hyperlink{classfabrica_componentes_a238aef4aa7fb7ca425efdfb22520171d}{obtener\+Boton\+Id} (string id, ofx\+Xml\+Settings \&conf)
+\begin{DoxyCompactList}\small\item\em Busca y crea un botón que tenga un cierto identificador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Utilidad para generar componentes a partir de archivos de configuración. 
+
+A veces es útil tener archivos de configuración para los espacios que contengan los elementos y sus atributos definidos para la interfaz y que sean cargados al inicio que definirlos en la misma clase. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classfabrica_componentes_a460be5076a70e15652163591eb5820bf}{}\index{fabrica\+Componentes@{fabrica\+Componentes}!fabrica\+Componentes@{fabrica\+Componentes}}
+\index{fabrica\+Componentes@{fabrica\+Componentes}!fabrica\+Componentes@{fabrica\+Componentes}}
+\subsubsection[{fabrica\+Componentes()}]{\setlength{\rightskip}{0pt plus 5cm}fabrica\+Componentes\+::fabrica\+Componentes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classfabrica_componentes_a460be5076a70e15652163591eb5820bf}
+
+
+Constructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classfabrica_componentes_a238aef4aa7fb7ca425efdfb22520171d}{}\index{fabrica\+Componentes@{fabrica\+Componentes}!obtener\+Boton\+Id@{obtener\+Boton\+Id}}
+\index{obtener\+Boton\+Id@{obtener\+Boton\+Id}!fabrica\+Componentes@{fabrica\+Componentes}}
+\subsubsection[{obtener\+Boton\+Id(string id, ofx\+Xml\+Settings \&conf)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf boton\+Simple}$\ast$ fabrica\+Componentes\+::obtener\+Boton\+Id (
+\begin{DoxyParamCaption}
+\item[{string}]{id, }
+\item[{ofx\+Xml\+Settings \&}]{conf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classfabrica_componentes_a238aef4aa7fb7ca425efdfb22520171d}
+
+
+Busca y crea un botón que tenga un cierto identificador. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em id} & Identificador del botón \\
+\hline
+{\em conf} & Instancia de manejador de archivos de configuración \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Instancia de la caja de texto 
+\end{DoxyReturn}
+\hypertarget{classfabrica_componentes_a995031bf966e21773d7dc1777dae811c}{}\index{fabrica\+Componentes@{fabrica\+Componentes}!obtener\+Caja\+Texto@{obtener\+Caja\+Texto}}
+\index{obtener\+Caja\+Texto@{obtener\+Caja\+Texto}!fabrica\+Componentes@{fabrica\+Componentes}}
+\subsubsection[{obtener\+Caja\+Texto(ofx\+Xml\+Settings \&conf)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf caja\+Texto}$\ast$ fabrica\+Componentes\+::obtener\+Caja\+Texto (
+\begin{DoxyParamCaption}
+\item[{ofx\+Xml\+Settings \&}]{conf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classfabrica_componentes_a995031bf966e21773d7dc1777dae811c}
+
+
+Busca y crea una caja de texto definida en el archivo de configuración. 
+
+A como está implementado se espera que exista solo una caja de texto.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em conf} & Instancia de manejador de archivos de configuración \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Instancia de la caja de texto 
+\end{DoxyReturn}
+\hypertarget{classfabrica_componentes_a05e1fdd9e97037c6e94778479ea4c062}{}\index{fabrica\+Componentes@{fabrica\+Componentes}!obtener\+Componentes@{obtener\+Componentes}}
+\index{obtener\+Componentes@{obtener\+Componentes}!fabrica\+Componentes@{fabrica\+Componentes}}
+\subsubsection[{obtener\+Componentes(ofx\+Xml\+Settings \&conf, string parent\+Tag)}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf componente\+Base}$\ast$$>$ fabrica\+Componentes\+::obtener\+Componentes (
+\begin{DoxyParamCaption}
+\item[{ofx\+Xml\+Settings \&}]{conf, }
+\item[{string}]{parent\+Tag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classfabrica_componentes_a05e1fdd9e97037c6e94778479ea4c062}
+
+
+Genera una lista de componentes a partir de un archivo de configuración. 
+
+Dado un archivo de configuración se crean las instancias de componentes y se almacenan en una lista.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em conf} & Instancia de manejador de archivos de configuración \\
+\hline
+{\em parent\+Tag} & Etiqueta X\+M\+L la cual contiene la lista de componentes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Lista de componentes 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/componentes/\hyperlink{fabrica_componentes_8h}{fabrica\+Componentes.\+h}\end{DoxyCompactItemize}

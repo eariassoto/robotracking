@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>RoboTracking App: Fichero Fuente C:/of_v0.8.4_vs_release/apps/myApps/RoboTrackingApp/src/espacios/espacioCamara.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RoboTracking App
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Herramientas técnicas para promover la autonomía de personas con movilidad reducida.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cecef1d433a19ac73484cba28be07231.html">espacios</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">espacioCamara.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="espacio_camara_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="espacio_base_8h.html">espacioBase.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;ofVideoGrabber.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="boton_imagen_8h.html">botonImagen.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classespacio_camara.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classespacio_camara.html">espacioCamara</a> : <span class="keyword">public</span> <a class="code" href="classespacio_base.html">espacioBase</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classespacio_camara.html#adf85b2cd673cb9eafee260e14b9c9f41">espacioCamara</a>(<a class="code" href="classespacio_base.html">espacioBase</a>*);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classespacio_camara.html#aa6ac19fb18722f62697bfe43b1b171ce">~espacioCamara</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classespacio_camara.html#af9b840498c705d9fe3ca8e363b4a535b">setup</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classespacio_base.html">espacioBase</a>* <a class="code" href="classespacio_camara.html#a133e544d5bb6015e3d9e6eff4a6d812d">update</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classespacio_camara.html#a2c3d027a3787a226e00aab10c93f1bbe">draw</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classespacio_camara.html#aa357745006c6358ac4919ea079e80caa">   34</a></span>&#160;    <span class="keywordtype">int</span>            <a class="code" href="classespacio_camara.html#aa357745006c6358ac4919ea079e80caa">camWidth</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classespacio_camara.html#ac9c3980d5710ce9ae83a95a4e7d4bf3a">   37</a></span>&#160;    <span class="keywordtype">int</span>            <a class="code" href="classespacio_camara.html#ac9c3980d5710ce9ae83a95a4e7d4bf3a">camHeight</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classespacio_camara.html#ac94dd88aad08d2077050c79e490d0a37">   40</a></span>&#160;    <span class="keywordtype">double</span>         <a class="code" href="classespacio_camara.html#ac94dd88aad08d2077050c79e490d0a37">camX</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classespacio_camara.html#a0dec829b25bb09c1f70150f885d9843e">   43</a></span>&#160;    <span class="keywordtype">double</span>         <a class="code" href="classespacio_camara.html#a0dec829b25bb09c1f70150f885d9843e">camY</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classespacio_camara.html#a005166cb15e10461341d0e28b145134f">   46</a></span>&#160;    ofVideoGrabber <a class="code" href="classespacio_camara.html#a005166cb15e10461341d0e28b145134f">vidGrabber</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classespacio_camara.html#a71d14cf73376b62e3158e90a6f72d18f">   49</a></span>&#160;    ofImage        <a class="code" href="classespacio_camara.html#a71d14cf73376b62e3158e90a6f72d18f">img</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classespacio_camara.html#a4d7caffe8a3090acf04dc78ed91e923c">   52</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a>    *<a class="code" href="classespacio_camara.html#a4d7caffe8a3090acf04dc78ed91e923c">btnAtras</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classespacio_camara.html#a0a33e016b145a3ad2723d6d120260f48">   55</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a>    *<a class="code" href="classespacio_camara.html#a0a33e016b145a3ad2723d6d120260f48">btnFoto</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classespacio_camara.html#a3d110b2810a8ba6579857dd7f8a6fe22">   58</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a>    *<a class="code" href="classespacio_camara.html#a3d110b2810a8ba6579857dd7f8a6fe22">btnGaleria</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="ttc" id="classespacio_camara_html"><div class="ttname"><a href="classespacio_camara.html">espacioCamara</a></div><div class="ttdoc">Espacio para tomar fotos por medio de la cámara. </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:13</div></div>
+<div class="ttc" id="classespacio_camara_html_a3d110b2810a8ba6579857dd7f8a6fe22"><div class="ttname"><a href="classespacio_camara.html#a3d110b2810a8ba6579857dd7f8a6fe22">espacioCamara::btnGaleria</a></div><div class="ttdeci">botonImagen * btnGaleria</div><div class="ttdoc">Botón para acceder a la galería. </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:58</div></div>
+<div class="ttc" id="classespacio_camara_html_aa357745006c6358ac4919ea079e80caa"><div class="ttname"><a href="classespacio_camara.html#aa357745006c6358ac4919ea079e80caa">espacioCamara::camWidth</a></div><div class="ttdeci">int camWidth</div><div class="ttdoc">Largo de la imagen de la cámara. </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:34</div></div>
+<div class="ttc" id="classespacio_camara_html_a0a33e016b145a3ad2723d6d120260f48"><div class="ttname"><a href="classespacio_camara.html#a0a33e016b145a3ad2723d6d120260f48">espacioCamara::btnFoto</a></div><div class="ttdeci">botonImagen * btnFoto</div><div class="ttdoc">Botón para tomar una foto. </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:55</div></div>
+<div class="ttc" id="classespacio_base_html"><div class="ttname"><a href="classespacio_base.html">espacioBase</a></div><div class="ttdoc">Clase base para todos los espacios de la aplicación. </div><div class="ttdef"><b>Definition:</b> espacioBase.h:16</div></div>
+<div class="ttc" id="classespacio_camara_html_adf85b2cd673cb9eafee260e14b9c9f41"><div class="ttname"><a href="classespacio_camara.html#adf85b2cd673cb9eafee260e14b9c9f41">espacioCamara::espacioCamara</a></div><div class="ttdeci">espacioCamara(espacioBase *)</div><div class="ttdoc">Constructor de la clase. </div><div class="ttdef"><b>Definition:</b> espacioCamara.cpp:3</div></div>
+<div class="ttc" id="classespacio_camara_html_ac94dd88aad08d2077050c79e490d0a37"><div class="ttname"><a href="classespacio_camara.html#ac94dd88aad08d2077050c79e490d0a37">espacioCamara::camX</a></div><div class="ttdeci">double camX</div><div class="ttdoc">Coordenada x de la imagen de la cámara. </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:40</div></div>
+<div class="ttc" id="classespacio_camara_html_ac9c3980d5710ce9ae83a95a4e7d4bf3a"><div class="ttname"><a href="classespacio_camara.html#ac9c3980d5710ce9ae83a95a4e7d4bf3a">espacioCamara::camHeight</a></div><div class="ttdeci">int camHeight</div><div class="ttdoc">Ancho de la imagen de la cámara. </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:37</div></div>
+<div class="ttc" id="classespacio_camara_html_a2c3d027a3787a226e00aab10c93f1bbe"><div class="ttname"><a href="classespacio_camara.html#a2c3d027a3787a226e00aab10c93f1bbe">espacioCamara::draw</a></div><div class="ttdeci">void draw()</div><div class="ttdoc">Controla las tareas gráficas de cada ciclo de OpenGL. </div><div class="ttdef"><b>Definition:</b> espacioCamara.cpp:61</div></div>
+<div class="ttc" id="classespacio_camara_html_aa6ac19fb18722f62697bfe43b1b171ce"><div class="ttname"><a href="classespacio_camara.html#aa6ac19fb18722f62697bfe43b1b171ce">espacioCamara::~espacioCamara</a></div><div class="ttdeci">~espacioCamara()</div><div class="ttdoc">Destructor de la clase. </div><div class="ttdef"><b>Definition:</b> espacioCamara.cpp:70</div></div>
+<div class="ttc" id="espacio_base_8h_html"><div class="ttname"><a href="espacio_base_8h.html">espacioBase.h</a></div></div>
+<div class="ttc" id="classespacio_camara_html_af9b840498c705d9fe3ca8e363b4a535b"><div class="ttname"><a href="classespacio_camara.html#af9b840498c705d9fe3ca8e363b4a535b">espacioCamara::setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Método inicial del ciclo de OpenGL. </div><div class="ttdef"><b>Definition:</b> espacioCamara.cpp:8</div></div>
+<div class="ttc" id="classespacio_camara_html_a005166cb15e10461341d0e28b145134f"><div class="ttname"><a href="classespacio_camara.html#a005166cb15e10461341d0e28b145134f">espacioCamara::vidGrabber</a></div><div class="ttdeci">ofVideoGrabber vidGrabber</div><div class="ttdoc">Instancia del manejador de la cámara. </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:46</div></div>
+<div class="ttc" id="classespacio_camara_html_a71d14cf73376b62e3158e90a6f72d18f"><div class="ttname"><a href="classespacio_camara.html#a71d14cf73376b62e3158e90a6f72d18f">espacioCamara::img</a></div><div class="ttdeci">ofImage img</div><div class="ttdoc">Captura de la cámara que se mostrando al usuario. </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:49</div></div>
+<div class="ttc" id="classespacio_camara_html_a0dec829b25bb09c1f70150f885d9843e"><div class="ttname"><a href="classespacio_camara.html#a0dec829b25bb09c1f70150f885d9843e">espacioCamara::camY</a></div><div class="ttdeci">double camY</div><div class="ttdoc">Coordenada y de la imagen de la cámara. </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:43</div></div>
+<div class="ttc" id="classespacio_camara_html_a4d7caffe8a3090acf04dc78ed91e923c"><div class="ttname"><a href="classespacio_camara.html#a4d7caffe8a3090acf04dc78ed91e923c">espacioCamara::btnAtras</a></div><div class="ttdeci">botonImagen * btnAtras</div><div class="ttdoc">Botón para salir al menú </div><div class="ttdef"><b>Definition:</b> espacioCamara.h:52</div></div>
+<div class="ttc" id="classespacio_camara_html_a133e544d5bb6015e3d9e6eff4a6d812d"><div class="ttname"><a href="classespacio_camara.html#a133e544d5bb6015e3d9e6eff4a6d812d">espacioCamara::update</a></div><div class="ttdeci">espacioBase * update(float, float, float, float, bool)</div><div class="ttdoc">Controla tareas lógica de cada ciclo de OpenGL. </div><div class="ttdef"><b>Definition:</b> espacioCamara.cpp:25</div></div>
+<div class="ttc" id="classboton_imagen_html"><div class="ttname"><a href="classboton_imagen.html">botonImagen</a></div><div class="ttdoc">Botón con imagen y texto. </div><div class="ttdef"><b>Definition:</b> botonImagen.h:15</div></div>
+<div class="ttc" id="boton_imagen_8h_html"><div class="ttname"><a href="boton_imagen_8h.html">botonImagen.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

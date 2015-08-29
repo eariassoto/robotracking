@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>RoboTracking App: Fichero Fuente C:/of_v0.8.4_vs_release/apps/myApps/RoboTrackingApp/src/espacios/espacioTeclado.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RoboTracking App
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Herramientas técnicas para promover la autonomía de personas con movilidad reducida.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_cecef1d433a19ac73484cba28be07231.html">espacios</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">espacioTeclado.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="espacio_teclado_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;ofxXmlSettings.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="espacio_base_8h.html">espacioBase.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fabrica_componentes_8h.html">fabricaComponentes.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="boton_imagen_8h.html">botonImagen.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classespacio_teclado.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classespacio_teclado.html">espacioTeclado</a> : <span class="keyword">public</span> <a class="code" href="classespacio_base.html">espacioBase</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classespacio_teclado.html">espacioTeclado</a>(<span class="keywordtype">string</span>, <a class="code" href="classespacio_base.html">espacioBase</a>*);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ~<a class="code" href="classespacio_teclado.html">espacioTeclado</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span>         setup();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classespacio_base.html">espacioBase</a>* update(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span>         draw();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> comandoHablar(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classespacio_teclado.html#af215829331b2ed6d0a4485eab2a37311">   45</a></span>&#160;    ofxXmlSettings          <a class="code" href="classespacio_teclado.html#af215829331b2ed6d0a4485eab2a37311">configuraciones</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classespacio_teclado.html#aaa53bfd0abe00de252f38c299174f0d1">   48</a></span>&#160;    <a class="code" href="classfabrica_componentes.html">fabricaComponentes</a>      <a class="code" href="classespacio_teclado.html#aaa53bfd0abe00de252f38c299174f0d1">fabComponentes</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classespacio_teclado.html#ac6f638174ab5143b45b5a0658f6782e9">   51</a></span>&#160;    <span class="keywordtype">int</span>                     <a class="code" href="classespacio_teclado.html#ac6f638174ab5143b45b5a0658f6782e9">cantidadComponentes</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classespacio_teclado.html#aad1549ce795db466bad7c47a5f82582c">   54</a></span>&#160;    vector&lt;componenteBase*&gt; <a class="code" href="classespacio_teclado.html#aad1549ce795db466bad7c47a5f82582c">componentes</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classespacio_teclado.html#ac4d882599a627a2d26aa19280fb1cf28">   57</a></span>&#160;    <a class="code" href="classcaja_texto.html">cajaTexto</a>               *<a class="code" href="classespacio_teclado.html#ac4d882599a627a2d26aa19280fb1cf28">cTexto</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classespacio_teclado.html#a68242d035fdf24a605e21d798ecf1a93">   60</a></span>&#160;    <a class="code" href="classboton_simple.html">botonSimple</a>             *<a class="code" href="classespacio_teclado.html#a68242d035fdf24a605e21d798ecf1a93">btnBorrar</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classespacio_teclado.html#abf7bb12c95256d20e421831fea3d23e1">   63</a></span>&#160;    <a class="code" href="classboton_simple.html">botonSimple</a>             *<a class="code" href="classespacio_teclado.html#abf7bb12c95256d20e421831fea3d23e1">btnEspacio</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classespacio_teclado.html#a401d7d71c05c9f234010e33adfe51d04">   66</a></span>&#160;    <a class="code" href="classboton_simple.html">botonSimple</a>             *<a class="code" href="classespacio_teclado.html#a401d7d71c05c9f234010e33adfe51d04">btnHablar</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classespacio_teclado.html#a82d9f915e17ee3491992da61a0d28a8f">   69</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a>             *<a class="code" href="classespacio_teclado.html#a82d9f915e17ee3491992da61a0d28a8f">btnSalir</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="ttc" id="classespacio_teclado_html_ac6f638174ab5143b45b5a0658f6782e9"><div class="ttname"><a href="classespacio_teclado.html#ac6f638174ab5143b45b5a0658f6782e9">espacioTeclado::cantidadComponentes</a></div><div class="ttdeci">int cantidadComponentes</div><div class="ttdoc">Cantidad de componentes en la pantalla. </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:51</div></div>
+<div class="ttc" id="classespacio_teclado_html_a82d9f915e17ee3491992da61a0d28a8f"><div class="ttname"><a href="classespacio_teclado.html#a82d9f915e17ee3491992da61a0d28a8f">espacioTeclado::btnSalir</a></div><div class="ttdeci">botonImagen * btnSalir</div><div class="ttdoc">Botón para salir al menú </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:69</div></div>
+<div class="ttc" id="fabrica_componentes_8h_html"><div class="ttname"><a href="fabrica_componentes_8h.html">fabricaComponentes.h</a></div></div>
+<div class="ttc" id="classespacio_base_html"><div class="ttname"><a href="classespacio_base.html">espacioBase</a></div><div class="ttdoc">Clase base para todos los espacios de la aplicación. </div><div class="ttdef"><b>Definition:</b> espacioBase.h:16</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classfabrica_componentes_html"><div class="ttname"><a href="classfabrica_componentes.html">fabricaComponentes</a></div><div class="ttdoc">Utilidad para generar componentes a partir de archivos de configuración. </div><div class="ttdef"><b>Definition:</b> fabricaComponentes.h:17</div></div>
+<div class="ttc" id="classespacio_teclado_html_a401d7d71c05c9f234010e33adfe51d04"><div class="ttname"><a href="classespacio_teclado.html#a401d7d71c05c9f234010e33adfe51d04">espacioTeclado::btnHablar</a></div><div class="ttdeci">botonSimple * btnHablar</div><div class="ttdoc">Botón para pasar la hilera a voz. </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:66</div></div>
+<div class="ttc" id="classespacio_teclado_html_aaa53bfd0abe00de252f38c299174f0d1"><div class="ttname"><a href="classespacio_teclado.html#aaa53bfd0abe00de252f38c299174f0d1">espacioTeclado::fabComponentes</a></div><div class="ttdeci">fabricaComponentes fabComponentes</div><div class="ttdoc">Fabrica los componentes a partir de las configuraciones. </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:48</div></div>
+<div class="ttc" id="classespacio_teclado_html"><div class="ttname"><a href="classespacio_teclado.html">espacioTeclado</a></div><div class="ttdoc">Espacio de comunicación por medio de lecto escritura. </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:17</div></div>
+<div class="ttc" id="classcaja_texto_html"><div class="ttname"><a href="classcaja_texto.html">cajaTexto</a></div><div class="ttdoc">Caja para mostrar texto. </div><div class="ttdef"><b>Definition:</b> cajaTexto.h:11</div></div>
+<div class="ttc" id="classboton_simple_html"><div class="ttname"><a href="classboton_simple.html">botonSimple</a></div><div class="ttdoc">Botón con texto. </div><div class="ttdef"><b>Definition:</b> botonSimple.h:11</div></div>
+<div class="ttc" id="classespacio_teclado_html_aad1549ce795db466bad7c47a5f82582c"><div class="ttname"><a href="classespacio_teclado.html#aad1549ce795db466bad7c47a5f82582c">espacioTeclado::componentes</a></div><div class="ttdeci">vector&lt; componenteBase * &gt; componentes</div><div class="ttdoc">Lista con los componentes cargados de las configuraciones. </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:54</div></div>
+<div class="ttc" id="classespacio_teclado_html_abf7bb12c95256d20e421831fea3d23e1"><div class="ttname"><a href="classespacio_teclado.html#abf7bb12c95256d20e421831fea3d23e1">espacioTeclado::btnEspacio</a></div><div class="ttdeci">botonSimple * btnEspacio</div><div class="ttdoc">Botón para insertar un nuevo espacio. </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:63</div></div>
+<div class="ttc" id="classespacio_teclado_html_ac4d882599a627a2d26aa19280fb1cf28"><div class="ttname"><a href="classespacio_teclado.html#ac4d882599a627a2d26aa19280fb1cf28">espacioTeclado::cTexto</a></div><div class="ttdeci">cajaTexto * cTexto</div><div class="ttdoc">Caja de texto para mostrar la hilera que produce el usuario. </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:57</div></div>
+<div class="ttc" id="espacio_base_8h_html"><div class="ttname"><a href="espacio_base_8h.html">espacioBase.h</a></div></div>
+<div class="ttc" id="classespacio_teclado_html_a68242d035fdf24a605e21d798ecf1a93"><div class="ttname"><a href="classespacio_teclado.html#a68242d035fdf24a605e21d798ecf1a93">espacioTeclado::btnBorrar</a></div><div class="ttdeci">botonSimple * btnBorrar</div><div class="ttdoc">Botón para borrar el último caracter. </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:60</div></div>
+<div class="ttc" id="classespacio_teclado_html_af215829331b2ed6d0a4485eab2a37311"><div class="ttname"><a href="classespacio_teclado.html#af215829331b2ed6d0a4485eab2a37311">espacioTeclado::configuraciones</a></div><div class="ttdeci">ofxXmlSettings configuraciones</div><div class="ttdoc">Instancia del manejador del archivo de configuraciones. </div><div class="ttdef"><b>Definition:</b> espacioTeclado.h:45</div></div>
+<div class="ttc" id="classboton_imagen_html"><div class="ttname"><a href="classboton_imagen.html">botonImagen</a></div><div class="ttdoc">Botón con imagen y texto. </div><div class="ttdef"><b>Definition:</b> botonImagen.h:15</div></div>
+<div class="ttc" id="boton_imagen_8h_html"><div class="ttname"><a href="boton_imagen_8h.html">botonImagen.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

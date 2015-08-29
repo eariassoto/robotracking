@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>RoboTracking App: Fichero Fuente C:/of_v0.8.4_vs_release/apps/myApps/RoboTrackingApp/src/menus/menuBase.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RoboTracking App
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Herramientas técnicas para promover la autonomía de personas con movilidad reducida.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a4cf0bd8881f9bd048453dfed09211e5.html">menus</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">menuBase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="menu_base_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;ofxXmlSettings.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="espacio_base_8h.html">espacioBase.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="boton_imagen_8h.html">botonImagen.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;ofImage.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> std::vector;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classmenu_base.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmenu_base.html">menuBase</a> : <span class="keyword">public</span> <a class="code" href="classespacio_base.html">espacioBase</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classmenu_base.html#a39dcbe65c2af659e4d27da0ec81f5824">menuBase</a>(<span class="keywordtype">string</span>, <a class="code" href="classespacio_base.html">espacioBase</a>*);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classmenu_base.html#a09884cccdb9271476bbf6d87c6acfdfa">~menuBase</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span>         <a class="code" href="classmenu_base.html#a8d6e8078f62721431e095cb50bbcf40e">setup</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classespacio_base.html">espacioBase</a>* <a class="code" href="classmenu_base.html#aed2125585944e1dfa0ee7cb0e4f7958c">update</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span>          <a class="code" href="classmenu_base.html#a0faf0816595b77204dd3e0309b35b76a">draw</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmenu_base.html#a8c48cc67dd9d789cf5a06c61333c8db9">   44</a></span>&#160;    ofTrueTypeFont <a class="code" href="classmenu_base.html#a8c48cc67dd9d789cf5a06c61333c8db9">fuente</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classmenu_base.html#a817536aa29cfe8f13d1e7c745e45b31d">   47</a></span>&#160;    ofImage <a class="code" href="classmenu_base.html#a817536aa29cfe8f13d1e7c745e45b31d">logo</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmenu_base.html#a97f2f1c174cadb12ae7b62f672fcde97">   50</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classmenu_base.html#a97f2f1c174cadb12ae7b62f672fcde97">logox</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classmenu_base.html#a8bd56c156201d813c9c6da884cd98296">   53</a></span>&#160;    <span class="keywordtype">float</span>  <a class="code" href="classmenu_base.html#a8bd56c156201d813c9c6da884cd98296">logoy</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classmenu_base.html#a07ca6fd4669759542b11d31eada55403">   56</a></span>&#160;    ofxXmlSettings <a class="code" href="classmenu_base.html#a07ca6fd4669759542b11d31eada55403">configuraciones</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classmenu_base.html#a6de979e3389d5918db62c75d886161d9">   59</a></span>&#160;    vector&lt;botonImagen&gt; <a class="code" href="classmenu_base.html#a6de979e3389d5918db62c75d886161d9">btn</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classmenu_base.html#a28cf020839a96b7793388baf8a9e054d">   62</a></span>&#160;    <a class="code" href="classboton_imagen.html">botonImagen</a> *<a class="code" href="classmenu_base.html#a28cf020839a96b7793388baf8a9e054d">btnAtras</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classespacio_base.html">espacioBase</a>* <a class="code" href="classmenu_base.html#a5a88a45efd3bc47b4731fb21749a97d5">eventos</a>(<span class="keywordtype">int</span> index) = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="ttc" id="classmenu_base_html_a97f2f1c174cadb12ae7b62f672fcde97"><div class="ttname"><a href="classmenu_base.html#a97f2f1c174cadb12ae7b62f672fcde97">menuBase::logox</a></div><div class="ttdeci">float logox</div><div class="ttdoc">Coordenada x del logo. </div><div class="ttdef"><b>Definition:</b> menuBase.h:50</div></div>
+<div class="ttc" id="classmenu_base_html_a5a88a45efd3bc47b4731fb21749a97d5"><div class="ttname"><a href="classmenu_base.html#a5a88a45efd3bc47b4731fb21749a97d5">menuBase::eventos</a></div><div class="ttdeci">virtual espacioBase * eventos(int index)=0</div><div class="ttdoc">Maneja los eventos de los botones. </div></div>
+<div class="ttc" id="classespacio_base_html"><div class="ttname"><a href="classespacio_base.html">espacioBase</a></div><div class="ttdoc">Clase base para todos los espacios de la aplicación. </div><div class="ttdef"><b>Definition:</b> espacioBase.h:16</div></div>
+<div class="ttc" id="classmenu_base_html_a8c48cc67dd9d789cf5a06c61333c8db9"><div class="ttname"><a href="classmenu_base.html#a8c48cc67dd9d789cf5a06c61333c8db9">menuBase::fuente</a></div><div class="ttdeci">ofTrueTypeFont fuente</div><div class="ttdoc">Fuente del texto. </div><div class="ttdef"><b>Definition:</b> menuBase.h:44</div></div>
+<div class="ttc" id="classmenu_base_html_a0faf0816595b77204dd3e0309b35b76a"><div class="ttname"><a href="classmenu_base.html#a0faf0816595b77204dd3e0309b35b76a">menuBase::draw</a></div><div class="ttdeci">void draw()</div><div class="ttdoc">Controla las tareas gráficas de cada ciclo de OpenGL. </div><div class="ttdef"><b>Definition:</b> menuBase.cpp:79</div></div>
+<div class="ttc" id="classmenu_base_html"><div class="ttname"><a href="classmenu_base.html">menuBase</a></div><div class="ttdoc">Base para los menús de la aplicación. </div><div class="ttdef"><b>Definition:</b> menuBase.h:20</div></div>
+<div class="ttc" id="classmenu_base_html_a8d6e8078f62721431e095cb50bbcf40e"><div class="ttname"><a href="classmenu_base.html#a8d6e8078f62721431e095cb50bbcf40e">menuBase::setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Método inicial del ciclo de OpenGL. </div><div class="ttdef"><b>Definition:</b> menuBase.cpp:10</div></div>
+<div class="ttc" id="espacio_base_8h_html"><div class="ttname"><a href="espacio_base_8h.html">espacioBase.h</a></div></div>
+<div class="ttc" id="classmenu_base_html_a28cf020839a96b7793388baf8a9e054d"><div class="ttname"><a href="classmenu_base.html#a28cf020839a96b7793388baf8a9e054d">menuBase::btnAtras</a></div><div class="ttdeci">botonImagen * btnAtras</div><div class="ttdoc">Botón para que el usuario se devuelva en la aplicación. </div><div class="ttdef"><b>Definition:</b> menuBase.h:62</div></div>
+<div class="ttc" id="classmenu_base_html_a09884cccdb9271476bbf6d87c6acfdfa"><div class="ttname"><a href="classmenu_base.html#a09884cccdb9271476bbf6d87c6acfdfa">menuBase::~menuBase</a></div><div class="ttdeci">~menuBase()</div><div class="ttdoc">Destructor de la clase. </div><div class="ttdef"><b>Definition:</b> menuBase.cpp:94</div></div>
+<div class="ttc" id="classmenu_base_html_a07ca6fd4669759542b11d31eada55403"><div class="ttname"><a href="classmenu_base.html#a07ca6fd4669759542b11d31eada55403">menuBase::configuraciones</a></div><div class="ttdeci">ofxXmlSettings configuraciones</div><div class="ttdoc">Instancia que maneja las configuraciones desde un archivo XML. </div><div class="ttdef"><b>Definition:</b> menuBase.h:56</div></div>
+<div class="ttc" id="classmenu_base_html_a6de979e3389d5918db62c75d886161d9"><div class="ttname"><a href="classmenu_base.html#a6de979e3389d5918db62c75d886161d9">menuBase::btn</a></div><div class="ttdeci">vector&lt; botonImagen &gt; btn</div><div class="ttdoc">Botones que llevan al usuario a los espacios del menú </div><div class="ttdef"><b>Definition:</b> menuBase.h:59</div></div>
+<div class="ttc" id="classmenu_base_html_a39dcbe65c2af659e4d27da0ec81f5824"><div class="ttname"><a href="classmenu_base.html#a39dcbe65c2af659e4d27da0ec81f5824">menuBase::menuBase</a></div><div class="ttdeci">menuBase(string, espacioBase *)</div><div class="ttdoc">Constructor de la clase. </div><div class="ttdef"><b>Definition:</b> menuBase.cpp:6</div></div>
+<div class="ttc" id="classmenu_base_html_a8bd56c156201d813c9c6da884cd98296"><div class="ttname"><a href="classmenu_base.html#a8bd56c156201d813c9c6da884cd98296">menuBase::logoy</a></div><div class="ttdeci">float logoy</div><div class="ttdoc">Coordenada y del logo. </div><div class="ttdef"><b>Definition:</b> menuBase.h:53</div></div>
+<div class="ttc" id="classmenu_base_html_a817536aa29cfe8f13d1e7c745e45b31d"><div class="ttname"><a href="classmenu_base.html#a817536aa29cfe8f13d1e7c745e45b31d">menuBase::logo</a></div><div class="ttdeci">ofImage logo</div><div class="ttdoc">Logo de la aplicación. </div><div class="ttdef"><b>Definition:</b> menuBase.h:47</div></div>
+<div class="ttc" id="classmenu_base_html_aed2125585944e1dfa0ee7cb0e4f7958c"><div class="ttname"><a href="classmenu_base.html#aed2125585944e1dfa0ee7cb0e4f7958c">menuBase::update</a></div><div class="ttdeci">espacioBase * update(float, float, float, float, bool)</div><div class="ttdoc">Controla tareas lógica de cada ciclo de OpenGL. </div><div class="ttdef"><b>Definition:</b> menuBase.cpp:58</div></div>
+<div class="ttc" id="classboton_imagen_html"><div class="ttname"><a href="classboton_imagen.html">botonImagen</a></div><div class="ttdoc">Botón con imagen y texto. </div><div class="ttdef"><b>Definition:</b> botonImagen.h:15</div></div>
+<div class="ttc" id="boton_imagen_8h_html"><div class="ttname"><a href="boton_imagen_8h.html">botonImagen.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

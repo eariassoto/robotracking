@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['my_20main_20page',['My Main Page',['../index.html',1,'']]]
+  ['p_26aacute_3bgina_20principal',['P&amp;aacute;gina Principal',['../index.html',1,'']]]
 ];

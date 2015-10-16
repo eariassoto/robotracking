@@ -22,12 +22,19 @@ Diagrama de herencias de boton\+Toggle\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Constructor principal de la clase, define tamaño y posición. \end{DoxyCompactList}\item 
 \hyperlink{classboton_toggle_ad193dda2df6e4399a3171a2d5ecc612f}{boton\+Toggle} (string, string, float, string, string, int, of\+Color)
 \begin{DoxyCompactList}\small\item\em Constructor secundario de la clase, sin tamaño y posición definidos. \end{DoxyCompactList}\item 
-bool \hyperlink{classboton_toggle_a067fa2bd02fd019d5c6c062ec8d521c0}{update} (float, float, float, float, bool)
+bool \hyperlink{classboton_toggle_abdba9bf27d77ddcd56c83bb494ddebb7}{update} (float, float, bool)
+\begin{DoxyCompactList}\small\item\em Implementa el cambio de imagen y texto si el usuario hizo clic. \end{DoxyCompactList}\item 
+bool \hyperlink{classboton_toggle_ad7f6623575a6e17544bd9fd9bef18c8a}{update} (float, float)
 \begin{DoxyCompactList}\small\item\em Implementa el cambio de imagen y texto si el usuario hizo clic. \end{DoxyCompactList}\item 
 bool \hyperlink{classboton_toggle_a6da75216bda1e716f10cb1baec792cd0}{state} ()
 \begin{DoxyCompactList}\small\item\em Devuelve el estado del botón. \end{DoxyCompactList}\item 
 void \hyperlink{classboton_toggle_a5a24ccd035199173e96b36a9dec4927f}{toggle} ()
 \begin{DoxyCompactList}\small\item\em Cambia el estado del botón. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classboton_toggle_ae0c7f301bb81bf8e813be7273e09ce3d}{update} (bool)
+\end{DoxyCompactItemize}
 \subsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
@@ -166,30 +173,24 @@ true si el botón está en el estado 2
 
 Cambia el estado del botón. 
 
-\hypertarget{classboton_toggle_a067fa2bd02fd019d5c6c062ec8d521c0}{}\index{boton\+Toggle@{boton\+Toggle}!update@{update}}
+\hypertarget{classboton_toggle_abdba9bf27d77ddcd56c83bb494ddebb7}{}\index{boton\+Toggle@{boton\+Toggle}!update@{update}}
 \index{update@{update}!boton\+Toggle@{boton\+Toggle}}
-\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}bool boton\+Toggle\+::update (
+\subsubsection[{update(float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}bool boton\+Toggle\+::update (
 \begin{DoxyParamCaption}
-\item[{float}]{x\+M, }
-\item[{float}]{y\+M, }
-\item[{float}]{x\+L, }
-\item[{float}]{y\+L, }
+\item[{float}]{x, }
+\item[{float}]{y, }
 \item[{bool}]{c}
 \end{DoxyParamCaption}
-)}\label{classboton_toggle_a067fa2bd02fd019d5c6c062ec8d521c0}
+)}\label{classboton_toggle_abdba9bf27d77ddcd56c83bb494ddebb7}
 
 
 Implementa el cambio de imagen y texto si el usuario hizo clic. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em x\+M} & coordenada x de la entrada visual \\
+{\em x} & coordenada x del componente de gestos \\
 \hline
-{\em y\+M} & coordenada y de la entrada visual \\
-\hline
-{\em x\+L} & coordenada x del componente de gestos \\
-\hline
-{\em y\+L} & coordenada y del componente de gestos \\
+{\em y} & coordenada y del componente de gestos \\
 \hline
 {\em c} & indica si el usuario ha hecho el gesto para el clic\\
 \hline
@@ -197,6 +198,35 @@ Implementa el cambio de imagen y texto si el usuario hizo clic.
 \begin{DoxyReturn}{Devuelve}
 true si el usuario hizo clic sobre el componente 
 \end{DoxyReturn}
+\hypertarget{classboton_toggle_ad7f6623575a6e17544bd9fd9bef18c8a}{}\index{boton\+Toggle@{boton\+Toggle}!update@{update}}
+\index{update@{update}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{update(float, float)}]{\setlength{\rightskip}{0pt plus 5cm}bool boton\+Toggle\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\label{classboton_toggle_ad7f6623575a6e17544bd9fd9bef18c8a}
+
+
+Implementa el cambio de imagen y texto si el usuario hizo clic. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em x} & coordenada x de la entrada \\
+\hline
+{\em y} & coordenada y de la entrada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el usuario hizo clic sobre el componente 
+\end{DoxyReturn}
+\hypertarget{classboton_toggle_ae0c7f301bb81bf8e813be7273e09ce3d}{}\index{boton\+Toggle@{boton\+Toggle}!update@{update}}
+\index{update@{update}!boton\+Toggle@{boton\+Toggle}}
+\subsubsection[{update(bool)}]{\setlength{\rightskip}{0pt plus 5cm}bool boton\+Toggle\+::update (
+\begin{DoxyParamCaption}
+\item[{bool}]{res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classboton_toggle_ae0c7f301bb81bf8e813be7273e09ce3d}
 
 
 \subsection{Documentación de los datos miembro}

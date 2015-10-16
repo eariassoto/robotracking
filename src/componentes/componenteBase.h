@@ -2,6 +2,7 @@
 #include <time.h>
 #include <chrono>
 #include "ofRectangle.h"
+#include "ofSoundPlayer.h"
 #include "ofGraphics.h"
 
 /// Esquema base de los componentes de los espacios
@@ -46,42 +47,58 @@ public:
 	/**
 		Valida la interacción del usuario con el componente. En caso de reconocimiento visual se usa
 		un temporizador. Cuando el usuario fija su atención en el componente corre un temporizador, si
-		el usuario mantiene dicha atención por ese tiempo se activa el componente. En caso de reconocimiento
-		de gestos se utilizan la posición de entrada y un boolean que indica si el usuario hizo clic.
+		el usuario mantiene dicha atención por ese tiempo se activa el componente. 
 
-		\param xIn coordenada x de la entrada visual
-		\param yIn coordenada y de la entrada visual
-		\param xLea coordenada x del componente de gestos
-		\param yLea coordenada y del componente de gestos
-		\param clic indica si el usuario ha hecho el gesto para el clic
+		\param xIn coordenada x de la entrada 
+		\param yIn coordenada y de la entrada 
 
 		\return true si el usuario hizo clic sobre el componente
 	*/
-	bool         update(float, float, float, float, bool);
+	bool update(float, float);
+
+	/// Actualiza el componente
+	/**
+	Valida la interacción del usuario con el componente. En el caso de reconocimiento
+	de gestos se utilizan la posición de entrada y un boolean que indica si el usuario hizo clic.
+
+	\param xLea coordenada x del componente de gestos
+	\param yLea coordenada y del componente de gestos
+	\param clic indica si el usuario ha hecho el gesto para el clic
+
+	\return true si el usuario hizo clic sobre el componente
+	*/
+	bool update(float, float, bool);
 	
 	/// Dibuja el componente en pantalla
 	virtual void draw() = 0;
 
+	bool seHizoClic();
+
+	bool hayMouseEncima();
+
 protected:
 
+	bool hayClic;
+
 	/// Indica si las coordenadas dadas están dentro del componente
-	bool          mouseEnCuadro(float, float);
+	bool mouseEnCuadro(float, float);
 
 	/// Devuelve el tiempo actual en milisegundos
 	long long int getMillisec();
 
 	/// Indica si el usuario está fijando su atención y no ha terminado el tiempo máximo
-	bool          leQuedaTiempo;
+	bool leQuedaTiempo;
 
 	/// Indice si el mouse está dentro del componente
-	bool          mouseDentro;
+	bool mouseDentro;
 
 	/// Tiempo actual cuando el usuario fija su atención en el componente
 	long long int tiempo;
 
 	/// Tiempo máximo para activar el componente 
-	int           tiempoMax;
+	int tiempoMax;
 
+	ofSoundPlayer player;
 };
 
 

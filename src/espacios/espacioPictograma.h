@@ -43,7 +43,8 @@ public:
 		de los pictogramas activos.
 	*/
 	void         setup();
-	espacioBase* update(float, float, float, float, bool);
+	espacioBase* update(float, float);
+	espacioBase* update(float, float, bool);
 	void         draw();
 
 private:
@@ -109,6 +110,6 @@ private:
 	/// Indica la categoría activa en la pantalla
 	int categoriaActual;
 	
-
+	espacioBase* update(bool, bool, bool, bool, bool, bool);
 	
 };

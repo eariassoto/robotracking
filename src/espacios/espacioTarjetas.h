@@ -28,7 +28,8 @@ public:
 	~espacioTarjetas();
 
 	void setup();
-	espacioBase* update(float, float, float, float, bool);
+	espacioBase* update(float, float);
+	espacioBase* update(float, float, bool);
 	void draw();
 
 private:
@@ -87,4 +88,5 @@ private:
 	/// Instancia del administrador de la base de datos
 	sqlite3Manager *baseDatos;
 
+	espacioBase* update(bool, bool, bool, bool, bool, bool);
 };

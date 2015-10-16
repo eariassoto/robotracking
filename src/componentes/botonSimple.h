@@ -26,22 +26,26 @@ public:
 	*/
 	botonSimple(string, int, ofColor, int, int, int, int);
 
-	void   draw();
+	botonSimple(string, int, ofColor, int, int, int, int, int);
+
+	void draw();
 
 	/// Recupera el texto del botón
 	string getTexto();
 
 	/// Cambia el texto del botón
-	void   setTexto(string);
+	void setTexto(string);
 
 private:
 
 	/// Color de la fuente
-	ofColor        colorFuente;
+	ofColor colorFuente;
 	
 	/// Instancia de la fuente para poder dibujar el texto
 	ofTrueTypeFont fuente;
 
 	/// Contiene el texto del botón
-	string         texto;
+	string texto;
+
+	int alfa;
 };

@@ -1,0 +1,209 @@
+\hypertarget{class_eye_x_host}{}\section{Referencia de la Clase Eye\+X\+Host}
+\label{class_eye_x_host}\index{Eye\+X\+Host@{Eye\+X\+Host}}
+
+
+Clase que maneja la interacción con el dispositivo Tobii\+Eye\+X.  
+
+
+
+
+{\ttfamily \#include $<$Eye\+X\+Host.\+h$>$}
+
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_eye_x_host_1_1_eye_x_host_singleton_guard}{Eye\+X\+Host\+Singleton\+Guard}
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_eye_x_host}{Eye\+X\+Host} $\ast$ \hyperlink{class_eye_x_host_a8468386a5900cfa1703844da67a713b4}{instance} (H\+W\+N\+D \hyperlink{class_eye_x_host_a9791baa4b1f20d3007d46d37e657ff43}{hwnd\+Window})
+\begin{DoxyCompactList}\small\item\em Se implementa este método para que las instancias del manejador sean únicas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_eye_x_host_ab62be3731b1e28ebd84a983e6683ab34}{x} = 0
+\item 
+static int \hyperlink{class_eye_x_host_a35ab6bf6585bd665c4b5c50f8b577a12}{y} = 0
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_eye_x_host_a376b3e2cf679be11303e84091c856a71}{Eye\+X\+Host} (H\+W\+N\+D)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_eye_x_host_a51725687b656ed9442c3ddc29cc448f3}{$\sim$\+Eye\+X\+Host} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+T\+X\+\_\+\+R\+E\+S\+U\+L\+T \hyperlink{class_eye_x_host_abcf6d191110994711060f65a5b8ac1aa}{Initialize\+Global\+Interactor\+Snapshot} (T\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+H\+A\+N\+D\+L\+E)
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_eye_x_host_a5c3e688cb906787ead95758baa9cc553}{On\+Gaze\+Data\+Event} (T\+X\+\_\+\+H\+A\+N\+D\+L\+E)
+\begin{DoxyCompactList}\small\item\em Callback del manejo de eventos de mirada del usuario. \end{DoxyCompactList}\item 
+static void T\+X\+\_\+\+C\+A\+L\+L\+C\+O\+N\+V\+E\+N\+T\+I\+O\+N \hyperlink{class_eye_x_host_a835b09b6d54730778d1c750eaf5a0ba7}{On\+Snapshot\+Committed} (T\+X\+\_\+\+C\+O\+N\+S\+T\+H\+A\+N\+D\+L\+E, T\+X\+\_\+\+U\+S\+E\+R\+P\+A\+R\+A\+M)
+\item 
+static void T\+X\+\_\+\+C\+A\+L\+L\+C\+O\+N\+V\+E\+N\+T\+I\+O\+N \hyperlink{class_eye_x_host_a8fd3d98accddcae32cbeccfd118d3d66}{On\+Engine\+Connection\+State\+Changed} (T\+X\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+S\+T\+A\+T\+E, T\+X\+\_\+\+U\+S\+E\+R\+P\+A\+R\+A\+M)
+\item 
+static void T\+X\+\_\+\+C\+A\+L\+L\+C\+O\+N\+V\+E\+N\+T\+I\+O\+N \hyperlink{class_eye_x_host_a84d178d9ea0e477e5742810fb2cfd3b7}{Handle\+Event} (T\+X\+\_\+\+C\+O\+N\+S\+T\+H\+A\+N\+D\+L\+E, T\+X\+\_\+\+U\+S\+E\+R\+P\+A\+R\+A\+M)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+T\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+H\+A\+N\+D\+L\+E \hyperlink{class_eye_x_host_aa25acc2fc272389da12f9cd22e3481aa}{h\+Context}
+\item 
+T\+X\+\_\+\+T\+I\+C\+K\+E\+T \hyperlink{class_eye_x_host_a5d7aa14e1384f6c130027ca0ae1ae823}{h\+Connection\+State\+Changed\+Ticket}
+\item 
+T\+X\+\_\+\+T\+I\+C\+K\+E\+T \hyperlink{class_eye_x_host_a2b6ed6e26a4a695501165886230cfcab}{h\+Event\+Handler\+Ticket}
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static H\+W\+N\+D \hyperlink{class_eye_x_host_a9791baa4b1f20d3007d46d37e657ff43}{hwnd\+Window} = N\+U\+L\+L
+\item 
+static const T\+X\+\_\+\+S\+T\+R\+I\+N\+G \hyperlink{class_eye_x_host_ad5318e87583fd9f98c8831a6f40b0a85}{Interactor\+Id} = \char`\"{}Eye\+X Qt\char`\"{}
+\begin{DoxyCompactList}\small\item\em I\+D del interactor. \end{DoxyCompactList}\item 
+static T\+X\+\_\+\+H\+A\+N\+D\+L\+E \hyperlink{class_eye_x_host_a212d54acb5dd498a5c7caa654bdcac1a}{g\+\_\+h\+Global\+Interactor\+Snapshot} = T\+X\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+H\+A\+N\+D\+L\+E
+\item 
+static \hyperlink{class_eye_x_host}{Eye\+X\+Host} $\ast$ \hyperlink{class_eye_x_host_ab27a57316b24225ee35e50ebd752e962}{singleton} = N\+U\+L\+L
+\begin{DoxyCompactList}\small\item\em Instancia del singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_eye_x_host_ac70a4275d1360ff292e3ce4e1b00b6f0}{Eye\+X\+Host\+Singleton\+Guard}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Clase que maneja la interacción con el dispositivo Tobii\+Eye\+X. 
+
+Esta clase crea las instancias y manejadores necesarios para interactuar con los eventos básicos del Tobii\+Eye\+X 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_eye_x_host_a376b3e2cf679be11303e84091c856a71}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!Eye\+X\+Host@{Eye\+X\+Host}}
+\index{Eye\+X\+Host@{Eye\+X\+Host}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{Eye\+X\+Host(\+H\+W\+N\+D)}]{\setlength{\rightskip}{0pt plus 5cm}Eye\+X\+Host\+::\+Eye\+X\+Host (
+\begin{DoxyParamCaption}
+\item[{H\+W\+N\+D}]{\+\_\+hwnd\+Window}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}}\label{class_eye_x_host_a376b3e2cf679be11303e84091c856a71}
+
+
+Constructor de la clase. 
+
+\hypertarget{class_eye_x_host_a51725687b656ed9442c3ddc29cc448f3}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!````~Eye\+X\+Host@{$\sim$\+Eye\+X\+Host}}
+\index{````~Eye\+X\+Host@{$\sim$\+Eye\+X\+Host}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{$\sim$\+Eye\+X\+Host()}]{\setlength{\rightskip}{0pt plus 5cm}Eye\+X\+Host\+::$\sim$\+Eye\+X\+Host (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\label{class_eye_x_host_a51725687b656ed9442c3ddc29cc448f3}
+
+
+Destructor de la clase. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_eye_x_host_a84d178d9ea0e477e5742810fb2cfd3b7}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!Handle\+Event@{Handle\+Event}}
+\index{Handle\+Event@{Handle\+Event}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{Handle\+Event(\+T\+X\+\_\+\+C\+O\+N\+S\+T\+H\+A\+N\+D\+L\+E, T\+X\+\_\+\+U\+S\+E\+R\+P\+A\+R\+A\+M)}]{\setlength{\rightskip}{0pt plus 5cm}void T\+X\+\_\+\+C\+A\+L\+L\+C\+O\+N\+V\+E\+N\+T\+I\+O\+N Eye\+X\+Host\+::\+Handle\+Event (
+\begin{DoxyParamCaption}
+\item[{T\+X\+\_\+\+C\+O\+N\+S\+T\+H\+A\+N\+D\+L\+E}]{h\+Async\+Data, }
+\item[{T\+X\+\_\+\+U\+S\+E\+R\+P\+A\+R\+A\+M}]{user\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_eye_x_host_a84d178d9ea0e477e5742810fb2cfd3b7}
+\hypertarget{class_eye_x_host_abcf6d191110994711060f65a5b8ac1aa}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!Initialize\+Global\+Interactor\+Snapshot@{Initialize\+Global\+Interactor\+Snapshot}}
+\index{Initialize\+Global\+Interactor\+Snapshot@{Initialize\+Global\+Interactor\+Snapshot}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{Initialize\+Global\+Interactor\+Snapshot(\+T\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+H\+A\+N\+D\+L\+E)}]{\setlength{\rightskip}{0pt plus 5cm}T\+X\+\_\+\+R\+E\+S\+U\+L\+T Eye\+X\+Host\+::\+Initialize\+Global\+Interactor\+Snapshot (
+\begin{DoxyParamCaption}
+\item[{T\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+H\+A\+N\+D\+L\+E}]{h\+Context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_eye_x_host_abcf6d191110994711060f65a5b8ac1aa}
+\hypertarget{class_eye_x_host_a8468386a5900cfa1703844da67a713b4}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!instance@{instance}}
+\index{instance@{instance}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{instance(\+H\+W\+N\+D hwnd\+Window)}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Eye\+X\+Host}$\ast$ Eye\+X\+Host\+::instance (
+\begin{DoxyParamCaption}
+\item[{H\+W\+N\+D}]{hwnd\+Window}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_eye_x_host_a8468386a5900cfa1703844da67a713b4}
+
+
+Se implementa este método para que las instancias del manejador sean únicas. 
+
+\hypertarget{class_eye_x_host_a8fd3d98accddcae32cbeccfd118d3d66}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!On\+Engine\+Connection\+State\+Changed@{On\+Engine\+Connection\+State\+Changed}}
+\index{On\+Engine\+Connection\+State\+Changed@{On\+Engine\+Connection\+State\+Changed}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{On\+Engine\+Connection\+State\+Changed(\+T\+X\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+S\+T\+A\+T\+E, T\+X\+\_\+\+U\+S\+E\+R\+P\+A\+R\+A\+M)}]{\setlength{\rightskip}{0pt plus 5cm}void T\+X\+\_\+\+C\+A\+L\+L\+C\+O\+N\+V\+E\+N\+T\+I\+O\+N Eye\+X\+Host\+::\+On\+Engine\+Connection\+State\+Changed (
+\begin{DoxyParamCaption}
+\item[{T\+X\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+S\+T\+A\+T\+E}]{connection\+State, }
+\item[{T\+X\+\_\+\+U\+S\+E\+R\+P\+A\+R\+A\+M}]{user\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_eye_x_host_a8fd3d98accddcae32cbeccfd118d3d66}
+\hypertarget{class_eye_x_host_a5c3e688cb906787ead95758baa9cc553}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!On\+Gaze\+Data\+Event@{On\+Gaze\+Data\+Event}}
+\index{On\+Gaze\+Data\+Event@{On\+Gaze\+Data\+Event}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{On\+Gaze\+Data\+Event(\+T\+X\+\_\+\+H\+A\+N\+D\+L\+E)}]{\setlength{\rightskip}{0pt plus 5cm}void Eye\+X\+Host\+::\+On\+Gaze\+Data\+Event (
+\begin{DoxyParamCaption}
+\item[{T\+X\+\_\+\+H\+A\+N\+D\+L\+E}]{h\+Gaze\+Data\+Behavior}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_eye_x_host_a5c3e688cb906787ead95758baa9cc553}
+
+
+Callback del manejo de eventos de mirada del usuario. 
+
+\hypertarget{class_eye_x_host_a835b09b6d54730778d1c750eaf5a0ba7}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!On\+Snapshot\+Committed@{On\+Snapshot\+Committed}}
+\index{On\+Snapshot\+Committed@{On\+Snapshot\+Committed}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{On\+Snapshot\+Committed(\+T\+X\+\_\+\+C\+O\+N\+S\+T\+H\+A\+N\+D\+L\+E, T\+X\+\_\+\+U\+S\+E\+R\+P\+A\+R\+A\+M)}]{\setlength{\rightskip}{0pt plus 5cm}void T\+X\+\_\+\+C\+A\+L\+L\+C\+O\+N\+V\+E\+N\+T\+I\+O\+N Eye\+X\+Host\+::\+On\+Snapshot\+Committed (
+\begin{DoxyParamCaption}
+\item[{T\+X\+\_\+\+C\+O\+N\+S\+T\+H\+A\+N\+D\+L\+E}]{h\+Async\+Data, }
+\item[{T\+X\+\_\+\+U\+S\+E\+R\+P\+A\+R\+A\+M}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_eye_x_host_a835b09b6d54730778d1c750eaf5a0ba7}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\hypertarget{class_eye_x_host_ac70a4275d1360ff292e3ce4e1b00b6f0}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!Eye\+X\+Host\+Singleton\+Guard@{Eye\+X\+Host\+Singleton\+Guard}}
+\index{Eye\+X\+Host\+Singleton\+Guard@{Eye\+X\+Host\+Singleton\+Guard}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{Eye\+X\+Host\+Singleton\+Guard}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Eye\+X\+Host\+Singleton\+Guard}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_eye_x_host_ac70a4275d1360ff292e3ce4e1b00b6f0}
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{class_eye_x_host_a212d54acb5dd498a5c7caa654bdcac1a}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!g\+\_\+h\+Global\+Interactor\+Snapshot@{g\+\_\+h\+Global\+Interactor\+Snapshot}}
+\index{g\+\_\+h\+Global\+Interactor\+Snapshot@{g\+\_\+h\+Global\+Interactor\+Snapshot}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{g\+\_\+h\+Global\+Interactor\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}T\+X\+\_\+\+H\+A\+N\+D\+L\+E Eye\+X\+Host\+::g\+\_\+h\+Global\+Interactor\+Snapshot = T\+X\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+H\+A\+N\+D\+L\+E\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_eye_x_host_a212d54acb5dd498a5c7caa654bdcac1a}
+\hypertarget{class_eye_x_host_a5d7aa14e1384f6c130027ca0ae1ae823}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!h\+Connection\+State\+Changed\+Ticket@{h\+Connection\+State\+Changed\+Ticket}}
+\index{h\+Connection\+State\+Changed\+Ticket@{h\+Connection\+State\+Changed\+Ticket}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{h\+Connection\+State\+Changed\+Ticket}]{\setlength{\rightskip}{0pt plus 5cm}T\+X\+\_\+\+T\+I\+C\+K\+E\+T Eye\+X\+Host\+::h\+Connection\+State\+Changed\+Ticket\hspace{0.3cm}{\ttfamily [private]}}\label{class_eye_x_host_a5d7aa14e1384f6c130027ca0ae1ae823}
+\hypertarget{class_eye_x_host_aa25acc2fc272389da12f9cd22e3481aa}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!h\+Context@{h\+Context}}
+\index{h\+Context@{h\+Context}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{h\+Context}]{\setlength{\rightskip}{0pt plus 5cm}T\+X\+\_\+\+C\+O\+N\+T\+E\+X\+T\+H\+A\+N\+D\+L\+E Eye\+X\+Host\+::h\+Context\hspace{0.3cm}{\ttfamily [private]}}\label{class_eye_x_host_aa25acc2fc272389da12f9cd22e3481aa}
+\hypertarget{class_eye_x_host_a2b6ed6e26a4a695501165886230cfcab}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!h\+Event\+Handler\+Ticket@{h\+Event\+Handler\+Ticket}}
+\index{h\+Event\+Handler\+Ticket@{h\+Event\+Handler\+Ticket}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{h\+Event\+Handler\+Ticket}]{\setlength{\rightskip}{0pt plus 5cm}T\+X\+\_\+\+T\+I\+C\+K\+E\+T Eye\+X\+Host\+::h\+Event\+Handler\+Ticket\hspace{0.3cm}{\ttfamily [private]}}\label{class_eye_x_host_a2b6ed6e26a4a695501165886230cfcab}
+\hypertarget{class_eye_x_host_a9791baa4b1f20d3007d46d37e657ff43}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!hwnd\+Window@{hwnd\+Window}}
+\index{hwnd\+Window@{hwnd\+Window}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{hwnd\+Window}]{\setlength{\rightskip}{0pt plus 5cm}H\+W\+N\+D Eye\+X\+Host\+::hwnd\+Window = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_eye_x_host_a9791baa4b1f20d3007d46d37e657ff43}
+\hypertarget{class_eye_x_host_ad5318e87583fd9f98c8831a6f40b0a85}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!Interactor\+Id@{Interactor\+Id}}
+\index{Interactor\+Id@{Interactor\+Id}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{Interactor\+Id}]{\setlength{\rightskip}{0pt plus 5cm}const T\+X\+\_\+\+S\+T\+R\+I\+N\+G Eye\+X\+Host\+::\+Interactor\+Id = \char`\"{}Eye\+X Qt\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_eye_x_host_ad5318e87583fd9f98c8831a6f40b0a85}
+
+
+I\+D del interactor. 
+
+\hypertarget{class_eye_x_host_ab27a57316b24225ee35e50ebd752e962}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!singleton@{singleton}}
+\index{singleton@{singleton}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{singleton}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Eye\+X\+Host} $\ast$ Eye\+X\+Host\+::singleton = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_eye_x_host_ab27a57316b24225ee35e50ebd752e962}
+
+
+Instancia del singleton. 
+
+\hypertarget{class_eye_x_host_ab62be3731b1e28ebd84a983e6683ab34}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!x@{x}}
+\index{x@{x}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}int Eye\+X\+Host\+::x = 0\hspace{0.3cm}{\ttfamily [static]}}\label{class_eye_x_host_ab62be3731b1e28ebd84a983e6683ab34}
+\hypertarget{class_eye_x_host_a35ab6bf6585bd665c4b5c50f8b577a12}{}\index{Eye\+X\+Host@{Eye\+X\+Host}!y@{y}}
+\index{y@{y}!Eye\+X\+Host@{Eye\+X\+Host}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}int Eye\+X\+Host\+::y = 0\hspace{0.3cm}{\ttfamily [static]}}\label{class_eye_x_host_a35ab6bf6585bd665c4b5c50f8b577a12}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/\+Eye\+X\+Host/\hyperlink{_eye_x_host_8h}{Eye\+X\+Host.\+h}\item 
+C\+:/of\+\_\+v0.\+8.\+4\+\_\+vs\+\_\+release/apps/my\+Apps/\+Robo\+Tracking\+App/src/\+Eye\+X\+Host/\hyperlink{_eye_x_host_8cpp}{Eye\+X\+Host.\+cpp}\end{DoxyCompactItemize}

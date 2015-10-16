@@ -12,16 +12,30 @@ espacioSiNo::~espacioSiNo(){
 	delete btnAtras;
 }
 
-espacioBase* espacioSiNo::update(float x, float y, float xL, float yL, bool clic)
+espacioBase* espacioSiNo::update(bool btnAtrasRes)
 {
 	espacioBase* r = this;
-	
-	if (btnAtras->update(x, y, xL, yL, clic))
+
+	if (btnAtrasRes)
 	{
 		r = espacioPadre;
 	}
 
 	return r;
+}
+
+espacioBase* espacioSiNo::update(float x, float y, bool clic)
+{
+	bool btnAtrasRes = btnAtras->update(x, y, clic);
+
+	return update(btnAtrasRes);
+}
+
+espacioBase* espacioSiNo::update(float x, float y)
+{
+	bool btnAtrasRes = btnAtras->update(x, y);
+
+	return update(btnAtrasRes);
 }
 
 void espacioSiNo::draw()

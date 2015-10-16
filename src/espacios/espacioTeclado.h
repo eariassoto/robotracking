@@ -25,7 +25,7 @@ public:
 		el espacio implementa un teclado con muchos botones es mejor definirlos dinámicamente.
 
 		\param confPath archivo de configuración
-		\param espacioPadre
+		\param espacioPadre puntero al espacio padre
 	*/
 	espacioTeclado(string, espacioBase*);
 
@@ -33,7 +33,8 @@ public:
 	~espacioTeclado();
 
 	void         setup();
-	espacioBase* update(float, float, float, float, bool);
+	espacioBase* update(float, float, bool);
+	espacioBase* update(float, float);
 	void         draw();
 
 private:
@@ -42,30 +43,35 @@ private:
 	void comandoHablar(string);
 
 	/// Instancia del manejador del archivo de configuraciones
-	ofxXmlSettings          configuraciones;
+	ofxXmlSettings  configuraciones;
 
 	/// Fabrica los componentes a partir de las configuraciones
-	fabricaComponentes      fabComponentes;
+	fabricaComponentes fabComponentes;
 
 	/// Cantidad de componentes en la pantalla
-	int                     cantidadComponentes;
+	int cantidadComponentes;
 
 	/// Lista con los componentes cargados de las configuraciones
 	vector<componenteBase*> componentes;
 
 	/// Caja de texto para mostrar la hilera que produce el usuario
-	cajaTexto               *cTexto;
+	cajaTexto *cTexto;
+
+	cajaTexto *tooltip;
 
 	/// Botón para borrar el último caracter
-	botonSimple             *btnBorrar;
+	botonSimple *btnBorrar;
 
 	/// Botón para insertar un nuevo espacio
-	botonSimple             *btnEspacio;
+	botonSimple *btnEspacio;
 
 	/// Botón para pasar la hilera a voz
-	botonSimple             *btnHablar;
+	botonSimple *btnHablar;
+
+	botonSimple *btnLimpiar;
 
 	/// Botón para salir al menú
-	botonImagen             *btnSalir;
+	botonImagen *btnSalir;
 
+	espacioBase* update(bool, bool, bool, bool, bool);
 };

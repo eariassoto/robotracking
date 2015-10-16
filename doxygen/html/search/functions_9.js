@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['obtenerbotonid',['obtenerBotonId',['../classfabrica_componentes.html#a238aef4aa7fb7ca425efdfb22520171d',1,'fabricaComponentes']]],
-  ['obtenercajatexto',['obtenerCajaTexto',['../classfabrica_componentes.html#a995031bf966e21773d7dc1777dae811c',1,'fabricaComponentes']]],
-  ['obtenercomponentes',['obtenerComponentes',['../classfabrica_componentes.html#a05e1fdd9e97037c6e94778479ea4c062',1,'fabricaComponentes']]],
-  ['ofapp',['ofApp',['../classof_app.html#a8e51b68c569cf4839163fd7470d50260',1,'ofApp']]]
+  ['keypressed',['keyPressed',['../classof_app.html#a957d3197364bbac8e67eaa4f15b28ad3',1,'ofApp']]],
+  ['keyreleased',['keyReleased',['../classof_app.html#aa1503a87453bcfdd395fe4acca5d91a0',1,'ofApp']]]
 ];

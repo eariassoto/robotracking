@@ -2,7 +2,7 @@
 
 void menuComunicacion::setup(){
 	menuBase::setup();
-	espTeclado = new espacioTeclado("interfaz1.xml", this);
+	espTeclado = new espacioTeclado("interfazTeclado.xml", this);
 	espPictograma = new espacioPictograma(this);
 	espSiNo = new espacioSiNo(this);
 	espTeclado->setup(); 

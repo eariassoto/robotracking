@@ -75,8 +75,9 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>LeapSDK\include;src\menus;src\utilidades\sqlite3Manager;src\utilidades\manejoSonido;src\utilidades\conexiones;src\componentes;src\espacios;src\;%(AdditionalIncludeDirectories);..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;sqlite3</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src\LeapHost;src\EyeXHost;LeapSDK\include;src\menus;src\utilidades\sqlite3Manager;src\utilidades\manejoSonido;src\utilidades\conexiones;src\componentes;src\espacios;src\;%(AdditionalIncludeDirectories);..\..\..\addons\ofxXmlSettings\libs;..\..\..\addons\ofxXmlSettings\src;sqlite3;tobii\include</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
+      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
@@ -86,12 +87,14 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <AdditionalDependencies>Leap.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>LeapSDK\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>tobii\lib\x86;LeapSDK\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /e /i /y "$(ProjectDir)..\..\..\export\vs\*.dll" "$(ProjectDir)bin" 
-xcopy /yr "LeapSDK\lib\x86\Leap.dll" "$(TargetDir)"</Command>
+xcopy /yr "LeapSDK\lib\x86\Leap.dll" "$(TargetDir)"
+ 	
+copy /b /y tobii\lib\x86\*.dll $(OutDir)</Command>
     </PostBuildEvent>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
@@ -109,6 +112,8 @@ xcopy /yr "LeapSDK\lib\x86\Leap.dll" "$(TargetDir)"</Command>
     <ClCompile Include="src\espacios\espacioSiNo.cpp" />
     <ClCompile Include="src\espacios\espacioTarjetas.cpp" />
     <ClCompile Include="src\espacios\espacioTeclado.cpp" />
+    <ClCompile Include="src\EyeXHost\EyeXHost.cpp" />
+    <ClCompile Include="src\LeapHost\LeapHost.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\menus\menuBase.cpp" />
     <ClCompile Include="src\menus\menuComunicacion.cpp" />
@@ -138,6 +143,8 @@ xcopy /yr "LeapSDK\lib\x86\Leap.dll" "$(TargetDir)"</Command>
     <ClInclude Include="src\espacios\espacioSiNo.h" />
     <ClInclude Include="src\espacios\espacioTarjetas.h" />
     <ClInclude Include="src\espacios\espacioTeclado.h" />
+    <ClInclude Include="src\EyeXHost\EyeXHost.h" />
+    <ClInclude Include="src\LeapHost\LeapHost.h" />
     <ClInclude Include="src\menus\menuBase.h" />
     <ClInclude Include="src\menus\menuComunicacion.h" />
     <ClInclude Include="src\menus\menuCotidiana.h" />

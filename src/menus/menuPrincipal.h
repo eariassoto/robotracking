@@ -21,20 +21,16 @@ public:
 	/// Constructor de la clase
 	/**
 		Define el modo en que el usuario va a interactuar, ya sea por visión o por gestos.
-
-		\param vM Indica el modo de reconociento que se va a utilizar
 	*/
-	menuPrincipal(bool);
+	menuPrincipal();
 
 	/// Destructor de la clase
 	~menuPrincipal();
 
 	void         setup();
-	espacioBase* update(float, float, float, float, bool);
+	espacioBase* update(float, float);
+	espacioBase* update(float, float, bool);
 	void         draw();
-
-	/// true si el modo de reconocimiento es visión
-	bool        visionMode;
 
 	/// Botón paa cambiar el modo de reconocimiento
 	botonToggle *btnInput;
@@ -81,6 +77,8 @@ private:
 
 	/// Botón para salir de la aplicación
 	botonImagen *btnSalir;
+
+	espacioBase* update(bool, bool, bool, bool, bool, bool);
 	
 };
 

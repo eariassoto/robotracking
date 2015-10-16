@@ -1,11 +1,17 @@
 #include "ofApp.h"
+#include <cmath>
 #include "espacioTeclado.h"
 
-ofApp::ofApp(int x, int y)
+ofApp::ofApp(Modo m, int x, int y, HWND _hwndWindow)
 {
 	tamX = x;
 	tamY = y;
-	inputMode = true;
+	modo = m;
+	hwndWindow = _hwndWindow;
+	host = EyeXHost::instance(_hwndWindow);
+	leapHost = new LeapHost(x, y);
+	ultimoX = host->x;
+	ultimoY = host->y;
 }
 
 void ofApp::setup()
@@ -13,83 +19,56 @@ void ofApp::setup()
 	ofSetWindowTitle("RoboTracking");
 	ofBackground(255, 255, 255);
 
-	controller = new Leap::Controller();
-	controller->enableGesture(Leap::Gesture::TYPE_SCREEN_TAP);
-
-	mPrincipal = new menuPrincipal(inputMode);
+	mPrincipal = new menuPrincipal();
 	espacioActivo = mPrincipal;
 	mPrincipal->setup();
 
-	handPressed = false;
-	
-	
 }
 
 //--------------------------------------------------------------
 void ofApp::update()
 {
 	espacioBase* a = espacioActivo;
+	int inputX, inputY;
 
-	bool leapClic = false;
-	int mX, mY, lX, lY;
-	if (!inputMode){
-		mX = mY = -1;
-
-		Frame frame = controller->frame();
-		
-		if (frame != lastFrame)
-		{
-			InteractionBox iBox = frame.interactionBox();
-			HandList hands = frame.hands();
-
-			if (hands.count() == 1){
-				Hand hand = hands[0];
-				if (hand.isValid()){
-
-					Vector leapPoint = hand.stabilizedPalmPosition();
-					Vector normalizedPoint = iBox.normalizePoint(leapPoint, false);
-
-					leapX = lX = normalizedPoint.x * tamX;
-					leapY = lY = (1 - normalizedPoint.y) * tamY;
-
-					float strength = hand.grabStrength();
-
-					if (!handPressed && strength > .9){
-						handPressed = true;
-					}
-					else{
-						if (handPressed && strength < .7){
-							handPressed = false;
-							leapClic = true;
-						}
-					}
-				}
-			}
-
-			lastFrame = frame;
-		}
-
-	}
-	else{
-		mX = mouseX;
-		mY = mouseY;
-		lX = lY = -1;
-		
+	switch (modo)
+	{
+	case Modo::Tobii:
+		inputX = host->x;
+		inputY = host->y;
+		espacioActivo = espacioActivo->update(inputX, inputY);
+		break;
+	case Modo::Mouse:
+		inputX = mouseX;
+		inputY = mouseY;
+		espacioActivo = espacioActivo->update(inputX, inputY);
+		break;
+	case Modo::Leap:
+		bool leapClic = false;
+		leapClic = leapHost->update();
+		inputX = leapHost->getX();
+		inputY = leapHost->getY();
+		espacioActivo = espacioActivo->update(inputX, inputY, leapClic);
+		break;
 	}
 	
-	espacioActivo = espacioActivo->update(mX, mY, lX, lY, leapClic);
 	if (espacioActivo == 0)
 	{
-		delete controller;
+		delete leapHost;
 		ofExit();
 	}
 	else{
 		if (espacioActivo == mPrincipal){
-			inputMode = mPrincipal->visionMode;
+			//inputMode = mPrincipal->visionMode;
 		}
 	}
 }
 
+
+double ofApp::circleDistance(double dX0, double dY0, double dX1, double dY1)
+{
+	return sqrt((dX1 - dX0)*(dX1 - dX0) + (dY1 - dY0)*(dY1 - dY0));
+}
 //--------------------------------------------------------------
 void ofApp::draw()
 {
@@ -98,19 +77,35 @@ void ofApp::draw()
 	ofFill();
 	ofEnableAlphaBlending();
 	
-	if (inputMode){
+	switch (modo)
+	{
+	case ofApp::Modo::Tobii:
+		if (circleDistance(ultimoX, ultimoY, host->x, host->y) > radioMirada)
+		{
+			ultimoX = host->x;
+			ultimoY = host->y;
+		}
+
 		ofSetColor(0, 0, 200, 127);
-		ofCircle(mouseX, mouseY, 25);
-	}
-	else{
-		if (handPressed){
+		ofCircle(ultimoX, ultimoY, radioMirada);
+		break;
+	case ofApp::Modo::Mouse:
+		ofSetColor(0, 0, 200, 127);
+		ofCircle(mouseX, mouseY, radioMirada);
+		break;
+	case ofApp::Modo::Leap:
+		if (leapHost->getHandPressed()){
 			ofSetColor(0, 200, 0, 127);
 		}
 		else{
 			ofSetColor(0, 0, 200, 127);
 		}
-		ofCircle(leapX, leapY, 25);
+		ofCircle(leapHost->getX(), leapHost->getY(), radioMirada);
+		break;
+	default:
+		break;
 	}
+
 	ofNoFill();
 
 }
@@ -126,7 +121,7 @@ void ofApp::keyReleased(int key)
 {
 	if (key == 't')
 	{
-		mPrincipal->visionMode = inputMode = !inputMode;
+		//mPrincipal->visionMode = inputMode = !inputMode;
 		mPrincipal->btnInput->toggle();
 	}
 }

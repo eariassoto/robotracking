@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['margen',['margen',['../classespacio_pictograma.html#ae9d1d84f5ddbeba53dd9aed28e7eb0d5',1,'espacioPictograma']]],
-  ['mcomunicacion',['mComunicacion',['../classmenu_principal.html#af820d04d0e35fa1f4c552af95d5e3036',1,'menuPrincipal']]],
-  ['mcotidiana',['mCotidiana',['../classmenu_principal.html#a67ce856e4bf6566b0e2dc4f6c1471e19',1,'menuPrincipal']]],
-  ['meducacion',['mEducacion',['../classmenu_principal.html#a495c578e5fba7f2453f963e88c193b5d',1,'menuPrincipal']]],
-  ['mocio',['mOcio',['../classmenu_principal.html#a8e372431b14d13de965f84dc0593e08a',1,'menuPrincipal']]],
-  ['mousedentro',['mouseDentro',['../classcomponente_base.html#a3cd688b2120c9545e25b490911e66717',1,'componenteBase']]],
-  ['mprincipal',['mPrincipal',['../classof_app.html#a9ba8bf05bd3a0932461179f47759b83d',1,'ofApp']]]
+  ['imagen',['imagen',['../classboton_imagen.html#a5099abcbecf2cc9d6cdb8cbe5b3a6921',1,'botonImagen']]],
+  ['img',['img',['../classespacio_camara.html#a71d14cf73376b62e3158e90a6f72d18f',1,'espacioCamara::img()'],['../classespacio_tarjetas.html#afa80c75849eae23d80adb0d66ffbd540',1,'espacioTarjetas::img()']]],
+  ['incorrecto',['incorrecto',['../classespacio_tarjetas.html#aec7ea4a5a0e9f386d8d256f2444ebfaf',1,'espacioTarjetas']]],
+  ['indice',['indice',['../classespacio_pictograma.html#ac977c8f8644a1a3ab7a724c689be0038',1,'espacioPictograma']]],
+  ['interactorid',['InteractorId',['../class_eye_x_host.html#ad5318e87583fd9f98c8831a6f40b0a85',1,'EyeXHost']]]
 ];

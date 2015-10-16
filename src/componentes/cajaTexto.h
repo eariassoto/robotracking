@@ -25,6 +25,8 @@ public:
 	*/
 	cajaTexto(int, ofColor, int, int, int, int);
 
+	cajaTexto(int, ofColor, int, int, int, int, int);
+
 	void draw();
 
 	/// Agrega texto al final de la hilera actual
@@ -36,15 +38,25 @@ public:
 	/// Devuelve el texto actual
 	string getTexto();
 
+	void limpiar();
+
 private:
 
 	/// Color del texto
-	ofColor        colorFuente;
+	ofColor colorFuente;
 
 	/// Fuente del texto
 	ofTrueTypeFont fuente;
 
 	/// Texto que se está mostrando en la caja
-	string         texto;
+	string texto;
+
+	int margenMaxTexto;
+	int margenMinTexto;
+	int fuenteInicial;
+	int razonCambioFuente;
+
+	int alfa;
+	ofColor color;
 };
 

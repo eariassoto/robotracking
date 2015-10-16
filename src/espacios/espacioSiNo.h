@@ -19,7 +19,8 @@ public:
 	~espacioSiNo();
 
 	void setup();
-	espacioBase* update(float, float, float, float, bool);
+	espacioBase* update(float, float);
+	espacioBase* update(float, float, bool);
 	void draw();
 
 private:
@@ -28,5 +29,7 @@ private:
 	ofTrueTypeFont fuenteSiNo;
 
 	botonImagen *btnAtras;
+
+	espacioBase* update(bool);
 };
 

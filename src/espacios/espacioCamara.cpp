@@ -1,13 +1,12 @@
 #include "espacioCamara.h"
 
-espacioCamara::espacioCamara(espacioBase* espPadre) :espacioBase(espPadre){
+espacioCamara::espacioCamara(espacioBase* espacioPadre) :espacioBase(espacioPadre){
 
 
 }
 
 void espacioCamara::setup()
 {
-
 	camWidth = 800;
 	camHeight = 600;
 	vidGrabber.setVerbose(true);
@@ -22,19 +21,22 @@ void espacioCamara::setup()
 	btnAtras = new botonImagen("img/mComunicacion/x.png", 0.5f, "Atras", 24, ofColor(0, 0, 0), 1140, 580, 125, 125);
 }
 
-espacioBase* espacioCamara::update(float x, float y, float xL, float yL, bool clic)
+espacioBase* espacioCamara::update(bool btnAtrasRes, bool btnGaleriaRes, bool btnFotoRes)
 {
 	espacioBase* r = this;
 
-	if (btnAtras->update(x, y, xL, yL, clic))
+	if (btnAtrasRes)
 	{
 		r = espacioPadre;
 	}
 
-	btnGaleria->update(x, y, xL, yL, clic);
 	
-	bool estadoFoto = btnFoto->update(x, y, xL, yL, clic);
-	if (estadoFoto)
+	if (btnGaleriaRes)
+	{
+
+	}
+
+	if (btnFotoRes)
 	{
 		auto t = time(nullptr);
 		auto tm = *localtime(&t);
@@ -42,19 +44,37 @@ espacioBase* espacioCamara::update(float x, float y, float xL, float yL, bool cl
 		stringstream buffer;
 		buffer << put_time(&tm, "%d%m%Y-%H%M%S");
 		string r = "fotos/img" + buffer.str() + ".png";
-		
+
 		img.saveImage(r);
 		//id++;
 
 	}
-	
+
 	vidGrabber.update();
 	if (vidGrabber.isFrameNew())
 	{
 		img.setFromPixels(vidGrabber.getPixelsRef());
 	}
-
 	return r;
+}
+
+espacioBase* espacioCamara::update(float x, float y)
+{
+	
+	bool btnAtrasRes   = btnAtras->update(x, y);
+	bool btnGaleriaRes = btnGaleria->update(x, y);
+	bool btnFotoRes    = btnFoto->update(x, y);
+	return update(btnAtrasRes, btnGaleriaRes, btnFotoRes);
+
+}
+
+espacioBase* espacioCamara::update(float x, float y, bool clic)
+{
+
+	bool btnAtrasRes   = btnAtras->update(x, y, clic);
+	bool btnGaleriaRes = btnGaleria->update(x, y, clic);
+	bool btnFotoRes    = btnFoto->update(x, y, clic);
+	return update(btnAtrasRes, btnGaleriaRes, btnFotoRes);
 
 }
 

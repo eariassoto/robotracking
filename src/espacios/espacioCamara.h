@@ -25,7 +25,10 @@ public:
 	~espacioCamara();
 
 	void setup();
-	espacioBase* update(float, float, float, float, bool);
+
+	espacioBase* update(float, float);
+	espacioBase* update(float, float, bool);
+	
 	void draw();
 
 private:
@@ -56,4 +59,6 @@ private:
 
 	/// Botón para acceder a la galería
 	botonImagen    *btnGaleria;
+
+	espacioBase* update(bool, bool, bool);
 };

@@ -24,10 +24,16 @@ void \hyperlink{classcomponente_base_af9d40a15747b13d6cf6ac2b7b658a9d4}{set\+Tam
 \begin{DoxyCompactList}\small\item\em Cambia el tamaño del componente. \end{DoxyCompactList}\item 
 void \hyperlink{classcomponente_base_a3797a3ebadf03c8374d9c7a9460bc645}{set\+Pos} (int, int)
 \begin{DoxyCompactList}\small\item\em Reposiciona el componente. \end{DoxyCompactList}\item 
-bool \hyperlink{classcomponente_base_a288dc05f1eb5748ba3a24ad651623d49}{update} (float, float, float, float, bool)
+bool \hyperlink{classcomponente_base_abb0253c1453914ecf1a2320cdddae474}{update} (float, float)
+\begin{DoxyCompactList}\small\item\em Actualiza el componente. \end{DoxyCompactList}\item 
+bool \hyperlink{classcomponente_base_ace60ea02ff300e2320657b25e54a1fe9}{update} (float, float, bool)
 \begin{DoxyCompactList}\small\item\em Actualiza el componente. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classcomponente_base_ac6faec0698776f8bfe0e817b9927c0f9}{draw} ()=0
-\begin{DoxyCompactList}\small\item\em Dibuja el componente en pantalla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Dibuja el componente en pantalla. \end{DoxyCompactList}\item 
+bool \hyperlink{classcomponente_base_addd45a1c6418e3c4cb8eba0c50bf1668}{se\+Hizo\+Clic} ()
+\item 
+bool \hyperlink{classcomponente_base_adfb19d2ac7ce963167c614b3809e83fa}{hay\+Mouse\+Encima} ()
+\end{DoxyCompactItemize}
 \subsection*{Métodos protegidos}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,6 +44,8 @@ long long int \hyperlink{classcomponente_base_a72b7c9497aa4af988a91d16446d26c34}
 \subsection*{Atributos protegidos}
 \begin{DoxyCompactItemize}
 \item 
+bool \hyperlink{classcomponente_base_a76a4fa4887545c9222a62d7f4aa7e71a}{hay\+Clic}
+\item 
 bool \hyperlink{classcomponente_base_ab03e8ff7fb596e34738ba00d455e37f5}{le\+Queda\+Tiempo}
 \begin{DoxyCompactList}\small\item\em Indica si el usuario está fijando su atención y no ha terminado el tiempo máximo. \end{DoxyCompactList}\item 
 bool \hyperlink{classcomponente_base_a3cd688b2120c9545e25b490911e66717}{mouse\+Dentro}
@@ -45,7 +53,9 @@ bool \hyperlink{classcomponente_base_a3cd688b2120c9545e25b490911e66717}{mouse\+D
 long long int \hyperlink{classcomponente_base_a6c1aa628629954f831209628e3dfcb2b}{tiempo}
 \begin{DoxyCompactList}\small\item\em Tiempo actual cuando el usuario fija su atención en el componente. \end{DoxyCompactList}\item 
 int \hyperlink{classcomponente_base_a0edb9230fa502947fd80006463f9ce25}{tiempo\+Max}
-\begin{DoxyCompactList}\small\item\em Tiempo máximo para activar el componente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Tiempo máximo para activar el componente. \end{DoxyCompactList}\item 
+of\+Sound\+Player \hyperlink{classcomponente_base_aed6af391c3e1381467f804283925ede1}{player}
+\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
@@ -110,6 +120,13 @@ Implementado en \hyperlink{classboton_imagen_aa2f66743b229d99cc06b36f5ad16450d}{
 
 Devuelve el tiempo actual en milisegundos. 
 
+\hypertarget{classcomponente_base_adfb19d2ac7ce963167c614b3809e83fa}{}\index{componente\+Base@{componente\+Base}!hay\+Mouse\+Encima@{hay\+Mouse\+Encima}}
+\index{hay\+Mouse\+Encima@{hay\+Mouse\+Encima}!componente\+Base@{componente\+Base}}
+\subsubsection[{hay\+Mouse\+Encima()}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::hay\+Mouse\+Encima (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcomponente_base_adfb19d2ac7ce963167c614b3809e83fa}
 \hypertarget{classcomponente_base_a2ca6628fb724d45687646a364ad68888}{}\index{componente\+Base@{componente\+Base}!mouse\+En\+Cuadro@{mouse\+En\+Cuadro}}
 \index{mouse\+En\+Cuadro@{mouse\+En\+Cuadro}!componente\+Base@{componente\+Base}}
 \subsubsection[{mouse\+En\+Cuadro(float, float)}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::mouse\+En\+Cuadro (
@@ -122,6 +139,13 @@ Devuelve el tiempo actual en milisegundos.
 
 Indica si las coordenadas dadas están dentro del componente. 
 
+\hypertarget{classcomponente_base_addd45a1c6418e3c4cb8eba0c50bf1668}{}\index{componente\+Base@{componente\+Base}!se\+Hizo\+Clic@{se\+Hizo\+Clic}}
+\index{se\+Hizo\+Clic@{se\+Hizo\+Clic}!componente\+Base@{componente\+Base}}
+\subsubsection[{se\+Hizo\+Clic()}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::se\+Hizo\+Clic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcomponente_base_addd45a1c6418e3c4cb8eba0c50bf1668}
 \hypertarget{classcomponente_base_a3797a3ebadf03c8374d9c7a9460bc645}{}\index{componente\+Base@{componente\+Base}!set\+Pos@{set\+Pos}}
 \index{set\+Pos@{set\+Pos}!componente\+Base@{componente\+Base}}
 \subsubsection[{set\+Pos(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}void componente\+Base\+::set\+Pos (
@@ -160,29 +184,47 @@ Cambia el tamaño del componente.
 {\em \+\_\+h} & ancho del componente \\
 \hline
 \end{DoxyParams}
-\hypertarget{classcomponente_base_a288dc05f1eb5748ba3a24ad651623d49}{}\index{componente\+Base@{componente\+Base}!update@{update}}
+\hypertarget{classcomponente_base_abb0253c1453914ecf1a2320cdddae474}{}\index{componente\+Base@{componente\+Base}!update@{update}}
 \index{update@{update}!componente\+Base@{componente\+Base}}
-\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::update (
+\subsubsection[{update(float, float)}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::update (
 \begin{DoxyParamCaption}
 \item[{float}]{x\+In, }
-\item[{float}]{y\+In, }
-\item[{float}]{x\+Lea, }
-\item[{float}]{y\+Lea, }
-\item[{bool}]{clic}
+\item[{float}]{y\+In}
 \end{DoxyParamCaption}
-)}\label{classcomponente_base_a288dc05f1eb5748ba3a24ad651623d49}
+)}\label{classcomponente_base_abb0253c1453914ecf1a2320cdddae474}
 
 
 Actualiza el componente. 
 
-Valida la interacción del usuario con el componente. En caso de reconocimiento visual se usa un temporizador. Cuando el usuario fija su atención en el componente corre un temporizador, si el usuario mantiene dicha atención por ese tiempo se activa el componente. En caso de reconocimiento de gestos se utilizan la posición de entrada y un boolean que indica si el usuario hizo clic.
+Valida la interacción del usuario con el componente. En caso de reconocimiento visual se usa un temporizador. Cuando el usuario fija su atención en el componente corre un temporizador, si el usuario mantiene dicha atención por ese tiempo se activa el componente.
 
 
 \begin{DoxyParams}{Parámetros}
-{\em x\+In} & coordenada x de la entrada visual \\
+{\em x\+In} & coordenada x de la entrada \\
 \hline
-{\em y\+In} & coordenada y de la entrada visual \\
+{\em y\+In} & coordenada y de la entrada\\
 \hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el usuario hizo clic sobre el componente 
+\end{DoxyReturn}
+\hypertarget{classcomponente_base_ace60ea02ff300e2320657b25e54a1fe9}{}\index{componente\+Base@{componente\+Base}!update@{update}}
+\index{update@{update}!componente\+Base@{componente\+Base}}
+\subsubsection[{update(float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::update (
+\begin{DoxyParamCaption}
+\item[{float}]{x\+Lea, }
+\item[{float}]{y\+Lea, }
+\item[{bool}]{clic}
+\end{DoxyParamCaption}
+)}\label{classcomponente_base_ace60ea02ff300e2320657b25e54a1fe9}
+
+
+Actualiza el componente. 
+
+Valida la interacción del usuario con el componente. En el caso de reconocimiento de gestos se utilizan la posición de entrada y un boolean que indica si el usuario hizo clic.
+
+
+\begin{DoxyParams}{Parámetros}
 {\em x\+Lea} & coordenada x del componente de gestos \\
 \hline
 {\em y\+Lea} & coordenada y del componente de gestos \\
@@ -196,6 +238,9 @@ true si el usuario hizo clic sobre el componente
 
 
 \subsection{Documentación de los datos miembro}
+\hypertarget{classcomponente_base_a76a4fa4887545c9222a62d7f4aa7e71a}{}\index{componente\+Base@{componente\+Base}!hay\+Clic@{hay\+Clic}}
+\index{hay\+Clic@{hay\+Clic}!componente\+Base@{componente\+Base}}
+\subsubsection[{hay\+Clic}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::hay\+Clic\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_a76a4fa4887545c9222a62d7f4aa7e71a}
 \hypertarget{classcomponente_base_ab03e8ff7fb596e34738ba00d455e37f5}{}\index{componente\+Base@{componente\+Base}!le\+Queda\+Tiempo@{le\+Queda\+Tiempo}}
 \index{le\+Queda\+Tiempo@{le\+Queda\+Tiempo}!componente\+Base@{componente\+Base}}
 \subsubsection[{le\+Queda\+Tiempo}]{\setlength{\rightskip}{0pt plus 5cm}bool componente\+Base\+::le\+Queda\+Tiempo\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_ab03e8ff7fb596e34738ba00d455e37f5}
@@ -210,6 +255,9 @@ Indica si el usuario está fijando su atención y no ha terminado el tiempo máx
 
 Indice si el mouse está dentro del componente. 
 
+\hypertarget{classcomponente_base_aed6af391c3e1381467f804283925ede1}{}\index{componente\+Base@{componente\+Base}!player@{player}}
+\index{player@{player}!componente\+Base@{componente\+Base}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}of\+Sound\+Player componente\+Base\+::player\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_aed6af391c3e1381467f804283925ede1}
 \hypertarget{classcomponente_base_a6c1aa628629954f831209628e3dfcb2b}{}\index{componente\+Base@{componente\+Base}!tiempo@{tiempo}}
 \index{tiempo@{tiempo}!componente\+Base@{componente\+Base}}
 \subsubsection[{tiempo}]{\setlength{\rightskip}{0pt plus 5cm}long long int componente\+Base\+::tiempo\hspace{0.3cm}{\ttfamily [protected]}}\label{classcomponente_base_a6c1aa628629954f831209628e3dfcb2b}

@@ -13,7 +13,7 @@ void espacioTarjetas::setup()
 	incorrecto = false;
 
 	baseDatos = new sqlite3Manager("data/db/robotracking.db3");
-	tarjetas = baseDatos->executeStatement("SELECT * FROM Categoria");
+	tarjetas = baseDatos->executeStatement("SELECT * FROM pictograma WHERE NombreCat='Sustantivos'");
 
 	fuenteResp.loadFont("opensansfont.ttf", 72);
 	fuenteResp2.loadFont("opensansfont.ttf", 28);
@@ -25,7 +25,7 @@ void espacioTarjetas::setup()
 	btn1 = new botonSimple("", 34, ofColor(0, 0, 0), 540, 100, 450, 80);
 	btn2 = new botonSimple("", 34, ofColor(0, 0, 0), 540, 190, 450, 80);
 	btn3 = new botonSimple("", 34, ofColor(0, 0, 0), 540, 280, 450, 80);
-	btnNuevo = new botonSimple("Nueva imagen", 34, ofColor(0, 0, 0), 540, 500, 450, 80);
+	btnNuevo = new botonSimple("Nueva imagen", 34, ofColor(0, 0, 0), 540, 480, 450, 80);
 	btnAtras = new botonImagen("img/mComunicacion/x.png", 0.5f, "Atras", 24, ofColor(0, 0, 0), 1140, 580, 125, 125);
 
 	cargarTarjeta();
@@ -55,7 +55,7 @@ void espacioTarjetas::cargarTarjeta(){
 	} while (tmp == resp[0] || tmp == resp[1] || tmp == resp[2]);
 	resp.push_back(tmp);
 
-	img.loadImage(tarjetas[resp[0]][1]);
+	img.loadImage(tarjetas[resp[0]][2]);
 
 	int data[] = { 0, 1, 2, 3 };
 	random_shuffle(data, data + 4);
@@ -64,6 +64,7 @@ void espacioTarjetas::cargarTarjeta(){
 	btn1->setTexto(tarjetas[resp[data[1]]][0]);
 	btn2->setTexto(tarjetas[resp[data[2]]][0]);
 	btn3->setTexto(tarjetas[resp[data[3]]][0]);
+
 }
 
 void espacioTarjetas::validarRespuesta(botonSimple *btn){
@@ -79,36 +80,61 @@ void espacioTarjetas::validarRespuesta(botonSimple *btn){
 	}
 }
 
-espacioBase* espacioTarjetas::update(float x, float y, float xL, float yL, bool clic)
+espacioBase* espacioTarjetas::update(bool btnAtrasRes, bool btn0Res, bool btn1Res, bool btn2Res, 
+	bool btn3Res, bool btnNuevoRes)
 {
 	espacioBase* r = this;
-	if (btnAtras->update(x, y, xL, yL, clic))
+	if (btnAtrasRes)
 	{
 		r = espacioPadre;
 	}
-
-	if (btn0->update(x, y, xL, yL, clic))
+	if (btn0Res)
 	{
 		validarRespuesta(btn0);
 	}
-	if (btn1->update(x, y, xL, yL, clic))
+	if (btn1Res)
 	{
 		validarRespuesta(btn1);
 	}
-	if (btn2->update(x, y, xL, yL, clic))
+	if (btn2Res)
 	{
 		validarRespuesta(btn2);
 	}
-	if (btn3->update(x, y, xL, yL, clic))
+	if (btn3Res)
 	{
 		validarRespuesta(btn3);
 	}
-	if ((correcto || incorrecto) && btnNuevo->update(x, y, xL, yL, clic))
+	if ((correcto || incorrecto) && btnNuevoRes)
 	{
 		cargarTarjeta();
 		correcto = incorrecto = false;
 	}
 	return r;
+}
+
+espacioBase* espacioTarjetas::update(float x, float y)
+{
+	bool btnAtrasRes = btnAtras->update(x, y);
+	bool btn0Res = btn0->update(x, y);
+	bool btn1Res = btn1->update(x, y);
+	bool btn2Res = btn2->update(x, y);
+	bool btn3Res = btn3->update(x, y);
+	bool btnNuevoRes = btnNuevo->update(x, y);
+
+	return update(btnAtrasRes, btn0Res, btn1Res, btn2Res, btn3Res, btnNuevoRes);
+
+}
+
+espacioBase* espacioTarjetas::update(float x, float y, bool clic)
+{
+	bool btnAtrasRes = btnAtras->update(x, y, clic);
+	bool btn0Res = btn0->update(x, y, clic);
+	bool btn1Res = btn1->update(x, y, clic);
+	bool btn2Res = btn2->update(x, y, clic);
+	bool btn3Res = btn3->update(x, y, clic);
+	bool btnNuevoRes = btnNuevo->update(x, y, clic);
+
+	return update(btnAtrasRes, btn0Res, btn1Res, btn2Res, btn3Res, btnNuevoRes);
 
 }
 
@@ -130,9 +156,6 @@ void espacioTarjetas::draw()
 	{
 		ofSetColor(35, 232, 51);
 		fuenteResp.drawString("Correcto", 540, 440);
-
-		ofSetColor(0, 0, 0);
-		fuenteResp2.drawString("Muy bien", 540, 480);
 
 		btnNuevo->draw();
 	}

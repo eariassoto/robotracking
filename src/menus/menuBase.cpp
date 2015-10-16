@@ -55,24 +55,49 @@ void menuBase::setup(){
 	btnAtras = new botonImagen("img/mComunicacion/x.png", 0.5f, "Atras", 24, ofColor(0, 0, 0), 1140, 580, 125, 125);
 }
 
-espacioBase* menuBase::update(float x, float y, float xL, float yL, bool clic){
+espacioBase* menuBase::update(bool btnAtrasRes){
 	espacioBase* r = this;
 
 	int i = 0;
 	for (vector<botonImagen>::iterator it = btn.begin(); it != btn.end(); it++)
 	{
-		if ((*it).update(x, y, xL, yL, clic)){
+		if ((*it).seHizoClic()){
 			r = eventos(i);
 		}
 		i++;
 	}
 
-	if (btnAtras->update(x, y, xL, yL, clic))
+	if (btnAtrasRes)
 	{
 		r = eventos(-1);
 	}
 
 	return r;
+}
+
+espacioBase* menuBase::update(float x, float y){
+
+	bool btnAtrasRes = btnAtras->update(x, y);
+
+	for (vector<botonImagen>::iterator it = btn.begin(); it != btn.end(); it++)
+	{
+		(*it).update(x, y);
+	}
+
+	return update(btnAtrasRes);
+
+}
+
+espacioBase* menuBase::update(float x, float y, bool clic){
+	
+	bool btnAtrasRes = btnAtras->update(x, y, clic);
+	
+	for (vector<botonImagen>::iterator it = btn.begin(); it != btn.end(); it++)
+	{
+		(*it).update(x, y, clic);
+	}
+
+	return update(btnAtrasRes);
 
 }
 

@@ -71,17 +71,16 @@ void espacioPictograma::setup()
 	cargarPictogramas();
 	
 }
-
-espacioBase* espacioPictograma::update(float x, float y, float xL, float yL, bool clic)
+espacioBase* espacioPictograma::update(bool btnSalirRes, bool btnAtrasRes, bool btnAdelanteRes, 
+	bool btnHablarRes, bool btnBorrarRes, bool btnBorrarTodoRes)
 {
 	espacioBase* r = this;
-
-	if (btnSalir->update(x, y, xL, yL, clic))
+	if (btnSalirRes)
 	{
 		r = espacioPadre;
 	}
 
-	if (btnAtrasVisible && btnAtras->update(x, y, xL, yL, clic)){
+	if (btnAtrasVisible && btnAtrasRes){
 		int size = getTamPictograma();
 		indice -= 4;
 
@@ -94,7 +93,7 @@ espacioBase* espacioPictograma::update(float x, float y, float xL, float yL, boo
 		cargarPictogramas();
 	}
 
-	if (btnAdelanteVisible && btnAdelante->update(x, y, xL, yL, clic)){
+	if (btnAdelanteVisible && btnAdelanteRes){
 		int size = getTamPictograma();
 		indice += 4;
 		btnAtrasVisible = true;
@@ -105,7 +104,7 @@ espacioBase* espacioPictograma::update(float x, float y, float xL, float yL, boo
 
 	}
 
-	if (btnHablar->update(x, y, xL, yL, clic)){
+	if (btnHablarRes){
 		string texto = "";
 		for (vector<pair<string, ofImage>>::iterator it = pictogramasActuales.begin(); it != pictogramasActuales.end(); it++){
 			texto += (*it).first + " ";
@@ -113,18 +112,18 @@ espacioBase* espacioPictograma::update(float x, float y, float xL, float yL, boo
 		comandoHablar(texto);
 	}
 
-	if (btnBorrar->update(x, y, xL, yL, clic)){
+	if (btnBorrarRes){
 		if (!pictogramasActuales.empty())
 			pictogramasActuales.pop_back();
 	}
 
-	if (btnBorrarTodo->update(x, y, xL, yL, clic)){
+	if (btnBorrarTodoRes){
 		pictogramasActuales.clear();
 	}
 
 	int i = 0;
 	for (vector<botonImagen>::iterator it = btnCategorias.begin(); it != btnCategorias.end(); it++){
-		if ((*it).update(x, y, xL, yL, clic)){
+		if ((*it).seHizoClic()){
 			categoriaActual = i;
 			indice = 0;
 			btnAtrasVisible = false;
@@ -138,7 +137,7 @@ espacioBase* espacioPictograma::update(float x, float y, float xL, float yL, boo
 
 	i = 0;
 	for (vector<botonImagen>::iterator it = pictogramasActivos.begin(); it != pictogramasActivos.end(); it++){
-		if ((*it).update(x, y, xL, yL, clic)){
+		if ((*it).seHizoClic()){
 			if (pictogramasActuales.size() < 5){
 				vector<string> pic = getPictograma(i);
 				ofImage img;
@@ -152,6 +151,51 @@ espacioBase* espacioPictograma::update(float x, float y, float xL, float yL, boo
 
 
 	return r;
+}
+
+
+espacioBase* espacioPictograma::update(float x, float y, bool clic)
+{
+	
+	bool btnSalirRes = btnSalir->update(x, y, clic);
+	bool btnAtrasRes = btnAtras->update(x, y, clic);
+	bool btnAdelanteRes = btnAdelante->update(x, y, clic);
+	bool btnHablarRes = btnHablar->update(x, y, clic);
+	bool btnBorrarRes = btnBorrar->update(x, y, clic);
+	bool btnBorrarTodoRes = btnBorrarTodo->update(x, y, clic);
+
+	
+	for (vector<botonImagen>::iterator it = btnCategorias.begin(); it != btnCategorias.end(); it++){
+		(*it).update(x, y, clic);
+	}
+
+	for (vector<botonImagen>::iterator it = pictogramasActivos.begin(); it != pictogramasActivos.end(); it++){
+		(*it).update(x, y, clic);
+	}
+
+	return update(btnSalirRes, btnAtrasRes, btnAdelanteRes,	btnHablarRes, btnBorrarRes, btnBorrarTodoRes);
+}
+
+espacioBase* espacioPictograma::update(float x, float y)
+{
+
+	bool btnSalirRes = btnSalir->update(x, y);
+	bool btnAtrasRes = btnAtras->update(x, y);
+	bool btnAdelanteRes = btnAdelante->update(x, y);
+	bool btnHablarRes = btnHablar->update(x, y);
+	bool btnBorrarRes = btnBorrar->update(x, y);
+	bool btnBorrarTodoRes = btnBorrarTodo->update(x, y);
+
+
+	for (vector<botonImagen>::iterator it = btnCategorias.begin(); it != btnCategorias.end(); it++){
+		(*it).update(x, y);
+	}
+
+	for (vector<botonImagen>::iterator it = pictogramasActivos.begin(); it != pictogramasActivos.end(); it++){
+		(*it).update(x, y);
+	}
+
+	return update(btnSalirRes, btnAtrasRes, btnAdelanteRes, btnHablarRes, btnBorrarRes, btnBorrarTodoRes);
 }
 
 void espacioPictograma::draw()

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['toggle',['toggle',['../classboton_toggle.html#a5a24ccd035199173e96b36a9dec4927f',1,'botonToggle']]]
+  ['printtable',['printTable',['../classsqlite3_manager.html#ac3b8080a48f4fa15df51d32f66f169eb',1,'sqlite3Manager']]]
 ];

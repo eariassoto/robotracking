@@ -2,8 +2,8 @@
 #include "ofGraphics.h"
 
 
-menuPrincipal::menuPrincipal(bool vM) : espacioBase(0){
-	visionMode = vM;
+menuPrincipal::menuPrincipal() : espacioBase(0){
+	//visionMode = vM;
 }
 
 void menuPrincipal::setup(){
@@ -27,7 +27,7 @@ void menuPrincipal::setup(){
 	btnOcio = new botonImagen("img/principal/ocio.png", 0.725f, "Ocio", 24, ofColor(0, 0, 0), (4 * margen) + (2 * btnTam), btny, btnTam, btnTam);
 	btnSalir = new botonImagen("img/principal/x.png", 0.5f, "Salir", 24, ofColor(0, 0, 0), 1140, 580, 125, 125);
 
-	if (visionMode)
+	if (true) // TODO
 		btnInput = new botonToggle("img/principal/ojo.png", "img/principal/leap.png", 0.5f, "Vision", "Gestos", 24, ofColor(0, 0, 0), 10, 580, 125, 125);
 	else
 		btnInput = new botonToggle("img/principal/leap.png", "img/principal/ojo.png", 0.5f, "Gestos", "Vision", 24, ofColor(0, 0, 0), 10, 580, 125, 125);
@@ -42,34 +42,61 @@ void menuPrincipal::setup(){
 	mCotidiana->setup();
 }
 
-espacioBase* menuPrincipal::update(float x, float y, float xL, float yL, bool clic){
+espacioBase* menuPrincipal::update(bool btnComunicacionRes, bool btnEducacionRes, bool btnCotidianaRes,
+	bool btnOcioRes, bool btnSalirRes, bool btnInputRes)
+{
 	espacioBase *r = this;
-	
-	if (btnComunicacion->update(x, y, xL, yL, clic))
+
+	if (btnComunicacionRes)
 	{
 		r = mComunicacion;
 	}
-	if (btnEducacion->update(x, y, xL, yL, clic))
+	if (btnEducacionRes)
 	{
 		r = mEducacion;
 	}
-	if (btnCotidiana->update(x, y, xL, yL, clic))
+	if (btnCotidianaRes)
 	{
 		r = mCotidiana;
 	}
-	if (btnOcio->update(x, y, xL, yL, clic))
+	if (btnOcioRes)
 	{
 		r = mOcio;
 	}
-	if (btnSalir->update(x, y, xL, yL, clic))
+	if (btnSalirRes)
 	{
 		r = 0;
 	}
 
-	if (btnInput->update(x, y, xL, yL, clic)){
-		visionMode = !visionMode;
+	if (btnInputRes){
+		//visionMode = !visionMode;
 	}
 	return r;
+}
+
+espacioBase* menuPrincipal::update(float x, float y, bool clic){
+
+	bool btnComunicacionRes = btnComunicacion->update(x, y,clic);
+	bool btnEducacionRes = btnEducacion->update(x, y, clic);
+	bool btnCotidianaRes = btnCotidiana->update(x, y, clic);
+	bool btnOcioRes = btnOcio->update(x, y, clic);
+	bool btnSalirRes = btnSalir->update(x, y, clic);
+	bool btnInputRes = btnInput->update(x, y, clic);
+	
+	return update(btnComunicacionRes, btnEducacionRes, btnCotidianaRes, btnOcioRes, btnSalirRes, btnInputRes);
+	
+}
+
+espacioBase* menuPrincipal::update(float x, float y){
+
+	bool btnComunicacionRes = btnComunicacion->update(x, y);
+	bool btnEducacionRes = btnEducacion->update(x, y);
+	bool btnCotidianaRes = btnCotidiana->update(x, y);
+	bool btnOcioRes = btnOcio->update(x, y);
+	bool btnSalirRes = btnSalir->update(x, y);
+	bool btnInputRes = btnInput->update(x, y);
+
+	return update(btnComunicacionRes, btnEducacionRes, btnCotidianaRes, btnOcioRes, btnSalirRes, btnInputRes);
 
 }
 

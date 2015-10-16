@@ -8,7 +8,24 @@ botonSimple::botonSimple(string t, int tamFuente, ofColor c, int x, int y, int w
 	texto = t;
 	std::transform(texto.begin(), texto.end(), texto.begin(), ::tolower);
 	colorFuente = c;
+	alfa = -1;
+};
 
+botonSimple::botonSimple(string t, int tamFuente, ofColor c, int x, int y, int w, int h, int a) : componenteBase(x, y, w, h)
+{
+
+	fuente.loadFont("opensansfont.ttf", tamFuente);
+	texto = t;
+	std::transform(texto.begin(), texto.end(), texto.begin(), ::tolower);
+	if (alfa > 0)
+	{
+		colorFuente.set(colorFuente.r, colorFuente.g, colorFuente.b, alfa);
+	}
+	else
+	{
+		colorFuente = c;
+	}
+	alfa = a;
 };
 
 void botonSimple::draw()
@@ -39,11 +56,17 @@ void botonSimple::draw()
 		color.set(200, 200, 200);
 	}
 
+	
+	if (alfa > 0)
+	{
+		color.set(color.r, color.g, color.b, alfa);
+	}
 	ofSetColor(color);
+
+	ofEnableAlphaBlending();
 	ofRect(x, y, width, height);
 
 	ofSetColor(colorFuente);
-
 
 	ofRectangle cajaTexto = fuente.getStringBoundingBox(texto, 0, 0);
 	float widthTexto = cajaTexto.width;
@@ -53,7 +76,7 @@ void botonSimple::draw()
 	float sobranteY = (height - heightTexto) / 2.0f + (heightTexto);
 
 	fuente.drawString(texto, x + sobranteX, y + sobranteY);
-
+	ofDisableAlphaBlending();
 }
 
 string botonSimple::getTexto()

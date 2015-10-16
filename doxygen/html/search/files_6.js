@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sqlite3manager_2ecpp',['sqlite3Manager.cpp',['../sqlite3_manager_8cpp.html',1,'']]],
-  ['sqlite3manager_2eh',['sqlite3Manager.h',['../sqlite3_manager_8h.html',1,'']]]
+  ['ofapp_2ecpp',['ofApp.cpp',['../of_app_8cpp.html',1,'']]],
+  ['ofapp_2eh',['ofApp.h',['../of_app_8h.html',1,'']]]
 ];

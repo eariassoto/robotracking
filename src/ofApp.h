@@ -2,9 +2,8 @@
 #include "ofMain.h"
 #include "espacioBase.h"
 #include "menuPrincipal.h"
-#include "Leap.h"
-
-using namespace Leap;
+#include "LeapHost.h"
+#include "EyeXHost.h"
 
 /// Clase base que coordina la interacción entre el ciclo de OpenGL y la aplicación como tal
 /**
@@ -18,16 +17,20 @@ class ofApp : public ofBaseApp
 
 public:
 
+	enum class Modo{ Tobii, Leap, Mouse };
+
 	/// Constructor de la clase
 	/**
 		Por defecto, inicia la aplicación en modo visión, sin embargo puede definirse un 
 		parámetro de constructor para definir el modo desde el main o leerlo desde un archivo
 		de configuración.
 
+		\param m modo de entrada para la instancia de la aplicación
 		\param[in] x tamaño del largo de la ventana de la aplicación
 		\param[in] y tamaño del ancho de la ventana de la apliación
+		\param _hwndWindow manejador de la ventana principal
 	*/
-	ofApp(int, int);
+	ofApp(Modo, int, int, HWND);
 
 	/// Destructor de la clase
 	/**
@@ -90,12 +93,19 @@ public:
 	void dragEvent(ofDragInfo dragInfo);
 	void gotMessage(ofMessage msg);
 
-	/// Define el modo actual de entrada (visión o gestos)
-	bool inputMode;
-
 private:
 
-	Controller    *controller;
+	/// Define el modo de entrada 
+	Modo modo;
+
+	/// Controlador de la ventana
+	HWND hwndWindow;
+
+	/// Controlador del Tobii EyeX
+	EyeXHost *host;
+
+	/// Controlador del Leap Motion
+	LeapHost *leapHost;
 
 	/// Instancia del espacio activo en la pantalla.
 	/**
@@ -110,9 +120,22 @@ private:
 	/// Instancia del menú principal de la aplicación
 	menuPrincipal *mPrincipal;
 	
-	int tamX, tamY, leapX, leapY;
-	bool handPressed;
+	/// Tamaño en el eje X de la pantalla de la aplicación
+	int tamX;
 
-	Frame lastFrame;
+	/// Tamaño en el eje Y de la pantalla de la aplicación
+	int tamY;
+	
+	/// Radio del circulo que
+	const int radioMirada = 30;
+
+	/// Ultima posicion del usuario en el eye x registrada
+	int ultimoX;
+
+	/// Ultima posicion del usuario en el eye y registrada
+	int ultimoY;
+
+	/// Utilidad que calcula la distancia entre dos circulos
+	double circleDistance(double, double, double, double);
 
 };

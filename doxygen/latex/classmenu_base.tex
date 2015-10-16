@@ -24,15 +24,19 @@ Diagrama de herencias de menu\+Base\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
 void \hyperlink{classmenu_base_a8d6e8078f62721431e095cb50bbcf40e}{setup} ()
 \begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
-\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_base_aed2125585944e1dfa0ee7cb0e4f7958c}{update} (float, float, float, float, bool)
-\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_base_afd9d5b3caee21605e08f3ccc387715a6}{update} (float, float)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_base_aff75fb7d3c219571e138d005fea69f9f}{update} (float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. \end{DoxyCompactList}\item 
 void \hyperlink{classmenu_base_a0faf0816595b77204dd3e0309b35b76a}{draw} ()
 \begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Métodos protegidos}
 \begin{DoxyCompactItemize}
 \item 
 virtual \hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_base_a5a88a45efd3bc47b4731fb21749a97d5}{eventos} (int index)=0
-\begin{DoxyCompactList}\small\item\em Maneja los eventos de los botones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Maneja los eventos de los botones. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_base_a9d5a46d7ecfa671591e547213a2bdd83}{update} (bool)
+\end{DoxyCompactItemize}
 \subsection*{Atributos protegidos}
 \begin{DoxyCompactItemize}
 \item 
@@ -151,25 +155,46 @@ Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espac
 
 Reimplementado en \hyperlink{classmenu_comunicacion_a9e42e30977954e20c304261a9f1be5e1}{menu\+Comunicacion}, \hyperlink{classmenu_ocio_a6b99292a5b8c60b5a8a799447fc85f18}{menu\+Ocio} y \hyperlink{classmenu_educacion_a782815ae0152a27aca5d33885f607e81}{menu\+Educacion}.
 
-\hypertarget{classmenu_base_aed2125585944e1dfa0ee7cb0e4f7958c}{}\index{menu\+Base@{menu\+Base}!update@{update}}
+\hypertarget{classmenu_base_afd9d5b3caee21605e08f3ccc387715a6}{}\index{menu\+Base@{menu\+Base}!update@{update}}
 \index{update@{update}!menu\+Base@{menu\+Base}}
-\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Base\+::update (
+\subsubsection[{update(float, float)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Base\+::update (
 \begin{DoxyParamCaption}
 \item[{float}]{, }
-\item[{float}]{, }
+\item[{float}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_base_afd9d5b3caee21605e08f3ccc387715a6}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. 
+
+
+
+Implementa \hyperlink{classespacio_base_abb71ddaa70032182ae4d8370dd05c536}{espacio\+Base}.
+
+\hypertarget{classmenu_base_aff75fb7d3c219571e138d005fea69f9f}{}\index{menu\+Base@{menu\+Base}!update@{update}}
+\index{update@{update}!menu\+Base@{menu\+Base}}
+\subsubsection[{update(float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Base\+::update (
+\begin{DoxyParamCaption}
 \item[{float}]{, }
 \item[{float}]{, }
 \item[{bool}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_base_aed2125585944e1dfa0ee7cb0e4f7958c}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_base_aff75fb7d3c219571e138d005fea69f9f}
 
 
-Controla tareas lógica de cada ciclo de Open\+G\+L. 
+Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. 
 
 
 
-Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+Implementa \hyperlink{classespacio_base_afe08700ffb54b8b8191cdea5ec1671ef}{espacio\+Base}.
 
+\hypertarget{classmenu_base_a9d5a46d7ecfa671591e547213a2bdd83}{}\index{menu\+Base@{menu\+Base}!update@{update}}
+\index{update@{update}!menu\+Base@{menu\+Base}}
+\subsubsection[{update(bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Base\+::update (
+\begin{DoxyParamCaption}
+\item[{bool}]{btn\+Atras\+Res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmenu_base_a9d5a46d7ecfa671591e547213a2bdd83}
 
 
 \subsection{Documentación de los datos miembro}

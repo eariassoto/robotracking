@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sp',['sp',['../classmanejo_sonido.html#ac302e51b6ea3723778777a03cb08e86b',1,'manejoSonido']]],
-  ['strcategorias',['strCategorias',['../classespacio_pictograma.html#a90f13e054faabc1dc26f9e62fff6f572',1,'espacioPictograma']]],
-  ['strpictogramas',['strPictogramas',['../classespacio_pictograma.html#af241bdf93ef686631b46fdadf07da04a',1,'espacioPictograma']]]
+  ['pictogramasactivos',['pictogramasActivos',['../classespacio_pictograma.html#a7c0a60d23d55abbc5bb131fadf0210d4',1,'espacioPictograma']]],
+  ['pictogramasactuales',['pictogramasActuales',['../classespacio_pictograma.html#a46e6758b5312fa89401ff012aa2d2b92',1,'espacioPictograma']]],
+  ['player',['player',['../classcomponente_base.html#aed6af391c3e1381467f804283925ede1',1,'componenteBase']]]
 ];

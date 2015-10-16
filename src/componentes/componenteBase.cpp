@@ -5,7 +5,7 @@ using namespace std;
 componenteBase::componenteBase(int _x, int _y, int _w, int _h)
 {
 	leQuedaTiempo = true;
-
+	hayClic = false;
 	mouseDentro = false;
 	tiempo = 0;
 	tiempoMax = 750;
@@ -15,6 +15,10 @@ componenteBase::componenteBase(int _x, int _y, int _w, int _h)
 
 	width = _w;
 	height = _h;
+
+	player.setMultiPlay(true);
+	player.setLoop(false);
+	player.loadSound("click.mp3");
 }
 
 void componenteBase::setPos(int _x, int _y)
@@ -29,10 +33,19 @@ void componenteBase::setTam(int _w, int _h)
 	height = _h;
 }
 
-bool componenteBase::update(float xIn, float yIn, float xLea, float yLea, bool clic)
+bool componenteBase::update(float xLea, float yLea, bool clic)
 {
+	hayClic = false;
 
-	bool cambio = false;
+	if (clic && mouseEnCuadro(xLea, yLea)){
+		hayClic = true;
+	}
+	return hayClic;
+}
+
+bool componenteBase::update(float xIn, float yIn)
+{
+	hayClic = false;
 
 	if (mouseEnCuadro(xIn, yIn))
 	{
@@ -48,8 +61,9 @@ bool componenteBase::update(float xIn, float yIn, float xLea, float yLea, bool c
 				long long int t = getMillisec();
 				if (t - tiempo >= tiempoMax)
 				{
-					cambio = true;
+					hayClic = true;
 					leQuedaTiempo = false;
+					player.play();
 				}
 			}
 		}
@@ -63,10 +77,7 @@ bool componenteBase::update(float xIn, float yIn, float xLea, float yLea, bool c
 		}
 	}
 
-	if (clic && mouseEnCuadro(xLea, yLea)){
-		cambio = true;
-	}
-	return cambio;
+	return hayClic;
 }
 
 bool componenteBase::mouseEnCuadro(float xM, float yM)
@@ -80,4 +91,14 @@ long long int componenteBase::getMillisec()
 	auto duration = tp.time_since_epoch();
 	long long int millis = chrono::duration_cast<chrono::milliseconds>(duration).count();
 	return millis;
+}
+
+bool componenteBase::seHizoClic()
+{
+	return hayClic;
+}
+
+bool componenteBase::hayMouseEncima()
+{
+	return mouseDentro;
 }

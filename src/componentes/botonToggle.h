@@ -43,15 +43,22 @@ public:
 
 	/// Implementa el cambio de imagen y texto si el usuario hizo clic
 	/**
-		\param xM coordenada x de la entrada visual
-		\param yM coordenada y de la entrada visual
-		\param xL coordenada x del componente de gestos
-		\param yL coordenada y del componente de gestos
+		\param x coordenada x del componente de gestos
+		\param y coordenada y del componente de gestos
 		\param c indica si el usuario ha hecho el gesto para el clic
 
 		\return true si el usuario hizo clic sobre el componente
 	*/
-	bool update(float, float, float, float, bool);
+	bool update(float, float, bool);
+
+	/// Implementa el cambio de imagen y texto si el usuario hizo clic
+	/**
+	\param x coordenada x de la entrada
+	\param y coordenada y de la entrada
+
+	\return true si el usuario hizo clic sobre el componente
+	*/
+	bool update(float, float);
 
 	/// Devuelve el estado del botón
 	/**
@@ -83,8 +90,10 @@ private:
 	float  escala;
 
 	/// Largo del botón
-	int    w;
+	int w;
 
 	/// Ancho del botón
-	int    h;
+	int h;
+
+	bool update(bool);
 };

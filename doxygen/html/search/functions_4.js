@@ -8,5 +8,6 @@ var searchData=
   ['espaciotarjetas',['espacioTarjetas',['../classespacio_tarjetas.html#a4fadd23e0a493467f5c28deecdbb975c',1,'espacioTarjetas']]],
   ['espacioteclado',['espacioTeclado',['../classespacio_teclado.html#a7bdaaa950b5673a464f322382aaf95cd',1,'espacioTeclado']]],
   ['eventos',['eventos',['../classmenu_base.html#a5a88a45efd3bc47b4731fb21749a97d5',1,'menuBase::eventos()'],['../classmenu_comunicacion.html#a7386759ca2897f5ce031bf4c166fa8a1',1,'menuComunicacion::eventos()'],['../classmenu_cotidiana.html#a5bc0b717e3cf19d4daa8bb73f3669f3a',1,'menuCotidiana::eventos()'],['../classmenu_educacion.html#af29464c6a5f1bb3c57ac6e12d3fcc740',1,'menuEducacion::eventos()'],['../classmenu_ocio.html#ab64d85113d3df4d1ba3b7599b89d0598',1,'menuOcio::eventos()']]],
-  ['executestatement',['executeStatement',['../classsqlite3_manager.html#ad619df24f9d979b179df8a472340a31e',1,'sqlite3Manager']]]
+  ['executestatement',['executeStatement',['../classsqlite3_manager.html#ad619df24f9d979b179df8a472340a31e',1,'sqlite3Manager']]],
+  ['eyexhost',['EyeXHost',['../class_eye_x_host.html#a376b3e2cf679be11303e84091c856a71',1,'EyeXHost']]]
 ];

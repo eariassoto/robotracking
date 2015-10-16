@@ -54,7 +54,7 @@ public:
 					conf.popTag();
 					string t = conf.getValue("hilera", "");
 					conf.popTag();
-					v.push_back(new botonSimple(t, f, c, x, y, w, h));
+					v.push_back(new botonSimple(t, f, c, x, y, w, h, 192));
 				}
 				conf.popTag();
 			}

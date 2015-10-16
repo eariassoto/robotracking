@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['categorias',['Categorias',['../classespacio_pictograma.html#aa3f1b61c7e192583f92c60ce9e87a132',1,'espacioPictograma']]]
+  ['modo',['Modo',['../classof_app.html#aab1f96029bf7fd45f397fc24647f3494',1,'ofApp']]]
 ];

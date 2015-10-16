@@ -29,8 +29,11 @@ public:
 	/// Método inicial del ciclo de OpenGL
 	virtual void setup() = 0;
 
-	/// Controla tareas lógica de cada ciclo de OpenGL
-	virtual espacioBase* update(float, float, float, float, bool) = 0;
+	/// Controla tareas lógica de cada ciclo de OpenGL, version leap
+	virtual espacioBase* update(float, float, bool) = 0;
+
+	/// Controla tareas lógica de cada ciclo de OpenGL, version tobii
+	virtual espacioBase* update(float, float) = 0;
 
 	/// Controla las tareas gráficas de cada ciclo de OpenGL
 	virtual void draw() = 0;

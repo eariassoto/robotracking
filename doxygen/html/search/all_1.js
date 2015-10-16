@@ -5,7 +5,7 @@ var searchData=
   ['botonimagen',['botonImagen',['../classboton_imagen.html',1,'botonImagen'],['../classboton_imagen.html#a39ee73ee8807ad4339d6a0a080bc8f6d',1,'botonImagen::botonImagen(string, float, string, int, ofColor, int, int, int, int)'],['../classboton_imagen.html#ad6917e2e059fa4a8247ada624663b19a',1,'botonImagen::botonImagen(string, float, string, int, ofColor)']]],
   ['botonimagen_2ecpp',['botonImagen.cpp',['../boton_imagen_8cpp.html',1,'']]],
   ['botonimagen_2eh',['botonImagen.h',['../boton_imagen_8h.html',1,'']]],
-  ['botonsimple',['botonSimple',['../classboton_simple.html',1,'botonSimple'],['../classboton_simple.html#acbcb5c2f8c673c1de738a2282fdca5de',1,'botonSimple::botonSimple()']]],
+  ['botonsimple',['botonSimple',['../classboton_simple.html',1,'botonSimple'],['../classboton_simple.html#acbcb5c2f8c673c1de738a2282fdca5de',1,'botonSimple::botonSimple(string, int, ofColor, int, int, int, int)'],['../classboton_simple.html#a2d33b48a7757daaf4c26877ec16eba0e',1,'botonSimple::botonSimple(string, int, ofColor, int, int, int, int, int)']]],
   ['botonsimple_2ecpp',['botonSimple.cpp',['../boton_simple_8cpp.html',1,'']]],
   ['botonsimple_2eh',['botonSimple.h',['../boton_simple_8h.html',1,'']]],
   ['botontoggle',['botonToggle',['../classboton_toggle.html',1,'botonToggle'],['../classboton_toggle.html#a53ca0ae03d7125318e8b88993f8ed936',1,'botonToggle::botonToggle(string, string, float, string, string, int, ofColor, int, int, int, int)'],['../classboton_toggle.html#ad193dda2df6e4399a3171a2d5ecc612f',1,'botonToggle::botonToggle(string, string, float, string, string, int, ofColor)']]],
@@ -31,6 +31,7 @@ var searchData=
   ['btngaleria',['btnGaleria',['../classespacio_camara.html#a3d110b2810a8ba6579857dd7f8a6fe22',1,'espacioCamara']]],
   ['btnhablar',['btnHablar',['../classespacio_pictograma.html#a739c7db68be68b07c10fe93b44a5a4d1',1,'espacioPictograma::btnHablar()'],['../classespacio_teclado.html#a401d7d71c05c9f234010e33adfe51d04',1,'espacioTeclado::btnHablar()']]],
   ['btninput',['btnInput',['../classmenu_principal.html#aea487ca8d9e0d1df2fda6a563ca0f04c',1,'menuPrincipal']]],
+  ['btnlimpiar',['btnLimpiar',['../classespacio_teclado.html#a8178b42312d7b9930dac260664904c4c',1,'espacioTeclado']]],
   ['btnnuevo',['btnNuevo',['../classespacio_tarjetas.html#aa306e2b163d2a22805517fb24a728212',1,'espacioTarjetas']]],
   ['btnocio',['btnOcio',['../classmenu_principal.html#a488846721d51f37a0ce23bb19372c0b1',1,'menuPrincipal']]],
   ['btnsalir',['btnSalir',['../classespacio_pictograma.html#ade5373849fab0cb55bc87bc4293e8c04',1,'espacioPictograma::btnSalir()'],['../classespacio_teclado.html#a82d9f915e17ee3491992da61a0d28a8f',1,'espacioTeclado::btnSalir()'],['../classmenu_principal.html#a9415d04ae2ac0a7927c32c95acdcb9ca',1,'menuPrincipal::btnSalir()']]]

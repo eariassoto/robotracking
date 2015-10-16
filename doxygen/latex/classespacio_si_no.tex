@@ -24,10 +24,17 @@ Diagrama de herencias de espacio\+Si\+No\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
 void \hyperlink{classespacio_si_no_a4094daf8c4bcc9ca7a0303fb4c41859f}{setup} ()
 \begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
-\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_si_no_a4adfb774583e44929d17422d510b3e87}{update} (float, float, float, float, bool)
-\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_si_no_a07aae24ddb49581bc81bec5acd5e898c}{update} (float, float)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_si_no_a555ffd236af24df46604126c1dfc8e54}{update} (float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. \end{DoxyCompactList}\item 
 void \hyperlink{classespacio_si_no_a9e413357608b8009da2f048b68220cbc}{draw} ()
 \begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_si_no_a5f304bb286fa8e85260b0d7cb7119496}{update} (bool)
+\end{DoxyCompactItemize}
 \subsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
@@ -99,25 +106,46 @@ Método inicial del ciclo de Open\+G\+L.
 
 Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
 
-\hypertarget{classespacio_si_no_a4adfb774583e44929d17422d510b3e87}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!update@{update}}
+\hypertarget{classespacio_si_no_a07aae24ddb49581bc81bec5acd5e898c}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!update@{update}}
 \index{update@{update}!espacio\+Si\+No@{espacio\+Si\+No}}
-\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Si\+No\+::update (
+\subsubsection[{update(float, float)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Si\+No\+::update (
 \begin{DoxyParamCaption}
 \item[{float}]{, }
-\item[{float}]{, }
+\item[{float}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_si_no_a07aae24ddb49581bc81bec5acd5e898c}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. 
+
+
+
+Implementa \hyperlink{classespacio_base_abb71ddaa70032182ae4d8370dd05c536}{espacio\+Base}.
+
+\hypertarget{classespacio_si_no_a555ffd236af24df46604126c1dfc8e54}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!update@{update}}
+\index{update@{update}!espacio\+Si\+No@{espacio\+Si\+No}}
+\subsubsection[{update(float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Si\+No\+::update (
+\begin{DoxyParamCaption}
 \item[{float}]{, }
 \item[{float}]{, }
 \item[{bool}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_si_no_a4adfb774583e44929d17422d510b3e87}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_si_no_a555ffd236af24df46604126c1dfc8e54}
 
 
-Controla tareas lógica de cada ciclo de Open\+G\+L. 
+Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. 
 
 
 
-Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+Implementa \hyperlink{classespacio_base_afe08700ffb54b8b8191cdea5ec1671ef}{espacio\+Base}.
 
+\hypertarget{classespacio_si_no_a5f304bb286fa8e85260b0d7cb7119496}{}\index{espacio\+Si\+No@{espacio\+Si\+No}!update@{update}}
+\index{update@{update}!espacio\+Si\+No@{espacio\+Si\+No}}
+\subsubsection[{update(bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Si\+No\+::update (
+\begin{DoxyParamCaption}
+\item[{bool}]{btn\+Atras\+Res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_si_no_a5f304bb286fa8e85260b0d7cb7119496}
 
 
 \subsection{Documentación de los datos miembro}

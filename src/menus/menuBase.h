@@ -35,7 +35,8 @@ public:
 	~menuBase();
 
 	void         setup();
-	espacioBase* update(float, float, float, float, bool);
+	espacioBase* update(float, float);
+	espacioBase* update(float, float, bool);
 	void          draw();
 
 protected:
@@ -70,5 +71,6 @@ protected:
 	*/
 	virtual espacioBase* eventos(int index) = 0;
 	
+	espacioBase* update(bool);
 };
 

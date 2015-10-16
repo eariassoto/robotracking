@@ -20,6 +20,8 @@ Diagrama de herencias de caja\+Texto\begin{figure}[H]
 \item 
 \hyperlink{classcaja_texto_aee455629d334f28613f43b6a61d16f14}{caja\+Texto} (int, of\+Color, int, int, int, int)
 \begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classcaja_texto_a66c1f439ba50e8df9a13eb5a53085c52}{caja\+Texto} (int, of\+Color, int, int, int, int, int)
+\item 
 void \hyperlink{classcaja_texto_a5bc02d7f55e12fd32715e4509853a558}{draw} ()
 \begin{DoxyCompactList}\small\item\em Dibuja el componente en pantalla. \end{DoxyCompactList}\item 
 void \hyperlink{classcaja_texto_ae6326da3ec5842eb0ff41208d22b1567}{append\+Texto} (string)
@@ -27,7 +29,9 @@ void \hyperlink{classcaja_texto_ae6326da3ec5842eb0ff41208d22b1567}{append\+Texto
 void \hyperlink{classcaja_texto_ab9362a01f444db0bed5032b9ec585905}{borrar\+Caracter} ()
 \begin{DoxyCompactList}\small\item\em Borra el último caracter del texto. \end{DoxyCompactList}\item 
 string \hyperlink{classcaja_texto_ab5e4ed49e9aaa7176e9186b085a07621}{get\+Texto} ()
-\begin{DoxyCompactList}\small\item\em Devuelve el texto actual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Devuelve el texto actual. \end{DoxyCompactList}\item 
+void \hyperlink{classcaja_texto_a088cc70dc707de2cf00bed4f906521c0}{limpiar} ()
+\end{DoxyCompactItemize}
 \subsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
@@ -36,7 +40,19 @@ of\+Color \hyperlink{classcaja_texto_a281b136399f6b3ee3fedfaa9069bebad}{color\+F
 of\+True\+Type\+Font \hyperlink{classcaja_texto_aa5cbc731d2fc56d87210d6ae6d2319b0}{fuente}
 \begin{DoxyCompactList}\small\item\em Fuente del texto. \end{DoxyCompactList}\item 
 string \hyperlink{classcaja_texto_a5b62049df6eb5efb5831b57b4958d115}{texto}
-\begin{DoxyCompactList}\small\item\em Texto que se está mostrando en la caja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Texto que se está mostrando en la caja. \end{DoxyCompactList}\item 
+int \hyperlink{classcaja_texto_a779378b7d6c746df32e86b0f3a7eaa0e}{margen\+Max\+Texto}
+\item 
+int \hyperlink{classcaja_texto_a1003061aaaac05741ede0303e5a7f6cc}{margen\+Min\+Texto}
+\item 
+int \hyperlink{classcaja_texto_a621c5f95927c538ca286827a06d861d0}{fuente\+Inicial}
+\item 
+int \hyperlink{classcaja_texto_ab5e905a37e7247d0f2b0c139ad49970e}{razon\+Cambio\+Fuente}
+\item 
+int \hyperlink{classcaja_texto_aa52a0f1d3f9041daa3f0e270214d85aa}{alfa}
+\item 
+of\+Color \hyperlink{classcaja_texto_a7c9fcc0013453675b9c08c4db98ee615}{color}
+\end{DoxyCompactItemize}
 \subsection*{Otros miembros heredados}
 
 
@@ -68,7 +84,20 @@ Inicializa la fuente y guarda las configuraciones necesarias para dibujarse en p
 \param y localización en el eye y
 \param w largo del componente
 \param h ancho del componente\end{DoxyVerb}
- 
+ \hypertarget{classcaja_texto_a66c1f439ba50e8df9a13eb5a53085c52}{}\index{caja\+Texto@{caja\+Texto}!caja\+Texto@{caja\+Texto}}
+\index{caja\+Texto@{caja\+Texto}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{caja\+Texto(int, of\+Color, int, int, int, int, int)}]{\setlength{\rightskip}{0pt plus 5cm}caja\+Texto\+::caja\+Texto (
+\begin{DoxyParamCaption}
+\item[{int}]{tam\+Fuente, }
+\item[{of\+Color}]{c, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{w, }
+\item[{int}]{h, }
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}\label{classcaja_texto_a66c1f439ba50e8df9a13eb5a53085c52}
+
 
 \subsection{Documentación de las funciones miembro}
 \hypertarget{classcaja_texto_ae6326da3ec5842eb0ff41208d22b1567}{}\index{caja\+Texto@{caja\+Texto}!append\+Texto@{append\+Texto}}
@@ -119,9 +148,22 @@ Implementa \hyperlink{classcomponente_base_ac6faec0698776f8bfe0e817b9927c0f9}{co
 
 Devuelve el texto actual. 
 
+\hypertarget{classcaja_texto_a088cc70dc707de2cf00bed4f906521c0}{}\index{caja\+Texto@{caja\+Texto}!limpiar@{limpiar}}
+\index{limpiar@{limpiar}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{limpiar()}]{\setlength{\rightskip}{0pt plus 5cm}void caja\+Texto\+::limpiar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcaja_texto_a088cc70dc707de2cf00bed4f906521c0}
 
 
 \subsection{Documentación de los datos miembro}
+\hypertarget{classcaja_texto_aa52a0f1d3f9041daa3f0e270214d85aa}{}\index{caja\+Texto@{caja\+Texto}!alfa@{alfa}}
+\index{alfa@{alfa}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{alfa}]{\setlength{\rightskip}{0pt plus 5cm}int caja\+Texto\+::alfa\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_aa52a0f1d3f9041daa3f0e270214d85aa}
+\hypertarget{classcaja_texto_a7c9fcc0013453675b9c08c4db98ee615}{}\index{caja\+Texto@{caja\+Texto}!color@{color}}
+\index{color@{color}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}of\+Color caja\+Texto\+::color\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_a7c9fcc0013453675b9c08c4db98ee615}
 \hypertarget{classcaja_texto_a281b136399f6b3ee3fedfaa9069bebad}{}\index{caja\+Texto@{caja\+Texto}!color\+Fuente@{color\+Fuente}}
 \index{color\+Fuente@{color\+Fuente}!caja\+Texto@{caja\+Texto}}
 \subsubsection[{color\+Fuente}]{\setlength{\rightskip}{0pt plus 5cm}of\+Color caja\+Texto\+::color\+Fuente\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_a281b136399f6b3ee3fedfaa9069bebad}
@@ -136,6 +178,18 @@ Color del texto.
 
 Fuente del texto. 
 
+\hypertarget{classcaja_texto_a621c5f95927c538ca286827a06d861d0}{}\index{caja\+Texto@{caja\+Texto}!fuente\+Inicial@{fuente\+Inicial}}
+\index{fuente\+Inicial@{fuente\+Inicial}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{fuente\+Inicial}]{\setlength{\rightskip}{0pt plus 5cm}int caja\+Texto\+::fuente\+Inicial\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_a621c5f95927c538ca286827a06d861d0}
+\hypertarget{classcaja_texto_a779378b7d6c746df32e86b0f3a7eaa0e}{}\index{caja\+Texto@{caja\+Texto}!margen\+Max\+Texto@{margen\+Max\+Texto}}
+\index{margen\+Max\+Texto@{margen\+Max\+Texto}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{margen\+Max\+Texto}]{\setlength{\rightskip}{0pt plus 5cm}int caja\+Texto\+::margen\+Max\+Texto\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_a779378b7d6c746df32e86b0f3a7eaa0e}
+\hypertarget{classcaja_texto_a1003061aaaac05741ede0303e5a7f6cc}{}\index{caja\+Texto@{caja\+Texto}!margen\+Min\+Texto@{margen\+Min\+Texto}}
+\index{margen\+Min\+Texto@{margen\+Min\+Texto}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{margen\+Min\+Texto}]{\setlength{\rightskip}{0pt plus 5cm}int caja\+Texto\+::margen\+Min\+Texto\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_a1003061aaaac05741ede0303e5a7f6cc}
+\hypertarget{classcaja_texto_ab5e905a37e7247d0f2b0c139ad49970e}{}\index{caja\+Texto@{caja\+Texto}!razon\+Cambio\+Fuente@{razon\+Cambio\+Fuente}}
+\index{razon\+Cambio\+Fuente@{razon\+Cambio\+Fuente}!caja\+Texto@{caja\+Texto}}
+\subsubsection[{razon\+Cambio\+Fuente}]{\setlength{\rightskip}{0pt plus 5cm}int caja\+Texto\+::razon\+Cambio\+Fuente\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_ab5e905a37e7247d0f2b0c139ad49970e}
 \hypertarget{classcaja_texto_a5b62049df6eb5efb5831b57b4958d115}{}\index{caja\+Texto@{caja\+Texto}!texto@{texto}}
 \index{texto@{texto}!caja\+Texto@{caja\+Texto}}
 \subsubsection[{texto}]{\setlength{\rightskip}{0pt plus 5cm}string caja\+Texto\+::texto\hspace{0.3cm}{\ttfamily [private]}}\label{classcaja_texto_a5b62049df6eb5efb5831b57b4958d115}

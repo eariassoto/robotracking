@@ -18,23 +18,28 @@ Diagrama de herencias de menu\+Principal\begin{figure}[H]
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classmenu_principal_a52d757f677ea4f87a1def3a2259e3052}{menu\+Principal} (bool)
+\hyperlink{classmenu_principal_a28bc45a9592e32d48979bb34b5e937b5}{menu\+Principal} ()
 \begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
 \hyperlink{classmenu_principal_aec2f0d44f0cd26e5c9ddfea5141ba0a1}{$\sim$menu\+Principal} ()
 \begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
 void \hyperlink{classmenu_principal_af392d4bbd2d1851b565441ed9dccbae8}{setup} ()
 \begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
-\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_principal_a69aa5c82d822246305ec9eb0ae60b546}{update} (float, float, float, float, bool)
-\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_principal_a92b6834ff602085f79bb16f39c6a45cd}{update} (float, float)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_principal_a74169588b3f34d0eec40f0d749a7f03f}{update} (float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. \end{DoxyCompactList}\item 
 void \hyperlink{classmenu_principal_ac76c28146574b4b72364cb877b5cd83f}{draw} ()
 \begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{classmenu_principal_a4fe6b875a2b261f24768a479b725c855}{vision\+Mode}
-\begin{DoxyCompactList}\small\item\em true si el modo de reconocimiento es visión \end{DoxyCompactList}\item 
 \hyperlink{classboton_toggle}{boton\+Toggle} $\ast$ \hyperlink{classmenu_principal_aea487ca8d9e0d1df2fda6a563ca0f04c}{btn\+Input}
 \begin{DoxyCompactList}\small\item\em Botón paa cambiar el modo de reconocimiento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classmenu_principal_a9855069f896926a6e6abace2f30e804e}{update} (bool, bool, bool, bool, bool, bool)
+\end{DoxyCompactItemize}
 \subsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
@@ -73,25 +78,18 @@ Menú principal de la aplicación.
 Este menú no tiene archivo de configuración sino que los botones están definidos manualmente. Cualquier submenú nuevo deber ser agregado acá. 
 
 \subsection{Documentación del constructor y destructor}
-\hypertarget{classmenu_principal_a52d757f677ea4f87a1def3a2259e3052}{}\index{menu\+Principal@{menu\+Principal}!menu\+Principal@{menu\+Principal}}
+\hypertarget{classmenu_principal_a28bc45a9592e32d48979bb34b5e937b5}{}\index{menu\+Principal@{menu\+Principal}!menu\+Principal@{menu\+Principal}}
 \index{menu\+Principal@{menu\+Principal}!menu\+Principal@{menu\+Principal}}
-\subsubsection[{menu\+Principal(bool)}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Principal\+::menu\+Principal (
+\subsubsection[{menu\+Principal()}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Principal\+::menu\+Principal (
 \begin{DoxyParamCaption}
-\item[{bool}]{v\+M}
+{}
 \end{DoxyParamCaption}
-)}\label{classmenu_principal_a52d757f677ea4f87a1def3a2259e3052}
+)}\label{classmenu_principal_a28bc45a9592e32d48979bb34b5e937b5}
 
 
 Constructor de la clase. 
 
-Define el modo en que el usuario va a interactuar, ya sea por visión o por gestos.
-
-
-\begin{DoxyParams}{Parámetros}
-{\em v\+M} & Indica el modo de reconociento que se va a utilizar \\
-\hline
-\end{DoxyParams}
-\hypertarget{classmenu_principal_aec2f0d44f0cd26e5c9ddfea5141ba0a1}{}\index{menu\+Principal@{menu\+Principal}!````~menu\+Principal@{$\sim$menu\+Principal}}
+Define el modo en que el usuario va a interactuar, ya sea por visión o por gestos. \hypertarget{classmenu_principal_aec2f0d44f0cd26e5c9ddfea5141ba0a1}{}\index{menu\+Principal@{menu\+Principal}!````~menu\+Principal@{$\sim$menu\+Principal}}
 \index{````~menu\+Principal@{$\sim$menu\+Principal}!menu\+Principal@{menu\+Principal}}
 \subsubsection[{$\sim$menu\+Principal()}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Principal\+::$\sim$menu\+Principal (
 \begin{DoxyParamCaption}
@@ -135,25 +133,51 @@ Método inicial del ciclo de Open\+G\+L.
 
 Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
 
-\hypertarget{classmenu_principal_a69aa5c82d822246305ec9eb0ae60b546}{}\index{menu\+Principal@{menu\+Principal}!update@{update}}
+\hypertarget{classmenu_principal_a92b6834ff602085f79bb16f39c6a45cd}{}\index{menu\+Principal@{menu\+Principal}!update@{update}}
 \index{update@{update}!menu\+Principal@{menu\+Principal}}
-\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Principal\+::update (
+\subsubsection[{update(float, float)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Principal\+::update (
 \begin{DoxyParamCaption}
 \item[{float}]{, }
-\item[{float}]{, }
+\item[{float}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_principal_a92b6834ff602085f79bb16f39c6a45cd}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. 
+
+
+
+Implementa \hyperlink{classespacio_base_abb71ddaa70032182ae4d8370dd05c536}{espacio\+Base}.
+
+\hypertarget{classmenu_principal_a74169588b3f34d0eec40f0d749a7f03f}{}\index{menu\+Principal@{menu\+Principal}!update@{update}}
+\index{update@{update}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{update(float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Principal\+::update (
+\begin{DoxyParamCaption}
 \item[{float}]{, }
 \item[{float}]{, }
 \item[{bool}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_principal_a69aa5c82d822246305ec9eb0ae60b546}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classmenu_principal_a74169588b3f34d0eec40f0d749a7f03f}
 
 
-Controla tareas lógica de cada ciclo de Open\+G\+L. 
+Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. 
 
 
 
-Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+Implementa \hyperlink{classespacio_base_afe08700ffb54b8b8191cdea5ec1671ef}{espacio\+Base}.
 
+\hypertarget{classmenu_principal_a9855069f896926a6e6abace2f30e804e}{}\index{menu\+Principal@{menu\+Principal}!update@{update}}
+\index{update@{update}!menu\+Principal@{menu\+Principal}}
+\subsubsection[{update(bool, bool, bool, bool, bool, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ menu\+Principal\+::update (
+\begin{DoxyParamCaption}
+\item[{bool}]{btn\+Comunicacion\+Res, }
+\item[{bool}]{btn\+Educacion\+Res, }
+\item[{bool}]{btn\+Cotidiana\+Res, }
+\item[{bool}]{btn\+Ocio\+Res, }
+\item[{bool}]{btn\+Salir\+Res, }
+\item[{bool}]{btn\+Input\+Res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classmenu_principal_a9855069f896926a6e6abace2f30e804e}
 
 
 \subsection{Documentación de los datos miembro}
@@ -254,13 +278,6 @@ Instancia del menú de educación.
 
 
 Instancia del menú de ocio. 
-
-\hypertarget{classmenu_principal_a4fe6b875a2b261f24768a479b725c855}{}\index{menu\+Principal@{menu\+Principal}!vision\+Mode@{vision\+Mode}}
-\index{vision\+Mode@{vision\+Mode}!menu\+Principal@{menu\+Principal}}
-\subsubsection[{vision\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool menu\+Principal\+::vision\+Mode}\label{classmenu_principal_a4fe6b875a2b261f24768a479b725c855}
-
-
-true si el modo de reconocimiento es visión 
 
 
 

@@ -2,9 +2,9 @@
     <boton>
 		<id>caracter</id>
         <x>20</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -17,10 +17,10 @@
     </boton>
 	<boton>
 		<id>caracter</id>
-        <x>120</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+        <x>140</x>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -33,10 +33,10 @@
     </boton>
 	<boton>
 		<id>caracter</id>
-        <x>220</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+        <x>260</x>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -49,10 +49,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>320</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+		<x>380</x>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -65,10 +65,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>420</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+		<x>500</x>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -81,10 +81,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>520</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+		<x>620</x>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -97,10 +97,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>620</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+		<x>740</x>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -113,10 +113,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>720</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+		<x>860</x>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -129,10 +129,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>820</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+		<x>980</x>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -145,10 +145,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>920</x>
-        <y>310</y>
-        <width>90</width>
-		<height>90</height>
+		<x>1100</x>
+        <y>220</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -162,9 +162,9 @@
 	<boton>
 		<id>caracter</id>
         <x>20</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -177,10 +177,10 @@
     </boton>
 	<boton>
 		<id>caracter</id>
-        <x>120</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+        <x>140</x>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -193,10 +193,10 @@
     </boton>
 	<boton>
 		<id>caracter</id>
-        <x>220</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+        <x>260</x>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -209,10 +209,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>320</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+		<x>380</x>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -225,10 +225,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>420</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+		<x>500</x>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -241,10 +241,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>520</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+		<x>620</x>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -257,10 +257,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>620</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+		<x>740</x>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -273,10 +273,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>720</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+		<x>860</x>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -289,10 +289,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>820</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+		<x>980</x>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -305,10 +305,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>920</x>
-        <y>410</y>
-        <width>90</width>
-		<height>90</height>
+		<x>1100</x>
+        <y>340</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -322,9 +322,9 @@
 	<boton>
 		<id>caracter</id>
         <x>20</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -337,10 +337,10 @@
     </boton>
 	<boton>
 		<id>caracter</id>
-        <x>120</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+        <x>140</x>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -353,10 +353,10 @@
     </boton>
 	<boton>
 		<id>caracter</id>
-        <x>220</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+        <x>260</x>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -369,10 +369,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>320</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+		<x>380</x>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -385,10 +385,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>420</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+		<x>500</x>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -401,10 +401,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>520</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+		<x>620</x>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -417,10 +417,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>620</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+		<x>740</x>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -433,10 +433,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>720</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+		<x>860</x>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -449,10 +449,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>820</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+		<x>980</x>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -465,10 +465,10 @@
     </boton>
 	<boton>
         <id>caracter</id>
-		<x>920</x>
-        <y>510</y>
-        <width>90</width>
-		<height>90</height>
+		<x>1100</x>
+        <y>460</y>
+        <width>110</width>
+		<height>110</height>
 		<texto>
 			<tamano>44</tamano>
 			<color>
@@ -481,9 +481,9 @@
     </boton>
 	<boton>
         <id>espacio</id>
-		<x>270</x>
-        <y>610</y>
-        <width>490</width>
+		<x>510</x>
+        <y>580</y>
+        <width>380</width>
 		<height>90</height>
 		<texto>
 			<tamano>42</tamano>
@@ -497,8 +497,8 @@
     </boton>
     <boton>
         <id>hablar</id>
-		<x>770</x>
-        <y>610</y>
+		<x>900</x>
+        <y>580</y>
         <width>190</width>
 		<height>90</height>
 		<texto>
@@ -513,8 +513,8 @@
     </boton>
 	<boton>
         <id>borrar</id>
-		<x>70</x>
-        <y>610</y>
+		<x>310</x>
+        <y>580</y>
         <width>190</width>
 		<height>90</height>
 		<texto>
@@ -527,13 +527,29 @@
 			<hilera>Borrar</hilera>
 		</texto>
     </boton>
+	<boton>
+        <id>limpiar</id>
+		<x>100</x>
+        <y>580</y>
+        <width>200</width>
+		<height>90</height>
+		<texto>
+			<tamano>42</tamano>
+			<color>
+				<r>0</r>
+				<g>0</g>
+				<b>0</b>
+			</color>
+			<hilera>Limpiar</hilera>
+		</texto>
+    </boton>
 	<cajaTexto>
         <x>10</x>
         <y>10</y>
-        <width>1010</width>
+        <width>1260</width>
 		<height>200</height>
 		<texto>
-			<tamano>56</tamano>
+			<tamano>100</tamano>
 			<color>
 				<r>0</r>
 				<g>0</g>

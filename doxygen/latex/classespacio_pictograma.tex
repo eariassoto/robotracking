@@ -24,8 +24,10 @@ Diagrama de herencias de espacio\+Pictograma\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
 void \hyperlink{classespacio_pictograma_a88576adb5f56ddc7d2c735f349a4864d}{setup} ()
 \begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
-\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_pictograma_a2ebefcf2c0838ef08d067a39c307ed6d}{update} (float, float, float, float, bool)
-\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_pictograma_aa6abbd78dd8a5e6e3eaa6976bc3b44ad}{update} (float, float)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_pictograma_a7483474fe025f26b200bbaecde989904}{update} (float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. \end{DoxyCompactList}\item 
 void \hyperlink{classespacio_pictograma_a0f869dd16b4431009825ef13527e40db}{draw} ()
 \begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Métodos privados}
@@ -38,7 +40,9 @@ void \hyperlink{classespacio_pictograma_abfadb8b3f6ec9c8c7558ea6eef22b295}{carga
 int \hyperlink{classespacio_pictograma_aa1d237a0781e86d2cc44c65c0c500d28}{get\+Tam\+Pictograma} ()
 \begin{DoxyCompactList}\small\item\em Recupera la cantidad de pictogramas en una lista. \end{DoxyCompactList}\item 
 void \hyperlink{classespacio_pictograma_a3a9c44580cc4f78eb1793c9479b89e9f}{comando\+Hablar} (string s)
-\begin{DoxyCompactList}\small\item\em Comando temporal para texto por voz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Comando temporal para texto por voz. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_pictograma_a845a704901e4e675d3d871f987193fc2}{update} (bool, bool, bool, bool, bool, bool)
+\end{DoxyCompactItemize}
 \subsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
@@ -194,25 +198,51 @@ Crea los botones de la categorías, los componentes del espacio y construye los 
 
 Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
 
-\hypertarget{classespacio_pictograma_a2ebefcf2c0838ef08d067a39c307ed6d}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!update@{update}}
+\hypertarget{classespacio_pictograma_aa6abbd78dd8a5e6e3eaa6976bc3b44ad}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!update@{update}}
 \index{update@{update}!espacio\+Pictograma@{espacio\+Pictograma}}
-\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Pictograma\+::update (
+\subsubsection[{update(float, float)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Pictograma\+::update (
 \begin{DoxyParamCaption}
 \item[{float}]{, }
-\item[{float}]{, }
+\item[{float}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_pictograma_aa6abbd78dd8a5e6e3eaa6976bc3b44ad}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. 
+
+
+
+Implementa \hyperlink{classespacio_base_abb71ddaa70032182ae4d8370dd05c536}{espacio\+Base}.
+
+\hypertarget{classespacio_pictograma_a7483474fe025f26b200bbaecde989904}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!update@{update}}
+\index{update@{update}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{update(float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Pictograma\+::update (
+\begin{DoxyParamCaption}
 \item[{float}]{, }
 \item[{float}]{, }
 \item[{bool}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_pictograma_a2ebefcf2c0838ef08d067a39c307ed6d}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_pictograma_a7483474fe025f26b200bbaecde989904}
 
 
-Controla tareas lógica de cada ciclo de Open\+G\+L. 
+Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. 
 
 
 
-Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+Implementa \hyperlink{classespacio_base_afe08700ffb54b8b8191cdea5ec1671ef}{espacio\+Base}.
 
+\hypertarget{classespacio_pictograma_a845a704901e4e675d3d871f987193fc2}{}\index{espacio\+Pictograma@{espacio\+Pictograma}!update@{update}}
+\index{update@{update}!espacio\+Pictograma@{espacio\+Pictograma}}
+\subsubsection[{update(bool, bool, bool, bool, bool, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Pictograma\+::update (
+\begin{DoxyParamCaption}
+\item[{bool}]{btn\+Salir\+Res, }
+\item[{bool}]{btn\+Atras\+Res, }
+\item[{bool}]{btn\+Adelante\+Res, }
+\item[{bool}]{btn\+Hablar\+Res, }
+\item[{bool}]{btn\+Borrar\+Res, }
+\item[{bool}]{btn\+Borrar\+Todo\+Res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_pictograma_a845a704901e4e675d3d871f987193fc2}
 
 
 \subsection{Documentación de los datos miembro}

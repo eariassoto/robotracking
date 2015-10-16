@@ -15,10 +15,18 @@ Diagrama de herencias de of\+App\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classof_app}
 \end{center}
 \end{figure}
+\subsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classof_app_aab1f96029bf7fd45f397fc24647f3494}{Modo} \{ \hyperlink{classof_app_aab1f96029bf7fd45f397fc24647f3494a52695cfdddc55d6f4cb5638e7d4f9dbd}{Modo\+::\+Tobii}, 
+\hyperlink{classof_app_aab1f96029bf7fd45f397fc24647f3494ad0bf83bf5396b08b6435d781c969c228}{Modo\+::\+Leap}, 
+\hyperlink{classof_app_aab1f96029bf7fd45f397fc24647f3494af2a47c6809d88e175dade0ef7b16aa13}{Modo\+::\+Mouse}
+ \}
+\end{DoxyCompactItemize}
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classof_app_a8e51b68c569cf4839163fd7470d50260}{of\+App} (int, int)
+\hyperlink{classof_app_a43e833d2c9b04c5a0bcddfbbfc479e45}{of\+App} (\hyperlink{classof_app_aab1f96029bf7fd45f397fc24647f3494}{Modo}, int, int, H\+W\+N\+D)
 \begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
 \hyperlink{classof_app_a46d5e370034c47f5fc1a530bcb331c27}{$\sim$of\+App} ()
 \begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
@@ -46,32 +54,36 @@ void \hyperlink{classof_app_aada5a79556321801567752a0e5a69bda}{drag\+Event} (of\
 \item 
 void \hyperlink{classof_app_a885672a72340a5e998af1d16718dc766}{got\+Message} (of\+Message msg)
 \end{DoxyCompactItemize}
-\subsection*{Atributos públicos}
+\subsection*{Métodos privados}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{classof_app_ac06e7f62949f8d76a68ea3020ff21da3}{input\+Mode}
-\begin{DoxyCompactList}\small\item\em Define el modo actual de entrada (visión o gestos) \end{DoxyCompactList}\end{DoxyCompactItemize}
+double \hyperlink{classof_app_a1955e470a29da6a317400eeece4e4428}{circle\+Distance} (double, double, double, double)
+\begin{DoxyCompactList}\small\item\em Utilidad que calcula la distancia entre dos circulos. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
-Controller $\ast$ \hyperlink{classof_app_aaca01b1fe9aa8a406ca09a5c4ede5f99}{controller}
-\item 
+\hyperlink{classof_app_aab1f96029bf7fd45f397fc24647f3494}{Modo} \hyperlink{classof_app_a8b4789de524f7b1376a44dc6caba6cb9}{modo}
+\begin{DoxyCompactList}\small\item\em Define el modo de entrada. \end{DoxyCompactList}\item 
+H\+W\+N\+D \hyperlink{classof_app_a764c01ed9a5c4bc9c3a4f6e6fed854c1}{hwnd\+Window}
+\begin{DoxyCompactList}\small\item\em Controlador de la ventana. \end{DoxyCompactList}\item 
+\hyperlink{class_eye_x_host}{Eye\+X\+Host} $\ast$ \hyperlink{classof_app_afcf3654e64e9c180a113194cdb8a8e23}{host}
+\begin{DoxyCompactList}\small\item\em Controlador del Tobii Eye\+X. \end{DoxyCompactList}\item 
+\hyperlink{class_leap_host}{Leap\+Host} $\ast$ \hyperlink{classof_app_aad56a9a303eb2d7becdba5ab7c117322}{leap\+Host}
+\begin{DoxyCompactList}\small\item\em Controlador del Leap Motion. \end{DoxyCompactList}\item 
 \hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classof_app_a1e3e4e9da97b2a839dd1255c65f73453}{espacio\+Activo}
 \begin{DoxyCompactList}\small\item\em Instancia del espacio activo en la pantalla. \end{DoxyCompactList}\item 
 \hyperlink{classmenu_principal}{menu\+Principal} $\ast$ \hyperlink{classof_app_a9ba8bf05bd3a0932461179f47759b83d}{m\+Principal}
 \begin{DoxyCompactList}\small\item\em Instancia del menú principal de la aplicación. \end{DoxyCompactList}\item 
 int \hyperlink{classof_app_a07b648bd42ef7fda31bf208ccd18d5f8}{tam\+X}
-\item 
+\begin{DoxyCompactList}\small\item\em Tamaño en el eje X de la pantalla de la aplicación. \end{DoxyCompactList}\item 
 int \hyperlink{classof_app_ac1e9d00b0014a47490688c3b298a67c9}{tam\+Y}
-\item 
-int \hyperlink{classof_app_ae5beab7e06a1bedf3a988264d501984c}{leap\+X}
-\item 
-int \hyperlink{classof_app_a96ce450adbe65fbf40bb099435d7b27d}{leap\+Y}
-\item 
-bool \hyperlink{classof_app_acd3a56a2f96cc74a240b84649179e79f}{hand\+Pressed}
-\item 
-Frame \hyperlink{classof_app_a49ee00759b6afa60298b89befa53664f}{last\+Frame}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Tamaño en el eje Y de la pantalla de la aplicación. \end{DoxyCompactList}\item 
+const int \hyperlink{classof_app_a92c5745a3f00e98470f2d6d7287da213}{radio\+Mirada} = 30
+\begin{DoxyCompactList}\small\item\em Radio del circulo que. \end{DoxyCompactList}\item 
+int \hyperlink{classof_app_a6dc30422836aa52bb36cd601c5250ba5}{ultimo\+X}
+\begin{DoxyCompactList}\small\item\em Ultima posicion del usuario en el eye x registrada. \end{DoxyCompactList}\item 
+int \hyperlink{classof_app_a0d785c36d4483946c4e43b7a1cecffe9}{ultimo\+Y}
+\begin{DoxyCompactList}\small\item\em Ultima posicion del usuario en el eye y registrada. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
@@ -79,15 +91,34 @@ Clase base que coordina la interacción entre el ciclo de Open\+G\+L y la aplica
 
 Esta clase se maneja por medio de los eventos establecidos por Open\+G\+L. Cualquier espacio de la aplicacion debe tener al menos implementado los métodos \hyperlink{classof_app_af68eaa1366244f7a541cd08e02199c12}{setup()}, \hyperlink{classof_app_afef41ea4aee5a22ea530afba33ae7a7b}{update()} y \hyperlink{classof_app_a75dd45437b9e317db73d8daef1ad49f8}{draw()} para que puedan ser inicializados y dibujados en pantalla. Las demás funciones de Open\+G\+L se definen pero se dejan vacías. 
 
+\subsection{Documentación de las enumeraciones miembro de la clase}
+\hypertarget{classof_app_aab1f96029bf7fd45f397fc24647f3494}{}\index{of\+App@{of\+App}!Modo@{Modo}}
+\index{Modo@{Modo}!of\+App@{of\+App}}
+\subsubsection[{Modo}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf of\+App\+::\+Modo}\hspace{0.3cm}{\ttfamily [strong]}}\label{classof_app_aab1f96029bf7fd45f397fc24647f3494}
+\begin{Desc}
+\item[Valores de enumeraciones]\par
+\begin{description}
+\index{Tobii@{Tobii}!of\+App@{of\+App}}\index{of\+App@{of\+App}!Tobii@{Tobii}}\item[{\em 
+\hypertarget{classof_app_aab1f96029bf7fd45f397fc24647f3494a52695cfdddc55d6f4cb5638e7d4f9dbd}{}Tobii\label{classof_app_aab1f96029bf7fd45f397fc24647f3494a52695cfdddc55d6f4cb5638e7d4f9dbd}
+}]\index{Leap@{Leap}!of\+App@{of\+App}}\index{of\+App@{of\+App}!Leap@{Leap}}\item[{\em 
+\hypertarget{classof_app_aab1f96029bf7fd45f397fc24647f3494ad0bf83bf5396b08b6435d781c969c228}{}Leap\label{classof_app_aab1f96029bf7fd45f397fc24647f3494ad0bf83bf5396b08b6435d781c969c228}
+}]\index{Mouse@{Mouse}!of\+App@{of\+App}}\index{of\+App@{of\+App}!Mouse@{Mouse}}\item[{\em 
+\hypertarget{classof_app_aab1f96029bf7fd45f397fc24647f3494af2a47c6809d88e175dade0ef7b16aa13}{}Mouse\label{classof_app_aab1f96029bf7fd45f397fc24647f3494af2a47c6809d88e175dade0ef7b16aa13}
+}]\end{description}
+\end{Desc}
+
+
 \subsection{Documentación del constructor y destructor}
-\hypertarget{classof_app_a8e51b68c569cf4839163fd7470d50260}{}\index{of\+App@{of\+App}!of\+App@{of\+App}}
+\hypertarget{classof_app_a43e833d2c9b04c5a0bcddfbbfc479e45}{}\index{of\+App@{of\+App}!of\+App@{of\+App}}
 \index{of\+App@{of\+App}!of\+App@{of\+App}}
-\subsubsection[{of\+App(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}of\+App\+::of\+App (
+\subsubsection[{of\+App(\+Modo, int, int, H\+W\+N\+D)}]{\setlength{\rightskip}{0pt plus 5cm}of\+App\+::of\+App (
 \begin{DoxyParamCaption}
+\item[{{\bf Modo}}]{m, }
 \item[{int}]{x, }
-\item[{int}]{y}
+\item[{int}]{y, }
+\item[{H\+W\+N\+D}]{\+\_\+hwnd\+Window}
 \end{DoxyParamCaption}
-)}\label{classof_app_a8e51b68c569cf4839163fd7470d50260}
+)}\label{classof_app_a43e833d2c9b04c5a0bcddfbbfc479e45}
 
 
 Constructor de la clase. 
@@ -96,9 +127,13 @@ Por defecto, inicia la aplicación en modo visión, sin embargo puede definirse 
 
 
 \begin{DoxyParams}[1]{Parámetros}
+ & {\em m} & modo de entrada para la instancia de la aplicación \\
+\hline
 \mbox{\tt in}  & {\em x} & tamaño del largo de la ventana de la aplicación \\
 \hline
 \mbox{\tt in}  & {\em y} & tamaño del ancho de la ventana de la apliación \\
+\hline
+ & {\em \+\_\+hwnd\+Window} & manejador de la ventana principal \\
 \hline
 \end{DoxyParams}
 \hypertarget{classof_app_a46d5e370034c47f5fc1a530bcb331c27}{}\index{of\+App@{of\+App}!````~of\+App@{$\sim$of\+App}}
@@ -115,6 +150,20 @@ Destructor de la clase.
 Borra a m\+Principal 
 
 \subsection{Documentación de las funciones miembro}
+\hypertarget{classof_app_a1955e470a29da6a317400eeece4e4428}{}\index{of\+App@{of\+App}!circle\+Distance@{circle\+Distance}}
+\index{circle\+Distance@{circle\+Distance}!of\+App@{of\+App}}
+\subsubsection[{circle\+Distance(double, double, double, double)}]{\setlength{\rightskip}{0pt plus 5cm}double of\+App\+::circle\+Distance (
+\begin{DoxyParamCaption}
+\item[{double}]{d\+X0, }
+\item[{double}]{d\+Y0, }
+\item[{double}]{d\+X1, }
+\item[{double}]{d\+Y1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a1955e470a29da6a317400eeece4e4428}
+
+
+Utilidad que calcula la distancia entre dos circulos. 
+
 \hypertarget{classof_app_aada5a79556321801567752a0e5a69bda}{}\index{of\+App@{of\+App}!drag\+Event@{drag\+Event}}
 \index{drag\+Event@{drag\+Event}!of\+App@{of\+App}}
 \subsubsection[{drag\+Event(of\+Drag\+Info drag\+Info)}]{\setlength{\rightskip}{0pt plus 5cm}void of\+App\+::drag\+Event (
@@ -256,9 +305,6 @@ Se activa cuando la ventana cambia de tamaño.
 
 
 \subsection{Documentación de los datos miembro}
-\hypertarget{classof_app_aaca01b1fe9aa8a406ca09a5c4ede5f99}{}\index{of\+App@{of\+App}!controller@{controller}}
-\index{controller@{controller}!of\+App@{of\+App}}
-\subsubsection[{controller}]{\setlength{\rightskip}{0pt plus 5cm}Controller$\ast$ of\+App\+::controller\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_aaca01b1fe9aa8a406ca09a5c4ede5f99}
 \hypertarget{classof_app_a1e3e4e9da97b2a839dd1255c65f73453}{}\index{of\+App@{of\+App}!espacio\+Activo@{espacio\+Activo}}
 \index{espacio\+Activo@{espacio\+Activo}!of\+App@{of\+App}}
 \subsubsection[{espacio\+Activo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base}$\ast$ of\+App\+::espacio\+Activo\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a1e3e4e9da97b2a839dd1255c65f73453}
@@ -268,25 +314,34 @@ Instancia del espacio activo en la pantalla.
 
 Este puntero se mueve dinámicamente. Si un espacio necesita cambiar a otro solo necesita modificar el puntero hacia el espacio que se quiere activar y el ciclo de Open\+G\+L se encarga de invocar a sus debidos métodos.
 
-Si el puntero llega alguna vez a ser 0 representa la salida del programa. \hypertarget{classof_app_acd3a56a2f96cc74a240b84649179e79f}{}\index{of\+App@{of\+App}!hand\+Pressed@{hand\+Pressed}}
-\index{hand\+Pressed@{hand\+Pressed}!of\+App@{of\+App}}
-\subsubsection[{hand\+Pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool of\+App\+::hand\+Pressed\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_acd3a56a2f96cc74a240b84649179e79f}
-\hypertarget{classof_app_ac06e7f62949f8d76a68ea3020ff21da3}{}\index{of\+App@{of\+App}!input\+Mode@{input\+Mode}}
-\index{input\+Mode@{input\+Mode}!of\+App@{of\+App}}
-\subsubsection[{input\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool of\+App\+::input\+Mode}\label{classof_app_ac06e7f62949f8d76a68ea3020ff21da3}
+Si el puntero llega alguna vez a ser 0 representa la salida del programa. \hypertarget{classof_app_afcf3654e64e9c180a113194cdb8a8e23}{}\index{of\+App@{of\+App}!host@{host}}
+\index{host@{host}!of\+App@{of\+App}}
+\subsubsection[{host}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Eye\+X\+Host}$\ast$ of\+App\+::host\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_afcf3654e64e9c180a113194cdb8a8e23}
 
 
-Define el modo actual de entrada (visión o gestos) 
+Controlador del Tobii Eye\+X. 
 
-\hypertarget{classof_app_a49ee00759b6afa60298b89befa53664f}{}\index{of\+App@{of\+App}!last\+Frame@{last\+Frame}}
-\index{last\+Frame@{last\+Frame}!of\+App@{of\+App}}
-\subsubsection[{last\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}Frame of\+App\+::last\+Frame\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a49ee00759b6afa60298b89befa53664f}
-\hypertarget{classof_app_ae5beab7e06a1bedf3a988264d501984c}{}\index{of\+App@{of\+App}!leap\+X@{leap\+X}}
-\index{leap\+X@{leap\+X}!of\+App@{of\+App}}
-\subsubsection[{leap\+X}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::leap\+X\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_ae5beab7e06a1bedf3a988264d501984c}
-\hypertarget{classof_app_a96ce450adbe65fbf40bb099435d7b27d}{}\index{of\+App@{of\+App}!leap\+Y@{leap\+Y}}
-\index{leap\+Y@{leap\+Y}!of\+App@{of\+App}}
-\subsubsection[{leap\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::leap\+Y\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a96ce450adbe65fbf40bb099435d7b27d}
+\hypertarget{classof_app_a764c01ed9a5c4bc9c3a4f6e6fed854c1}{}\index{of\+App@{of\+App}!hwnd\+Window@{hwnd\+Window}}
+\index{hwnd\+Window@{hwnd\+Window}!of\+App@{of\+App}}
+\subsubsection[{hwnd\+Window}]{\setlength{\rightskip}{0pt plus 5cm}H\+W\+N\+D of\+App\+::hwnd\+Window\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a764c01ed9a5c4bc9c3a4f6e6fed854c1}
+
+
+Controlador de la ventana. 
+
+\hypertarget{classof_app_aad56a9a303eb2d7becdba5ab7c117322}{}\index{of\+App@{of\+App}!leap\+Host@{leap\+Host}}
+\index{leap\+Host@{leap\+Host}!of\+App@{of\+App}}
+\subsubsection[{leap\+Host}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Leap\+Host}$\ast$ of\+App\+::leap\+Host\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_aad56a9a303eb2d7becdba5ab7c117322}
+
+
+Controlador del Leap Motion. 
+
+\hypertarget{classof_app_a8b4789de524f7b1376a44dc6caba6cb9}{}\index{of\+App@{of\+App}!modo@{modo}}
+\index{modo@{modo}!of\+App@{of\+App}}
+\subsubsection[{modo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Modo} of\+App\+::modo\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a8b4789de524f7b1376a44dc6caba6cb9}
+
+
+Define el modo de entrada. 
+
 \hypertarget{classof_app_a9ba8bf05bd3a0932461179f47759b83d}{}\index{of\+App@{of\+App}!m\+Principal@{m\+Principal}}
 \index{m\+Principal@{m\+Principal}!of\+App@{of\+App}}
 \subsubsection[{m\+Principal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf menu\+Principal}$\ast$ of\+App\+::m\+Principal\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a9ba8bf05bd3a0932461179f47759b83d}
@@ -294,12 +349,41 @@ Define el modo actual de entrada (visión o gestos)
 
 Instancia del menú principal de la aplicación. 
 
+\hypertarget{classof_app_a92c5745a3f00e98470f2d6d7287da213}{}\index{of\+App@{of\+App}!radio\+Mirada@{radio\+Mirada}}
+\index{radio\+Mirada@{radio\+Mirada}!of\+App@{of\+App}}
+\subsubsection[{radio\+Mirada}]{\setlength{\rightskip}{0pt plus 5cm}const int of\+App\+::radio\+Mirada = 30\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a92c5745a3f00e98470f2d6d7287da213}
+
+
+Radio del circulo que. 
+
 \hypertarget{classof_app_a07b648bd42ef7fda31bf208ccd18d5f8}{}\index{of\+App@{of\+App}!tam\+X@{tam\+X}}
 \index{tam\+X@{tam\+X}!of\+App@{of\+App}}
 \subsubsection[{tam\+X}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::tam\+X\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a07b648bd42ef7fda31bf208ccd18d5f8}
+
+
+Tamaño en el eje X de la pantalla de la aplicación. 
+
 \hypertarget{classof_app_ac1e9d00b0014a47490688c3b298a67c9}{}\index{of\+App@{of\+App}!tam\+Y@{tam\+Y}}
 \index{tam\+Y@{tam\+Y}!of\+App@{of\+App}}
 \subsubsection[{tam\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::tam\+Y\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_ac1e9d00b0014a47490688c3b298a67c9}
+
+
+Tamaño en el eje Y de la pantalla de la aplicación. 
+
+\hypertarget{classof_app_a6dc30422836aa52bb36cd601c5250ba5}{}\index{of\+App@{of\+App}!ultimo\+X@{ultimo\+X}}
+\index{ultimo\+X@{ultimo\+X}!of\+App@{of\+App}}
+\subsubsection[{ultimo\+X}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::ultimo\+X\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a6dc30422836aa52bb36cd601c5250ba5}
+
+
+Ultima posicion del usuario en el eye x registrada. 
+
+\hypertarget{classof_app_a0d785c36d4483946c4e43b7a1cecffe9}{}\index{of\+App@{of\+App}!ultimo\+Y@{ultimo\+Y}}
+\index{ultimo\+Y@{ultimo\+Y}!of\+App@{of\+App}}
+\subsubsection[{ultimo\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int of\+App\+::ultimo\+Y\hspace{0.3cm}{\ttfamily [private]}}\label{classof_app_a0d785c36d4483946c4e43b7a1cecffe9}
+
+
+Ultima posicion del usuario en el eye y registrada. 
+
 
 
 La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}

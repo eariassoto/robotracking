@@ -21,8 +21,8 @@ botonToggle::botonToggle(string r1, string r2, float esc, string t1, string t2, 
 	texto2 = t2;
 }
 
-bool botonToggle::update(float xM, float yM, float xL, float yL, bool c){
-	bool res = botonImagen::update(xM, yM, xL, yL, c);
+bool botonToggle::update(bool res)
+{
 	if (res){
 		if (toggleState){
 			imagen.loadImage(ruta1);
@@ -36,6 +36,18 @@ bool botonToggle::update(float xM, float yM, float xL, float yL, bool c){
 		}
 		toggleState = !toggleState;
 	}
+	return res;
+}
+
+bool botonToggle::update(float x, float y){
+	bool res = botonImagen::update(x, y);
+	update(res);
+	return res;
+}
+
+bool botonToggle::update(float x, float y, bool c){
+	bool res = botonImagen::update(x, y, c);
+	update(res);
 	return res;
 }
 

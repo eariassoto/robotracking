@@ -24,8 +24,10 @@ Diagrama de herencias de espacio\+Tarjetas\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
 void \hyperlink{classespacio_tarjetas_a0dc8d9154c4de90daab303a4fab5fd90}{setup} ()
 \begin{DoxyCompactList}\small\item\em Método inicial del ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
-\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_tarjetas_a61d5cd1dcc3538b9eafe7a6ab7d6e6e5}{update} (float, float, float, float, bool)
-\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_tarjetas_a3605dfcf054ea79c7ddb3c335bac12d4}{update} (float, float)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_tarjetas_aa2cc230a9c7bd367364f0651ada06c73}{update} (float, float, bool)
+\begin{DoxyCompactList}\small\item\em Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. \end{DoxyCompactList}\item 
 void \hyperlink{classespacio_tarjetas_a53e047fce1e887a4dfc49ff31388867d}{draw} ()
 \begin{DoxyCompactList}\small\item\em Controla las tareas gráficas de cada ciclo de Open\+G\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Métodos privados}
@@ -34,7 +36,9 @@ void \hyperlink{classespacio_tarjetas_a53e047fce1e887a4dfc49ff31388867d}{draw} (
 void \hyperlink{classespacio_tarjetas_a14b6c40ed3154459f9b1ec511f176613}{cargar\+Tarjeta} ()
 \begin{DoxyCompactList}\small\item\em Carga un ejercicio en pantalla. \end{DoxyCompactList}\item 
 void \hyperlink{classespacio_tarjetas_a826269ec11513bc1c471d9aa51288a47}{validar\+Respuesta} (\hyperlink{classboton_simple}{boton\+Simple} $\ast$)
-\begin{DoxyCompactList}\small\item\em Verifica si la respuesta elegida por el usuario es correcta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Verifica si la respuesta elegida por el usuario es correcta. \end{DoxyCompactList}\item 
+\hyperlink{classespacio_base}{espacio\+Base} $\ast$ \hyperlink{classespacio_tarjetas_a57d9e609b53f6f8248e8f52941890ecf}{update} (bool, bool, bool, bool, bool, bool)
+\end{DoxyCompactItemize}
 \subsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
@@ -145,25 +149,51 @@ Método inicial del ciclo de Open\+G\+L.
 
 Implementa \hyperlink{classespacio_base_a65020ad1e767a235b0c227a1769c5416}{espacio\+Base}.
 
-\hypertarget{classespacio_tarjetas_a61d5cd1dcc3538b9eafe7a6ab7d6e6e5}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!update@{update}}
+\hypertarget{classespacio_tarjetas_a3605dfcf054ea79c7ddb3c335bac12d4}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!update@{update}}
 \index{update@{update}!espacio\+Tarjetas@{espacio\+Tarjetas}}
-\subsubsection[{update(float, float, float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Tarjetas\+::update (
+\subsubsection[{update(float, float)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Tarjetas\+::update (
 \begin{DoxyParamCaption}
 \item[{float}]{, }
-\item[{float}]{, }
+\item[{float}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_tarjetas_a3605dfcf054ea79c7ddb3c335bac12d4}
+
+
+Controla tareas lógica de cada ciclo de Open\+G\+L, version tobii. 
+
+
+
+Implementa \hyperlink{classespacio_base_abb71ddaa70032182ae4d8370dd05c536}{espacio\+Base}.
+
+\hypertarget{classespacio_tarjetas_aa2cc230a9c7bd367364f0651ada06c73}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!update@{update}}
+\index{update@{update}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{update(float, float, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Tarjetas\+::update (
+\begin{DoxyParamCaption}
 \item[{float}]{, }
 \item[{float}]{, }
 \item[{bool}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_tarjetas_a61d5cd1dcc3538b9eafe7a6ab7d6e6e5}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classespacio_tarjetas_aa2cc230a9c7bd367364f0651ada06c73}
 
 
-Controla tareas lógica de cada ciclo de Open\+G\+L. 
+Controla tareas lógica de cada ciclo de Open\+G\+L, version leap. 
 
 
 
-Implementa \hyperlink{classespacio_base_a9b94b1106cd478dd78bc42078a36d013}{espacio\+Base}.
+Implementa \hyperlink{classespacio_base_afe08700ffb54b8b8191cdea5ec1671ef}{espacio\+Base}.
 
+\hypertarget{classespacio_tarjetas_a57d9e609b53f6f8248e8f52941890ecf}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!update@{update}}
+\index{update@{update}!espacio\+Tarjetas@{espacio\+Tarjetas}}
+\subsubsection[{update(bool, bool, bool, bool, bool, bool)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf espacio\+Base} $\ast$ espacio\+Tarjetas\+::update (
+\begin{DoxyParamCaption}
+\item[{bool}]{btn\+Atras\+Res, }
+\item[{bool}]{btn0\+Res, }
+\item[{bool}]{btn1\+Res, }
+\item[{bool}]{btn2\+Res, }
+\item[{bool}]{btn3\+Res, }
+\item[{bool}]{btn\+Nuevo\+Res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classespacio_tarjetas_a57d9e609b53f6f8248e8f52941890ecf}
 \hypertarget{classespacio_tarjetas_a826269ec11513bc1c471d9aa51288a47}{}\index{espacio\+Tarjetas@{espacio\+Tarjetas}!validar\+Respuesta@{validar\+Respuesta}}
 \index{validar\+Respuesta@{validar\+Respuesta}!espacio\+Tarjetas@{espacio\+Tarjetas}}
 \subsubsection[{validar\+Respuesta(boton\+Simple $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void espacio\+Tarjetas\+::validar\+Respuesta (
